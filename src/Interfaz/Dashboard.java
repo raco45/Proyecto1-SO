@@ -30,44 +30,43 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         adminPanel = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
         squarePanel = new javax.swing.JPanel();
         nintendoPanel = new javax.swing.JPanel();
         jSeparator1 = new javax.swing.JSeparator();
-        jLabel4 = new javax.swing.JLabel();
+        cantDlcN = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jSpinner1 = new javax.swing.JSpinner();
-        jSpinner2 = new javax.swing.JSpinner();
-        jSpinner3 = new javax.swing.JSpinner();
-        jSpinner4 = new javax.swing.JSpinner();
-        jSpinner5 = new javax.swing.JSpinner();
+        spinnerIntegradorN = new javax.swing.JSpinner();
+        spinnerNarrativoN = new javax.swing.JSpinner();
+        spinnerNivelesN = new javax.swing.JSpinner();
+        spinnerSpritesN = new javax.swing.JSpinner();
+        spinnerLogicaN = new javax.swing.JSpinner();
         jLabel9 = new javax.swing.JLabel();
-        jSpinner6 = new javax.swing.JSpinner();
+        spinnerDlcN = new javax.swing.JSpinner();
         jLabel2 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
+        maxGuionesN = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
-        jLabel24 = new javax.swing.JLabel();
-        jLabel25 = new javax.swing.JLabel();
+        cantSpritesN = new javax.swing.JLabel();
+        cantSistemasN = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jProgressBar1 = new javax.swing.JProgressBar();
         jLabel26 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
-        jLabel29 = new javax.swing.JLabel();
-        jLabel30 = new javax.swing.JLabel();
+        cantGuionesN = new javax.swing.JLabel();
+        cantNivelesN = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
         jLabel32 = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
@@ -81,19 +80,39 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel41 = new javax.swing.JLabel();
         jLabel42 = new javax.swing.JLabel();
         jLabel43 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        maxNivelesN = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        maxSpritesN = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        maxSistemasN = new javax.swing.JLabel();
+        jLabel46 = new javax.swing.JLabel();
+        maxDlcN = new javax.swing.JLabel();
+        jLabel48 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         adminPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel1.setText("Ventana de administrador ");
+        adminPanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 30, 220, 30));
+
+        jLabel34.setText("Cargar parametros de simulacion ");
+        adminPanel.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, 200, -1));
+
+        jButton1.setText("jButton1");
+        adminPanel.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 140, -1, -1));
+
         jTabbedPane1.addTab("Admin", adminPanel);
 
         javax.swing.GroupLayout squarePanelLayout = new javax.swing.GroupLayout(squarePanel);
         squarePanel.setLayout(squarePanelLayout);
         squarePanelLayout.setHorizontalGroup(
             squarePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 770, Short.MAX_VALUE)
+            .addGap(0, 750, Short.MAX_VALUE)
         );
         squarePanelLayout.setVerticalGroup(
             squarePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -105,10 +124,10 @@ public class Dashboard extends javax.swing.JFrame {
         nintendoPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         nintendoPanel.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 63, 770, 10));
 
-        jLabel4.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 0, 51));
-        jLabel4.setText("0");
-        nintendoPanel.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 410, 40, 30));
+        cantDlcN.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+        cantDlcN.setForeground(new java.awt.Color(255, 0, 51));
+        cantDlcN.setText("0");
+        nintendoPanel.add(cantDlcN, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 410, 40, 30));
 
         jLabel5.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
         jLabel5.setText("Disenadores de niveles");
@@ -125,16 +144,16 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel8.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
         jLabel8.setText("Integrador");
         nintendoPanel.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 440, 200, 30));
-        nintendoPanel.add(jSpinner1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 440, 60, -1));
-        nintendoPanel.add(jSpinner2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 290, 60, -1));
-        nintendoPanel.add(jSpinner3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 320, 60, -1));
-        nintendoPanel.add(jSpinner4, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 350, 60, -1));
-        nintendoPanel.add(jSpinner5, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 380, 60, -1));
+        nintendoPanel.add(spinnerIntegradorN, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 440, 60, -1));
+        nintendoPanel.add(spinnerNarrativoN, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 290, 60, -1));
+        nintendoPanel.add(spinnerNivelesN, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 320, 60, -1));
+        nintendoPanel.add(spinnerSpritesN, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 350, 60, -1));
+        nintendoPanel.add(spinnerLogicaN, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 380, 60, -1));
 
         jLabel9.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
         jLabel9.setText("Desarroladores de DLC");
         nintendoPanel.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, 200, 30));
-        nintendoPanel.add(jSpinner6, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 410, 60, -1));
+        nintendoPanel.add(spinnerDlcN, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 410, 60, -1));
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("Pretendo", 0, 14)); // NOI18N
@@ -164,10 +183,6 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel13.setText("Drive dlc");
         nintendoPanel.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 410, 200, 30));
 
-        jLabel14.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-        jLabel14.setText("de 10 ");
-        nintendoPanel.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 410, 60, 30));
-
         jLabel15.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
         jLabel15.setText("juegos con DLc");
         nintendoPanel.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 150, 120, 30));
@@ -184,21 +199,9 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel18.setText("Drive sistemas ");
         nintendoPanel.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 380, 200, 30));
 
-        jLabel19.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-        jLabel19.setText("de 25 ");
-        nintendoPanel.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 290, 60, 30));
-
-        jLabel20.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-        jLabel20.setText("de 20 ");
-        nintendoPanel.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 320, 60, 30));
-
-        jLabel21.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-        jLabel21.setText("de 55 ");
-        nintendoPanel.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 350, 60, 30));
-
-        jLabel22.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-        jLabel22.setText("de 35 ");
-        nintendoPanel.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 380, 60, 30));
+        maxGuionesN.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+        maxGuionesN.setText("25");
+        nintendoPanel.add(maxGuionesN, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 290, 30, 30));
 
         jLabel11.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 0, 51));
@@ -210,15 +213,15 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel23.setText("0");
         nintendoPanel.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 150, 40, 30));
 
-        jLabel24.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-        jLabel24.setForeground(new java.awt.Color(255, 0, 51));
-        jLabel24.setText("0");
-        nintendoPanel.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 350, 40, 30));
+        cantSpritesN.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+        cantSpritesN.setForeground(new java.awt.Color(255, 0, 51));
+        cantSpritesN.setText("0");
+        nintendoPanel.add(cantSpritesN, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 350, 40, 30));
 
-        jLabel25.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-        jLabel25.setForeground(new java.awt.Color(255, 0, 51));
-        jLabel25.setText("0");
-        nintendoPanel.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 380, 40, 30));
+        cantSistemasN.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+        cantSistemasN.setForeground(new java.awt.Color(255, 0, 51));
+        cantSistemasN.setText("0");
+        nintendoPanel.add(cantSistemasN, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 380, 40, 30));
 
         jLabel3.setBackground(new java.awt.Color(255, 255, 255));
         jLabel3.setFont(new java.awt.Font("Pretendo", 0, 14)); // NOI18N
@@ -245,15 +248,15 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel27.setText("Drive guiones ");
         nintendoPanel.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 290, 200, 30));
 
-        jLabel29.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-        jLabel29.setForeground(new java.awt.Color(255, 0, 51));
-        jLabel29.setText("0");
-        nintendoPanel.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 290, 40, 30));
+        cantGuionesN.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+        cantGuionesN.setForeground(new java.awt.Color(255, 0, 51));
+        cantGuionesN.setText("0");
+        nintendoPanel.add(cantGuionesN, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 290, 40, 30));
 
-        jLabel30.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-        jLabel30.setForeground(new java.awt.Color(255, 0, 51));
-        jLabel30.setText("0");
-        nintendoPanel.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 320, 40, 30));
+        cantNivelesN.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+        cantNivelesN.setForeground(new java.awt.Color(255, 0, 51));
+        cantNivelesN.setText("0");
+        nintendoPanel.add(cantNivelesN, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 320, 40, 30));
 
         jLabel31.setBackground(new java.awt.Color(255, 255, 255));
         jLabel31.setFont(new java.awt.Font("Pretendo", 0, 14)); // NOI18N
@@ -343,6 +346,42 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel43.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         nintendoPanel.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 20, 90, 30));
 
+        jLabel24.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+        jLabel24.setText("de ");
+        nintendoPanel.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 290, 30, 30));
+
+        maxNivelesN.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+        maxNivelesN.setText("20");
+        nintendoPanel.add(maxNivelesN, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 320, 30, 30));
+
+        jLabel29.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+        jLabel29.setText("de ");
+        nintendoPanel.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 320, 30, 30));
+
+        maxSpritesN.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+        maxSpritesN.setText("55");
+        nintendoPanel.add(maxSpritesN, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 350, 30, 30));
+
+        jLabel44.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+        jLabel44.setText("de ");
+        nintendoPanel.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 350, 30, 30));
+
+        maxSistemasN.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+        maxSistemasN.setText("35");
+        nintendoPanel.add(maxSistemasN, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 380, 30, 30));
+
+        jLabel46.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+        jLabel46.setText("de ");
+        nintendoPanel.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 380, 30, 30));
+
+        maxDlcN.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+        maxDlcN.setText("10");
+        nintendoPanel.add(maxDlcN, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 410, 30, 30));
+
+        jLabel48.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+        jLabel48.setText("de ");
+        nintendoPanel.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 410, 30, 30));
+
         jTabbedPane1.addTab("Nintendo", nintendoPanel);
 
         jPanel1.add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 750, 590));
@@ -400,42 +439,45 @@ public class Dashboard extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel adminPanel;
+    private javax.swing.JLabel cantDlcN;
+    private javax.swing.JLabel cantGuionesN;
+    private javax.swing.JLabel cantNivelesN;
+    private javax.swing.JLabel cantSistemasN;
+    private javax.swing.JLabel cantSpritesN;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel39;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel48;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
@@ -444,14 +486,19 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JProgressBar jProgressBar1;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JSpinner jSpinner1;
-    private javax.swing.JSpinner jSpinner2;
-    private javax.swing.JSpinner jSpinner3;
-    private javax.swing.JSpinner jSpinner4;
-    private javax.swing.JSpinner jSpinner5;
-    private javax.swing.JSpinner jSpinner6;
     private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JLabel maxDlcN;
+    private javax.swing.JLabel maxGuionesN;
+    private javax.swing.JLabel maxNivelesN;
+    private javax.swing.JLabel maxSistemasN;
+    private javax.swing.JLabel maxSpritesN;
     private javax.swing.JPanel nintendoPanel;
+    private javax.swing.JSpinner spinnerDlcN;
+    private javax.swing.JSpinner spinnerIntegradorN;
+    private javax.swing.JSpinner spinnerLogicaN;
+    private javax.swing.JSpinner spinnerNarrativoN;
+    private javax.swing.JSpinner spinnerNivelesN;
+    private javax.swing.JSpinner spinnerSpritesN;
     private javax.swing.JPanel squarePanel;
     // End of variables declaration//GEN-END:variables
 }
