@@ -5,18 +5,77 @@
  */
 package Interfaz;
 
+import javax.swing.JSpinner;
+import javax.swing.SpinnerModel;
+import javax.swing.SpinnerNumberModel;
+
 /**
  *
  * @author raco1
  */
 public class Dashboard extends javax.swing.JFrame {
+    
 
     /**
      * Creates new form Dashboard
      */
     public Dashboard() {
+        this.setLocationRelativeTo(null);
+        this.setVisible(true);
         initComponents();
+        this.verifySpinners();
+        this.spinnerNarrativoN.setModel(this.verifySpinners());
+        this.spinnerLogicaN.setModel(this.verifySpinners());
+        this.spinnerDlcN.setModel(this.verifySpinners());
+        this.spinnerSpritesN.setModel(this.verifySpinners());
+        this.spinnerNivelesN.setModel(this.verifySpinners());
+        this.spinnerIntegradorN.setModel(this.verifySpinners());
     }
+    
+    
+    public SpinnerNumberModel verifySpinners(){
+        SpinnerNumberModel modeloSpinner = new SpinnerNumberModel();
+        modeloSpinner.setMaximum(17);
+        modeloSpinner.setMinimum(1);
+        modeloSpinner.setValue(1);
+        return modeloSpinner;      
+        }
+    
+    public void checkCantEmpleados(JSpinner narrativa, JSpinner niveles, JSpinner sprites, JSpinner logica, JSpinner dlc, JSpinner integrador, int maxEmpleados){
+        int narra= (int) narrativa.getValue();
+        int nive= (int) niveles.getValue();
+        int spri= (int) sprites.getValue();
+        int log= (int) logica.getValue();
+        int dlcs= (int) dlc.getValue();
+        int inte= (int) integrador.getValue();
+        int sum= narra+ nive+ spri+ log+dlcs+inte;
+        if(sum == maxEmpleados){
+            this.setMaxSpinn(narrativa, narra);
+            this.setMaxSpinn(niveles, nive);
+            this.setMaxSpinn(sprites, spri);
+            this.setMaxSpinn(logica, log);
+            this.setMaxSpinn(dlc, dlcs);
+            this.setMaxSpinn(integrador, inte);
+        }else{
+            int resta= maxEmpleados - sum;
+            this.setMaxSpinn(narrativa, narra+resta);
+            this.setMaxSpinn(niveles, nive+resta);
+            this.setMaxSpinn(sprites, spri+resta);
+            this.setMaxSpinn(logica, log+resta);
+            this.setMaxSpinn(dlc, dlcs+resta);
+            this.setMaxSpinn(integrador, inte+resta);
+        }
+        
+    }
+    public void setMaxSpinn(JSpinner current, int max){
+        SpinnerNumberModel modeloSpinner = new SpinnerNumberModel();
+        modeloSpinner.setMaximum(max);
+        modeloSpinner.setMinimum(1);
+        modeloSpinner.setValue((int) current.getValue());
+        current.setModel(modeloSpinner);
+    }    
+        
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -33,6 +92,7 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel34 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        jLabel45 = new javax.swing.JLabel();
         squarePanel = new javax.swing.JPanel();
         nintendoPanel = new javax.swing.JPanel();
         jSeparator1 = new javax.swing.JSeparator();
@@ -101,10 +161,25 @@ public class Dashboard extends javax.swing.JFrame {
         adminPanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 30, 220, 30));
 
         jLabel34.setText("Cargar parametros de simulacion ");
-        adminPanel.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, 200, -1));
+        adminPanel.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, 200, -1));
 
         jButton1.setText("jButton1");
-        adminPanel.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 140, -1, -1));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        adminPanel.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 170, -1, -1));
+
+        jLabel45.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel45.setFont(new java.awt.Font("Pretendo", 0, 14)); // NOI18N
+        jLabel45.setForeground(new java.awt.Color(255, 0, 0));
+        jLabel45.setText("Nintendo");
+        jLabel45.setAlignmentX(5.0F);
+        jLabel45.setAlignmentY(0.0F);
+        jLabel45.setFocusable(false);
+        jLabel45.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        adminPanel.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 130, 80, 30));
 
         jTabbedPane1.addTab("Admin", adminPanel);
 
@@ -144,15 +219,52 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel8.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
         jLabel8.setText("Integrador");
         nintendoPanel.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 440, 200, 30));
+
+        spinnerIntegradorN.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                spinnerIntegradorNStateChanged(evt);
+            }
+        });
         nintendoPanel.add(spinnerIntegradorN, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 440, 60, -1));
+
+        spinnerNarrativoN.setValue(1);
+        spinnerNarrativoN.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                spinnerNarrativoNStateChanged(evt);
+            }
+        });
         nintendoPanel.add(spinnerNarrativoN, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 290, 60, -1));
+
+        spinnerNivelesN.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                spinnerNivelesNStateChanged(evt);
+            }
+        });
         nintendoPanel.add(spinnerNivelesN, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 320, 60, -1));
+
+        spinnerSpritesN.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                spinnerSpritesNStateChanged(evt);
+            }
+        });
         nintendoPanel.add(spinnerSpritesN, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 350, 60, -1));
+
+        spinnerLogicaN.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                spinnerLogicaNStateChanged(evt);
+            }
+        });
         nintendoPanel.add(spinnerLogicaN, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 380, 60, -1));
 
         jLabel9.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
         jLabel9.setText("Desarroladores de DLC");
         nintendoPanel.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, 200, 30));
+
+        spinnerDlcN.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                spinnerDlcNStateChanged(evt);
+            }
+        });
         nintendoPanel.add(spinnerDlcN, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 410, 60, -1));
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
@@ -402,6 +514,41 @@ public class Dashboard extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        this.checkCantEmpleados(spinnerNarrativoN, this.spinnerNivelesN,this.spinnerSpritesN, spinnerLogicaN, spinnerDlcN, this.spinnerIntegradorN, 17);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void spinnerNarrativoNStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerNarrativoNStateChanged
+        // TODO add your handling code here:
+        this.checkCantEmpleados(spinnerNarrativoN, this.spinnerNivelesN,this.spinnerSpritesN, spinnerLogicaN, spinnerDlcN, this.spinnerIntegradorN, 17);
+    }//GEN-LAST:event_spinnerNarrativoNStateChanged
+
+    private void spinnerNivelesNStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerNivelesNStateChanged
+        // TODO add your handling code here:
+        this.checkCantEmpleados(spinnerNarrativoN, this.spinnerNivelesN,this.spinnerSpritesN, spinnerLogicaN, spinnerDlcN, this.spinnerIntegradorN, 17);
+    }//GEN-LAST:event_spinnerNivelesNStateChanged
+
+    private void spinnerSpritesNStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerSpritesNStateChanged
+        // TODO add your handling code here:
+        this.checkCantEmpleados(spinnerNarrativoN, this.spinnerNivelesN,this.spinnerSpritesN, spinnerLogicaN, spinnerDlcN, this.spinnerIntegradorN, 17);
+    }//GEN-LAST:event_spinnerSpritesNStateChanged
+
+    private void spinnerLogicaNStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerLogicaNStateChanged
+        // TODO add your handling code here:
+        this.checkCantEmpleados(spinnerNarrativoN, this.spinnerNivelesN,this.spinnerSpritesN, spinnerLogicaN, spinnerDlcN, this.spinnerIntegradorN, 17);
+    }//GEN-LAST:event_spinnerLogicaNStateChanged
+
+    private void spinnerDlcNStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerDlcNStateChanged
+        // TODO add your handling code here:
+        this.checkCantEmpleados(spinnerNarrativoN, this.spinnerNivelesN,this.spinnerSpritesN, spinnerLogicaN, spinnerDlcN, this.spinnerIntegradorN, 17);
+    }//GEN-LAST:event_spinnerDlcNStateChanged
+
+    private void spinnerIntegradorNStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerIntegradorNStateChanged
+        // TODO add your handling code here:
+        this.checkCantEmpleados(spinnerNarrativoN, this.spinnerNivelesN,this.spinnerSpritesN, spinnerLogicaN, spinnerDlcN, this.spinnerIntegradorN, 17);
+    }//GEN-LAST:event_spinnerIntegradorNStateChanged
+
     /**
      * @param args the command line arguments
      */
@@ -476,6 +623,7 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel43;
     private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel46;
     private javax.swing.JLabel jLabel48;
     private javax.swing.JLabel jLabel5;
