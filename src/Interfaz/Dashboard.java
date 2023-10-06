@@ -89,12 +89,130 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         adminPanel = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel34 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
         jLabel45 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        jSeparator2 = new javax.swing.JSeparator();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        txtSimu = new javax.swing.JButton();
+        jSpinner3 = new javax.swing.JSpinner();
+        jSpinner6 = new javax.swing.JSpinner();
+        jSpinner7 = new javax.swing.JSpinner();
+        jSpinner8 = new javax.swing.JSpinner();
+        jSpinner9 = new javax.swing.JSpinner();
+        txtSimu1 = new javax.swing.JButton();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel47 = new javax.swing.JLabel();
+        jSpinner4 = new javax.swing.JSpinner();
+        jSpinner10 = new javax.swing.JSpinner();
+        jLabel49 = new javax.swing.JLabel();
+        jLabel50 = new javax.swing.JLabel();
+        jLabel51 = new javax.swing.JLabel();
+        jLabel52 = new javax.swing.JLabel();
+        spinnerIntegradorN1 = new javax.swing.JSpinner();
+        spinnerNarrativoN1 = new javax.swing.JSpinner();
+        spinnerNivelesN1 = new javax.swing.JSpinner();
+        spinnerSpritesN1 = new javax.swing.JSpinner();
+        spinnerLogicaN1 = new javax.swing.JSpinner();
+        jLabel53 = new javax.swing.JLabel();
+        spinnerDlcN1 = new javax.swing.JSpinner();
+        jLabel54 = new javax.swing.JLabel();
+        jLabel55 = new javax.swing.JLabel();
+        jLabel56 = new javax.swing.JLabel();
+        jLabel57 = new javax.swing.JLabel();
+        jLabel58 = new javax.swing.JLabel();
+        jLabel59 = new javax.swing.JLabel();
+        jLabel60 = new javax.swing.JLabel();
+        jLabel61 = new javax.swing.JLabel();
+        jLabel62 = new javax.swing.JLabel();
+        spinnerIntegradorN2 = new javax.swing.JSpinner();
+        spinnerNarrativoN2 = new javax.swing.JSpinner();
+        spinnerNivelesN2 = new javax.swing.JSpinner();
+        spinnerSpritesN2 = new javax.swing.JSpinner();
+        spinnerLogicaN2 = new javax.swing.JSpinner();
+        jLabel63 = new javax.swing.JLabel();
+        spinnerDlcN2 = new javax.swing.JSpinner();
+        jLabel64 = new javax.swing.JLabel();
+        jLabel65 = new javax.swing.JLabel();
+        jLabel66 = new javax.swing.JLabel();
         squarePanel = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
+        jSeparator3 = new javax.swing.JSeparator();
+        cantDlcN1 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        spinnerIntegradorN3 = new javax.swing.JSpinner();
+        spinnerNarrativoN3 = new javax.swing.JSpinner();
+        spinnerNivelesN3 = new javax.swing.JSpinner();
+        spinnerSpritesN3 = new javax.swing.JSpinner();
+        spinnerLogicaN3 = new javax.swing.JSpinner();
+        jLabel37 = new javax.swing.JLabel();
+        spinnerDlcN3 = new javax.swing.JSpinner();
+        jLabel38 = new javax.swing.JLabel();
+        jLabel70 = new javax.swing.JLabel();
+        jLabel71 = new javax.swing.JLabel();
+        jLabel72 = new javax.swing.JLabel();
+        jLabel74 = new javax.swing.JLabel();
+        jLabel75 = new javax.swing.JLabel();
+        jLabel76 = new javax.swing.JLabel();
+        jLabel77 = new javax.swing.JLabel();
+        maxGuionesN1 = new javax.swing.JLabel();
+        readyToShip2 = new javax.swing.JLabel();
+        readyToShipDLC1 = new javax.swing.JLabel();
+        cantSpritesN1 = new javax.swing.JLabel();
+        cantSistemasN1 = new javax.swing.JLabel();
+        jLabel78 = new javax.swing.JLabel();
+        jProgressBar2 = new javax.swing.JProgressBar();
+        jLabel79 = new javax.swing.JLabel();
+        jLabel80 = new javax.swing.JLabel();
+        cantGuionesN1 = new javax.swing.JLabel();
+        cantNivelesN1 = new javax.swing.JLabel();
+        jLabel81 = new javax.swing.JLabel();
+        jLabel82 = new javax.swing.JLabel();
+        jLabel83 = new javax.swing.JLabel();
+        estadoDirectorN1 = new javax.swing.JLabel();
+        estadoPmN1 = new javax.swing.JLabel();
+        descuentoPmN1 = new javax.swing.JLabel();
+        faltasPmN1 = new javax.swing.JLabel();
+        jLabel84 = new javax.swing.JLabel();
+        jLabel85 = new javax.swing.JLabel();
+        jLabel86 = new javax.swing.JLabel();
+        jLabel87 = new javax.swing.JLabel();
+        jLabel88 = new javax.swing.JLabel();
+        jLabel89 = new javax.swing.JLabel();
+        maxNivelesN1 = new javax.swing.JLabel();
+        jLabel90 = new javax.swing.JLabel();
+        maxSpritesN1 = new javax.swing.JLabel();
+        jLabel91 = new javax.swing.JLabel();
+        maxSistemasN1 = new javax.swing.JLabel();
+        jLabel92 = new javax.swing.JLabel();
+        maxDlcN1 = new javax.swing.JLabel();
+        jLabel93 = new javax.swing.JLabel();
+        jLabel94 = new javax.swing.JLabel();
+        jLabel95 = new javax.swing.JLabel();
+        gananciasBrutasN1 = new javax.swing.JLabel();
+        cantGuionesN7 = new javax.swing.JLabel();
+        cantGuionesN8 = new javax.swing.JLabel();
+        cantGuionesN9 = new javax.swing.JLabel();
+        cantGuionesN10 = new javax.swing.JLabel();
+        cantGuionesN11 = new javax.swing.JLabel();
+        costosOpeN1 = new javax.swing.JLabel();
+        label1 = new javax.swing.JLabel();
+        label3 = new javax.swing.JLabel();
+        jLabel97 = new javax.swing.JLabel();
+        jLabel98 = new javax.swing.JLabel();
+        readyToShip3 = new javax.swing.JLabel();
+        jLabel99 = new javax.swing.JLabel();
         nintendoPanel = new javax.swing.JPanel();
         jSeparator1 = new javax.swing.JSeparator();
         cantDlcN = new javax.swing.JLabel();
@@ -118,8 +236,8 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         maxGuionesN = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
+        readyToShip = new javax.swing.JLabel();
+        readyToShipDLC = new javax.swing.JLabel();
         cantSpritesN = new javax.swing.JLabel();
         cantSistemasN = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -131,11 +249,10 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel31 = new javax.swing.JLabel();
         jLabel32 = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
-        jLabel35 = new javax.swing.JLabel();
-        jLabel36 = new javax.swing.JLabel();
-        jLabel37 = new javax.swing.JLabel();
-        jLabel38 = new javax.swing.JLabel();
-        jLabel28 = new javax.swing.JLabel();
+        estadoDirectorN = new javax.swing.JLabel();
+        estadoPmN = new javax.swing.JLabel();
+        descuentoPmN = new javax.swing.JLabel();
+        faltasPmN = new javax.swing.JLabel();
         jLabel39 = new javax.swing.JLabel();
         jLabel40 = new javax.swing.JLabel();
         jLabel41 = new javax.swing.JLabel();
@@ -150,380 +267,1153 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel46 = new javax.swing.JLabel();
         maxDlcN = new javax.swing.JLabel();
         jLabel48 = new javax.swing.JLabel();
+        jLabel67 = new javax.swing.JLabel();
+        jLabel68 = new javax.swing.JLabel();
+        jLabel69 = new javax.swing.JLabel();
+        gananciasBrutasN = new javax.swing.JLabel();
+        cantGuionesN2 = new javax.swing.JLabel();
+        cantGuionesN3 = new javax.swing.JLabel();
+        cantGuionesN4 = new javax.swing.JLabel();
+        cantGuionesN5 = new javax.swing.JLabel();
+        cantGuionesN6 = new javax.swing.JLabel();
+        costosOpeN = new javax.swing.JLabel();
+        label = new javax.swing.JLabel();
+        label2 = new javax.swing.JLabel();
+        jLabel73 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        readyToShip1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         adminPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel1.setText("Ventana de administrador ");
-        adminPanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 30, 220, 30));
-
-        jLabel34.setText("Cargar parametros de simulacion ");
-        adminPanel.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, 200, -1));
-
-        jButton1.setText("jButton1");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        adminPanel.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 170, -1, -1));
-
         jLabel45.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel45.setFont(new java.awt.Font("Pretendo", 0, 14)); // NOI18N
+        jLabel45.setFont(new java.awt.Font("Pretendo", 0, 24)); // NOI18N
         jLabel45.setForeground(new java.awt.Color(255, 0, 0));
         jLabel45.setText("Nintendo");
         jLabel45.setAlignmentX(5.0F);
         jLabel45.setAlignmentY(0.0F);
         jLabel45.setFocusable(false);
         jLabel45.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        adminPanel.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 130, 80, 30));
+        adminPanel.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 130, 130, 70));
 
-        jTabbedPane1.addTab("Admin", adminPanel);
+        jLabel1.setFont(new java.awt.Font("Pretendo", 0, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 0, 0));
+        jLabel1.setText("Un software de Luis y Ricardo ");
+        adminPanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 20, -1, 50));
 
-        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jTextArea1.setText("grafica \\");
+            jScrollPane1.setViewportView(jTextArea1);
 
-        javax.swing.GroupLayout squarePanelLayout = new javax.swing.GroupLayout(squarePanel);
-        squarePanel.setLayout(squarePanelLayout);
-        squarePanelLayout.setHorizontalGroup(
-            squarePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        squarePanelLayout.setVerticalGroup(
-            squarePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+            adminPanel.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 360, 610, 360));
+            adminPanel.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1010, -1));
 
-        jTabbedPane1.addTab("Square Enix", squarePanel);
+            jLabel4.setFont(new java.awt.Font("BankGothic Lt BT", 0, 36)); // NOI18N
+            jLabel4.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel4.setText("Dashboard");
+            adminPanel.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, 260, -1));
 
-        nintendoPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        nintendoPanel.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 63, 770, 10));
+            jLabel14.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+            jLabel14.setText("Desarroladores e integradores ");
+            adminPanel.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 90, 270, -1));
 
-        cantDlcN.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-        cantDlcN.setForeground(new java.awt.Color(255, 0, 51));
-        cantDlcN.setText("0");
-        nintendoPanel.add(cantDlcN, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 410, 40, 30));
+            jLabel19.setFont(new java.awt.Font("BankGothic Md BT", 0, 16)); // NOI18N
+            jLabel19.setText("Drive dlc");
+            adminPanel.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 320, 130, 30));
 
-        jLabel5.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-        jLabel5.setText("Disenadores de niveles");
-        nintendoPanel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, 200, 30));
+            jLabel20.setFont(new java.awt.Font("BankGothic Md BT", 0, 16)); // NOI18N
+            jLabel20.setText("Drive Niveles ");
+            adminPanel.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, 140, 30));
 
-        jLabel6.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-        jLabel6.setText("artistas de sprites");
-        nintendoPanel.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 350, 200, 30));
+            jLabel21.setFont(new java.awt.Font("BankGothic Md BT", 0, 16)); // NOI18N
+            jLabel21.setText("Drive Sprites");
+            adminPanel.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, 130, 30));
 
-        jLabel7.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-        jLabel7.setText("Programadores de logica");
-        nintendoPanel.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 380, 200, 30));
+            jLabel22.setFont(new java.awt.Font("BankGothic Md BT", 0, 16)); // NOI18N
+            jLabel22.setText("Drive sistemas ");
+            adminPanel.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, 150, 30));
 
-        jLabel8.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-        jLabel8.setText("Integrador");
-        nintendoPanel.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 440, 200, 30));
+            jLabel30.setBackground(new java.awt.Color(255, 255, 255));
+            jLabel30.setFont(new java.awt.Font("BankGothic Lt BT", 0, 18)); // NOI18N
+            jLabel30.setForeground(new java.awt.Color(255, 0, 0));
+            jLabel30.setText("Espacio del drive ");
+            jLabel30.setAlignmentX(5.0F);
+            jLabel30.setAlignmentY(0.0F);
+            jLabel30.setFocusable(false);
+            jLabel30.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+            adminPanel.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, 190, 30));
 
-        spinnerIntegradorN.addChangeListener(new javax.swing.event.ChangeListener() {
-            public void stateChanged(javax.swing.event.ChangeEvent evt) {
-                spinnerIntegradorNStateChanged(evt);
-            }
-        });
-        nintendoPanel.add(spinnerIntegradorN, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 440, 60, -1));
+            jLabel34.setFont(new java.awt.Font("BankGothic Md BT", 0, 16)); // NOI18N
+            jLabel34.setText("Drive guiones ");
+            adminPanel.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, 140, 30));
 
-        spinnerNarrativoN.setValue(1);
-        spinnerNarrativoN.addChangeListener(new javax.swing.event.ChangeListener() {
-            public void stateChanged(javax.swing.event.ChangeEvent evt) {
-                spinnerNarrativoNStateChanged(evt);
-            }
-        });
-        nintendoPanel.add(spinnerNarrativoN, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 290, 60, -1));
+            txtSimu.setFont(new java.awt.Font("BankGothic Lt BT", 0, 12)); // NOI18N
+            txtSimu.setText("Iniciar simulacion");
+            txtSimu.addActionListener(new java.awt.event.ActionListener() {
+                public void actionPerformed(java.awt.event.ActionEvent evt) {
+                    txtSimuActionPerformed(evt);
+                }
+            });
+            adminPanel.add(txtSimu, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 130, -1, 30));
+            adminPanel.add(jSpinner3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 200, 60, 30));
+            adminPanel.add(jSpinner6, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 320, 60, 30));
+            adminPanel.add(jSpinner7, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 230, 60, 30));
+            adminPanel.add(jSpinner8, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 260, 60, 30));
+            adminPanel.add(jSpinner9, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 290, 60, 30));
 
-        spinnerNivelesN.addChangeListener(new javax.swing.event.ChangeListener() {
-            public void stateChanged(javax.swing.event.ChangeEvent evt) {
-                spinnerNivelesNStateChanged(evt);
-            }
-        });
-        nintendoPanel.add(spinnerNivelesN, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 320, 60, -1));
+            txtSimu1.setFont(new java.awt.Font("BankGothic Lt BT", 0, 12)); // NOI18N
+            txtSimu1.setText("Cargar archivo de simulacion ");
+            txtSimu1.addActionListener(new java.awt.event.ActionListener() {
+                public void actionPerformed(java.awt.event.ActionEvent evt) {
+                    txtSimu1ActionPerformed(evt);
+                }
+            });
+            adminPanel.add(txtSimu1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, -1, 30));
 
-        spinnerSpritesN.addChangeListener(new javax.swing.event.ChangeListener() {
-            public void stateChanged(javax.swing.event.ChangeEvent evt) {
-                spinnerSpritesNStateChanged(evt);
-            }
-        });
-        nintendoPanel.add(spinnerSpritesN, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 350, 60, -1));
+            jLabel25.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            jLabel25.setText("Dias entre entregas ");
+            adminPanel.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 220, 180, 30));
 
-        spinnerLogicaN.addChangeListener(new javax.swing.event.ChangeListener() {
-            public void stateChanged(javax.swing.event.ChangeEvent evt) {
-                spinnerLogicaNStateChanged(evt);
-            }
-        });
-        nintendoPanel.add(spinnerLogicaN, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 380, 60, -1));
+            jLabel47.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            jLabel47.setText("Duracion del dia ");
+            adminPanel.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 190, 160, 30));
+            adminPanel.add(jSpinner4, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 190, 60, 30));
+            adminPanel.add(jSpinner10, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 220, 60, 30));
 
-        jLabel9.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-        jLabel9.setText("Desarroladores de DLC");
-        nintendoPanel.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, 200, 30));
+            jLabel49.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            jLabel49.setText("Disenadores de niveles");
+            adminPanel.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 270, 200, 30));
 
-        spinnerDlcN.addChangeListener(new javax.swing.event.ChangeListener() {
-            public void stateChanged(javax.swing.event.ChangeEvent evt) {
-                spinnerDlcNStateChanged(evt);
-            }
-        });
-        nintendoPanel.add(spinnerDlcN, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 410, 60, -1));
+            jLabel50.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            jLabel50.setText("artistas de sprites");
+            adminPanel.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 300, 200, 30));
 
-        jLabel2.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel2.setFont(new java.awt.Font("Pretendo", 0, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel2.setText("Avance de juego");
-        jLabel2.setAlignmentX(5.0F);
-        jLabel2.setAlignmentY(0.0F);
-        jLabel2.setFocusable(false);
-        jLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        nintendoPanel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 490, 160, 30));
+            jLabel51.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            jLabel51.setText("Programadores de logica");
+            adminPanel.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 330, 200, 30));
 
-        jLabel10.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-        jLabel10.setText("Desarrolador narrativo");
-        nintendoPanel.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, 200, 30));
+            jLabel52.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            jLabel52.setText("Integrador");
+            adminPanel.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 390, 200, 30));
 
-        jLabel12.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel12.setFont(new java.awt.Font("Pretendo", 0, 14)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel12.setText("Juegos entregados");
-        jLabel12.setAlignmentX(5.0F);
-        jLabel12.setAlignmentY(0.0F);
-        jLabel12.setFocusable(false);
-        jLabel12.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        nintendoPanel.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 20, 160, 30));
+            spinnerIntegradorN1.addChangeListener(new javax.swing.event.ChangeListener() {
+                public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                    spinnerIntegradorN1StateChanged(evt);
+                }
+            });
+            adminPanel.add(spinnerIntegradorN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 390, 60, -1));
 
-        jLabel13.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-        jLabel13.setText("Drive dlc");
-        nintendoPanel.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 410, 200, 30));
+            spinnerNarrativoN1.setValue(1);
+            spinnerNarrativoN1.addChangeListener(new javax.swing.event.ChangeListener() {
+                public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                    spinnerNarrativoN1StateChanged(evt);
+                }
+            });
+            adminPanel.add(spinnerNarrativoN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 240, 60, -1));
 
-        jLabel15.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-        jLabel15.setText("juegos con DLc");
-        nintendoPanel.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 150, 120, 30));
+            spinnerNivelesN1.addChangeListener(new javax.swing.event.ChangeListener() {
+                public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                    spinnerNivelesN1StateChanged(evt);
+                }
+            });
+            adminPanel.add(spinnerNivelesN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 270, 60, -1));
 
-        jLabel16.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-        jLabel16.setText("Drive Niveles ");
-        nintendoPanel.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 320, 200, 30));
+            spinnerSpritesN1.addChangeListener(new javax.swing.event.ChangeListener() {
+                public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                    spinnerSpritesN1StateChanged(evt);
+                }
+            });
+            adminPanel.add(spinnerSpritesN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 300, 60, -1));
 
-        jLabel17.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-        jLabel17.setText("Drive Sprites");
-        nintendoPanel.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 350, 200, 30));
+            spinnerLogicaN1.addChangeListener(new javax.swing.event.ChangeListener() {
+                public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                    spinnerLogicaN1StateChanged(evt);
+                }
+            });
+            adminPanel.add(spinnerLogicaN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 330, 60, -1));
 
-        jLabel18.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-        jLabel18.setText("Drive sistemas ");
-        nintendoPanel.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 380, 200, 30));
+            jLabel53.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            jLabel53.setText("Desarroladores de DLC");
+            adminPanel.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 360, 200, 30));
 
-        maxGuionesN.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-        maxGuionesN.setText("25");
-        nintendoPanel.add(maxGuionesN, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 290, 30, 30));
+            spinnerDlcN1.addChangeListener(new javax.swing.event.ChangeListener() {
+                public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                    spinnerDlcN1StateChanged(evt);
+                }
+            });
+            adminPanel.add(spinnerDlcN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 360, 60, -1));
 
-        jLabel11.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(255, 0, 51));
-        jLabel11.setText("0");
-        nintendoPanel.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 120, 40, 30));
+            jLabel54.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            jLabel54.setText("Desarrolador narrativo");
+            adminPanel.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 240, 200, 30));
 
-        jLabel23.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-        jLabel23.setForeground(new java.awt.Color(255, 0, 51));
-        jLabel23.setText("0");
-        nintendoPanel.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 150, 40, 30));
+            jLabel55.setBackground(new java.awt.Color(255, 255, 255));
+            jLabel55.setFont(new java.awt.Font("Pretendo", 0, 14)); // NOI18N
+            jLabel55.setForeground(new java.awt.Color(255, 0, 0));
+            jLabel55.setText("Empleados disponibles :");
+            jLabel55.setAlignmentX(5.0F);
+            jLabel55.setAlignmentY(0.0F);
+            jLabel55.setFocusable(false);
+            jLabel55.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+            adminPanel.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 200, 190, 30));
 
-        cantSpritesN.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-        cantSpritesN.setForeground(new java.awt.Color(255, 0, 51));
-        cantSpritesN.setText("0");
-        nintendoPanel.add(cantSpritesN, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 350, 40, 30));
+            jLabel56.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+            jLabel56.setText("Parametros de simulacion ");
+            adminPanel.add(jLabel56, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 90, 230, -1));
 
-        cantSistemasN.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-        cantSistemasN.setForeground(new java.awt.Color(255, 0, 51));
-        cantSistemasN.setText("0");
-        nintendoPanel.add(cantSistemasN, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 380, 40, 30));
+            jLabel57.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+            jLabel57.setText("0");
+            adminPanel.add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 200, 20, 20));
 
-        jLabel3.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel3.setFont(new java.awt.Font("Pretendo", 0, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel3.setText("Proje ct  Manager");
-        jLabel3.setAlignmentX(5.0F);
-        jLabel3.setAlignmentY(0.0F);
-        jLabel3.setFocusable(false);
-        jLabel3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        nintendoPanel.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 130, 150, 30));
-        nintendoPanel.add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 520, 130, 20));
+            jLabel58.setBackground(new java.awt.Color(255, 255, 255));
+            jLabel58.setFont(new java.awt.Font("BankGothic-Medium", 1, 24)); // NOI18N
+            jLabel58.setForeground(new java.awt.Color(255, 0, 0));
+            jLabel58.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/Imagenes/Square_Enix-Logo.wine2.png"))); // NOI18N
+            jLabel58.setAlignmentX(5.0F);
+            jLabel58.setAlignmentY(0.0F);
+            jLabel58.setFocusable(false);
+            jLabel58.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+            adminPanel.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 440, 220, 60));
 
-        jLabel26.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel26.setFont(new java.awt.Font("Pretendo", 0, 14)); // NOI18N
-        jLabel26.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel26.setText("Elementos de Videojuego");
-        jLabel26.setAlignmentX(5.0F);
-        jLabel26.setAlignmentY(0.0F);
-        jLabel26.setFocusable(false);
-        jLabel26.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        nintendoPanel.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 260, 230, 30));
+            jLabel59.setFont(new java.awt.Font("BankGothic-Medium", 1, 14)); // NOI18N
+            jLabel59.setText("Disenadores de niveles");
+            adminPanel.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 560, 200, 30));
 
-        jLabel27.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-        jLabel27.setText("Drive guiones ");
-        nintendoPanel.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 290, 200, 30));
+            jLabel60.setFont(new java.awt.Font("BankGothic-Medium", 1, 14)); // NOI18N
+            jLabel60.setText("artistas de sprites");
+            adminPanel.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 590, 200, 30));
 
-        cantGuionesN.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-        cantGuionesN.setForeground(new java.awt.Color(255, 0, 51));
-        cantGuionesN.setText("0");
-        nintendoPanel.add(cantGuionesN, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 290, 40, 30));
+            jLabel61.setFont(new java.awt.Font("BankGothic-Medium", 1, 14)); // NOI18N
+            jLabel61.setText("Programadores de logica");
+            adminPanel.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 620, 210, 30));
 
-        cantNivelesN.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-        cantNivelesN.setForeground(new java.awt.Color(255, 0, 51));
-        cantNivelesN.setText("0");
-        nintendoPanel.add(cantNivelesN, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 320, 40, 30));
+            jLabel62.setFont(new java.awt.Font("BankGothic-Medium", 1, 14)); // NOI18N
+            jLabel62.setText("Integrador");
+            adminPanel.add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 680, 200, 30));
 
-        jLabel31.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel31.setFont(new java.awt.Font("Pretendo", 0, 14)); // NOI18N
-        jLabel31.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel31.setText("        Desarrolladores");
-        jLabel31.setAlignmentX(5.0F);
-        jLabel31.setAlignmentY(0.0F);
-        jLabel31.setFocusable(false);
-        jLabel31.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        nintendoPanel.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 260, 160, 30));
+            spinnerIntegradorN2.addChangeListener(new javax.swing.event.ChangeListener() {
+                public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                    spinnerIntegradorN2StateChanged(evt);
+                }
+            });
+            adminPanel.add(spinnerIntegradorN2, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 680, 60, -1));
 
-        jLabel32.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel32.setFont(new java.awt.Font("Pretendo", 0, 14)); // NOI18N
-        jLabel32.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel32.setText("Director");
-        jLabel32.setAlignmentX(5.0F);
-        jLabel32.setAlignmentY(0.0F);
-        jLabel32.setFocusable(false);
-        jLabel32.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        nintendoPanel.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, 80, 30));
+            spinnerNarrativoN2.setValue(1);
+            spinnerNarrativoN2.addChangeListener(new javax.swing.event.ChangeListener() {
+                public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                    spinnerNarrativoN2StateChanged(evt);
+                }
+            });
+            adminPanel.add(spinnerNarrativoN2, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 530, 60, -1));
 
-        jLabel33.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-        jLabel33.setText("Ganancias en bruto");
-        nintendoPanel.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 140, 160, 30));
+            spinnerNivelesN2.addChangeListener(new javax.swing.event.ChangeListener() {
+                public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                    spinnerNivelesN2StateChanged(evt);
+                }
+            });
+            adminPanel.add(spinnerNivelesN2, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 560, 60, -1));
 
-        jLabel35.setFont(new java.awt.Font("Super Mario 256", 0, 10)); // NOI18N
-        jLabel35.setText("Estado");
-        nintendoPanel.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 100, 70, 30));
+            spinnerSpritesN2.addChangeListener(new javax.swing.event.ChangeListener() {
+                public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                    spinnerSpritesN2StateChanged(evt);
+                }
+            });
+            adminPanel.add(spinnerSpritesN2, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 590, 60, -1));
 
-        jLabel36.setFont(new java.awt.Font("Super Mario 256", 0, 10)); // NOI18N
-        jLabel36.setText("Estado");
-        nintendoPanel.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, 70, 30));
+            spinnerLogicaN2.addChangeListener(new javax.swing.event.ChangeListener() {
+                public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                    spinnerLogicaN2StateChanged(evt);
+                }
+            });
+            adminPanel.add(spinnerLogicaN2, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 620, 60, -1));
 
-        jLabel37.setFont(new java.awt.Font("Super Mario 256", 0, 10)); // NOI18N
-        jLabel37.setText("Dinero descontado");
-        nintendoPanel.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 190, 130, 30));
+            jLabel63.setFont(new java.awt.Font("BankGothic-Medium", 1, 14)); // NOI18N
+            jLabel63.setText("Desarroladores de DLC");
+            adminPanel.add(jLabel63, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 650, 200, 30));
 
-        jLabel38.setFont(new java.awt.Font("Super Mario 256", 0, 10)); // NOI18N
-        jLabel38.setText("Faltas");
-        nintendoPanel.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 170, 70, 30));
+            spinnerDlcN2.addChangeListener(new javax.swing.event.ChangeListener() {
+                public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                    spinnerDlcN2StateChanged(evt);
+                }
+            });
+            adminPanel.add(spinnerDlcN2, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 650, 60, -1));
 
-        jLabel28.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel28.setFont(new java.awt.Font("Pretendo", 0, 14)); // NOI18N
-        jLabel28.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel28.setText("Para  entregar");
-        jLabel28.setAlignmentX(5.0F);
-        jLabel28.setAlignmentY(0.0F);
-        jLabel28.setFocusable(false);
-        jLabel28.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        nintendoPanel.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 90, 130, 30));
+            jLabel64.setFont(new java.awt.Font("BankGothic-Medium", 1, 14)); // NOI18N
+            jLabel64.setText("Desarrolador narrativo");
+            adminPanel.add(jLabel64, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 530, 200, 30));
 
-        jLabel39.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-        jLabel39.setText("Juegos");
-        nintendoPanel.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 120, 70, 30));
+            jLabel65.setBackground(new java.awt.Color(255, 255, 255));
+            jLabel65.setFont(new java.awt.Font("BankGothic-Medium", 1, 14)); // NOI18N
+            jLabel65.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel65.setText("Empleados disponibles :");
+            jLabel65.setAlignmentX(5.0F);
+            jLabel65.setAlignmentY(0.0F);
+            jLabel65.setFocusable(false);
+            jLabel65.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+            adminPanel.add(jLabel65, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 490, 200, 30));
 
-        jLabel40.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-        jLabel40.setText("Costos operativos");
-        nintendoPanel.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 110, 160, 30));
+            jLabel66.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+            jLabel66.setText("0");
+            adminPanel.add(jLabel66, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 490, 20, 20));
 
-        jLabel41.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel41.setFont(new java.awt.Font("Pretendo", 0, 14)); // NOI18N
-        jLabel41.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel41.setText("Utiliadad del estudio");
-        jLabel41.setAlignmentX(5.0F);
-        jLabel41.setAlignmentY(0.0F);
-        jLabel41.setFocusable(false);
-        jLabel41.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        nintendoPanel.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 190, 30));
+            jTabbedPane1.addTab("Admin", adminPanel);
 
-        jLabel42.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel42.setFont(new java.awt.Font("Pretendo", 0, 14)); // NOI18N
-        jLabel42.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel42.setText("Economia");
-        jLabel42.setAlignmentX(5.0F);
-        jLabel42.setAlignmentY(0.0F);
-        jLabel42.setFocusable(false);
-        jLabel42.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        nintendoPanel.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 80, 90, 30));
+            jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+            jPanel2.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 77, 1010, -1));
 
-        jLabel43.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel43.setFont(new java.awt.Font("Pretendo", 0, 14)); // NOI18N
-        jLabel43.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel43.setText("Deadline");
-        jLabel43.setAlignmentX(5.0F);
-        jLabel43.setAlignmentY(0.0F);
-        jLabel43.setFocusable(false);
-        jLabel43.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        nintendoPanel.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 20, 90, 30));
+            cantDlcN1.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            cantDlcN1.setForeground(new java.awt.Color(0, 0, 0));
+            cantDlcN1.setText("0");
+            jPanel2.add(cantDlcN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 440, 40, 30));
 
-        jLabel24.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-        jLabel24.setText("de ");
-        nintendoPanel.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 290, 30, 30));
+            jLabel11.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            jLabel11.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel11.setText("Disenadores de niveles");
+            jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 340, 200, 30));
 
-        maxNivelesN.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-        maxNivelesN.setText("20");
-        nintendoPanel.add(maxNivelesN, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 320, 30, 30));
+            jLabel23.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            jLabel23.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel23.setText("artistas de sprites");
+            jPanel2.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 370, 200, 30));
 
-        jLabel29.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-        jLabel29.setText("de ");
-        nintendoPanel.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 320, 30, 30));
+            jLabel28.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            jLabel28.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel28.setText("Programadores de logica");
+            jPanel2.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 400, 210, 30));
 
-        maxSpritesN.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-        maxSpritesN.setText("55");
-        nintendoPanel.add(maxSpritesN, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 350, 30, 30));
+            jLabel36.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            jLabel36.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel36.setText("Integrador");
+            jPanel2.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 460, 200, 30));
 
-        jLabel44.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-        jLabel44.setText("de ");
-        nintendoPanel.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 350, 30, 30));
+            spinnerIntegradorN3.addChangeListener(new javax.swing.event.ChangeListener() {
+                public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                    spinnerIntegradorN3StateChanged(evt);
+                }
+            });
+            jPanel2.add(spinnerIntegradorN3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 460, 60, -1));
 
-        maxSistemasN.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-        maxSistemasN.setText("35");
-        nintendoPanel.add(maxSistemasN, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 380, 30, 30));
+            spinnerNarrativoN3.setValue(1);
+            spinnerNarrativoN3.addChangeListener(new javax.swing.event.ChangeListener() {
+                public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                    spinnerNarrativoN3StateChanged(evt);
+                }
+            });
+            jPanel2.add(spinnerNarrativoN3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 310, 60, -1));
 
-        jLabel46.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-        jLabel46.setText("de ");
-        nintendoPanel.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 380, 30, 30));
+            spinnerNivelesN3.addChangeListener(new javax.swing.event.ChangeListener() {
+                public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                    spinnerNivelesN3StateChanged(evt);
+                }
+            });
+            jPanel2.add(spinnerNivelesN3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 340, 60, -1));
 
-        maxDlcN.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-        maxDlcN.setText("10");
-        nintendoPanel.add(maxDlcN, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 410, 30, 30));
+            spinnerSpritesN3.addChangeListener(new javax.swing.event.ChangeListener() {
+                public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                    spinnerSpritesN3StateChanged(evt);
+                }
+            });
+            jPanel2.add(spinnerSpritesN3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 370, 60, -1));
 
-        jLabel48.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-        jLabel48.setText("de ");
-        nintendoPanel.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 410, 30, 30));
+            spinnerLogicaN3.addChangeListener(new javax.swing.event.ChangeListener() {
+                public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                    spinnerLogicaN3StateChanged(evt);
+                }
+            });
+            jPanel2.add(spinnerLogicaN3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 400, 60, -1));
 
-        jTabbedPane1.addTab("Nintendo", nintendoPanel);
+            jLabel37.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            jLabel37.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel37.setText("Desarroladores de DLC");
+            jPanel2.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 430, 200, 30));
 
-        jPanel1.add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 1010, 760));
+            spinnerDlcN3.addChangeListener(new javax.swing.event.ChangeListener() {
+                public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                    spinnerDlcN3StateChanged(evt);
+                }
+            });
+            jPanel2.add(spinnerDlcN3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 430, 60, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 756, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
+            jLabel38.setBackground(new java.awt.Color(255, 255, 255));
+            jLabel38.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            jLabel38.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel38.setText("Avance de juego");
+            jLabel38.setAlignmentX(5.0F);
+            jLabel38.setAlignmentY(0.0F);
+            jLabel38.setFocusable(false);
+            jLabel38.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+            jPanel2.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 340, 160, 30));
 
-        pack();
-        setLocationRelativeTo(null);
-    }// </editor-fold>//GEN-END:initComponents
+            jLabel70.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            jLabel70.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel70.setText("Desarrolador narrativo");
+            jPanel2.add(jLabel70, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, 200, 30));
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-        this.checkCantEmpleados(spinnerNarrativoN, this.spinnerNivelesN,this.spinnerSpritesN, spinnerLogicaN, spinnerDlcN, this.spinnerIntegradorN, 17);
-    }//GEN-LAST:event_jButton1ActionPerformed
+            jLabel71.setBackground(new java.awt.Color(255, 255, 255));
+            jLabel71.setFont(new java.awt.Font("BankGothic Md BT", 0, 18)); // NOI18N
+            jLabel71.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel71.setText("Juegos  con  DLC ");
+            jLabel71.setAlignmentX(5.0F);
+            jLabel71.setAlignmentY(0.0F);
+            jLabel71.setFocusable(false);
+            jLabel71.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+            jPanel2.add(jLabel71, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 40, 200, 30));
+
+            jLabel72.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            jLabel72.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel72.setText("dlc");
+            jPanel2.add(jLabel72, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 440, 200, 30));
+
+            jLabel74.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            jLabel74.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel74.setText("juegos con DLC");
+            jPanel2.add(jLabel74, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 260, 150, 30));
+
+            jLabel75.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            jLabel75.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel75.setText("Niveles ");
+            jPanel2.add(jLabel75, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 350, 200, 30));
+
+            jLabel76.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            jLabel76.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel76.setText("Sprites");
+            jPanel2.add(jLabel76, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 380, 200, 30));
+
+            jLabel77.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            jLabel77.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel77.setText("sistemas ");
+            jPanel2.add(jLabel77, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 410, 200, 30));
+
+            maxGuionesN1.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            maxGuionesN1.setForeground(new java.awt.Color(0, 0, 0));
+            maxGuionesN1.setText("25");
+            jPanel2.add(maxGuionesN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 320, 30, 30));
+
+            readyToShip2.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            readyToShip2.setForeground(new java.awt.Color(0, 0, 0));
+            readyToShip2.setText("0");
+            jPanel2.add(readyToShip2, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 130, 40, 30));
+
+            readyToShipDLC1.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            readyToShipDLC1.setForeground(new java.awt.Color(0, 0, 0));
+            readyToShipDLC1.setText("0");
+            jPanel2.add(readyToShipDLC1, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 260, 40, 30));
+
+            cantSpritesN1.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            cantSpritesN1.setForeground(new java.awt.Color(0, 0, 0));
+            cantSpritesN1.setText("0");
+            jPanel2.add(cantSpritesN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 380, 40, 30));
+
+            cantSistemasN1.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            cantSistemasN1.setForeground(new java.awt.Color(0, 0, 0));
+            cantSistemasN1.setText("0");
+            jPanel2.add(cantSistemasN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 410, 40, 30));
+
+            jLabel78.setBackground(new java.awt.Color(255, 255, 255));
+            jLabel78.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            jLabel78.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel78.setText("Proje ct  Manager");
+            jLabel78.setAlignmentX(5.0F);
+            jLabel78.setAlignmentY(0.0F);
+            jLabel78.setFocusable(false);
+            jLabel78.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+            jPanel2.add(jLabel78, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 100, 190, 30));
+            jPanel2.add(jProgressBar2, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 370, 130, 20));
+
+            jLabel79.setBackground(new java.awt.Color(255, 255, 255));
+            jLabel79.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            jLabel79.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel79.setText("Drive de elementos");
+            jLabel79.setAlignmentX(5.0F);
+            jLabel79.setAlignmentY(0.0F);
+            jLabel79.setFocusable(false);
+            jLabel79.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+            jPanel2.add(jLabel79, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 290, 200, 30));
+
+            jLabel80.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            jLabel80.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel80.setText("guiones ");
+            jPanel2.add(jLabel80, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 320, 200, 30));
+
+            cantGuionesN1.setFont(new java.awt.Font("BankGothic Md BT", 0, 18)); // NOI18N
+            cantGuionesN1.setForeground(new java.awt.Color(0, 0, 0));
+            cantGuionesN1.setText("0");
+            jPanel2.add(cantGuionesN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 40, 40, 30));
+
+            cantNivelesN1.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            cantNivelesN1.setForeground(new java.awt.Color(0, 0, 0));
+            cantNivelesN1.setText("0");
+            jPanel2.add(cantNivelesN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 350, 40, 30));
+
+            jLabel81.setBackground(new java.awt.Color(255, 255, 255));
+            jLabel81.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            jLabel81.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel81.setText("        Desarrolladores");
+            jLabel81.setAlignmentX(5.0F);
+            jLabel81.setAlignmentY(0.0F);
+            jLabel81.setFocusable(false);
+            jLabel81.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+            jPanel2.add(jLabel81, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, 200, 30));
+
+            jLabel82.setBackground(new java.awt.Color(255, 255, 255));
+            jLabel82.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            jLabel82.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel82.setText("Director");
+            jLabel82.setAlignmentX(5.0F);
+            jLabel82.setAlignmentY(0.0F);
+            jLabel82.setFocusable(false);
+            jLabel82.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+            jPanel2.add(jLabel82, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 100, 30));
+
+            jLabel83.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            jLabel83.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel83.setText("Ganancias en bruto");
+            jPanel2.add(jLabel83, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 130, 160, 30));
+
+            estadoDirectorN1.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            estadoDirectorN1.setForeground(new java.awt.Color(0, 0, 0));
+            estadoDirectorN1.setText("Estado");
+            jPanel2.add(estadoDirectorN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 70, 30));
+
+            estadoPmN1.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            estadoPmN1.setForeground(new java.awt.Color(0, 0, 0));
+            estadoPmN1.setText("Estado");
+            jPanel2.add(estadoPmN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 130, 70, 30));
+
+            descuentoPmN1.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            descuentoPmN1.setForeground(new java.awt.Color(0, 0, 0));
+            descuentoPmN1.setText("0");
+            jPanel2.add(descuentoPmN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 160, 20, 30));
+
+            faltasPmN1.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            faltasPmN1.setForeground(new java.awt.Color(0, 0, 0));
+            faltasPmN1.setText("0");
+            jPanel2.add(faltasPmN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 160, 70, 30));
+
+            jLabel84.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            jLabel84.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel84.setText("Juegos");
+            jPanel2.add(jLabel84, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 230, 70, 30));
+
+            jLabel85.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            jLabel85.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel85.setText("Costos operativos");
+            jPanel2.add(jLabel85, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 90, 160, 30));
+
+            jLabel86.setBackground(new java.awt.Color(255, 255, 255));
+            jLabel86.setFont(new java.awt.Font("BankGothic Md BT", 0, 18)); // NOI18N
+            jLabel86.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel86.setText("Utiliadad: ");
+            jLabel86.setAlignmentX(5.0F);
+            jLabel86.setAlignmentY(0.0F);
+            jLabel86.setFocusable(false);
+            jLabel86.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+            jPanel2.add(jLabel86, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 40, 190, 30));
+
+            jLabel87.setBackground(new java.awt.Color(255, 255, 255));
+            jLabel87.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            jLabel87.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel87.setText("Dias en simulacion ");
+            jLabel87.setAlignmentX(5.0F);
+            jLabel87.setAlignmentY(0.0F);
+            jLabel87.setFocusable(false);
+            jLabel87.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+            jPanel2.add(jLabel87, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 90, 200, 30));
+
+            jLabel88.setBackground(new java.awt.Color(255, 255, 255));
+            jLabel88.setFont(new java.awt.Font("BankGothic Md BT", 0, 18)); // NOI18N
+            jLabel88.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel88.setText("Dias  para  la  entrega");
+            jLabel88.setAlignmentX(5.0F);
+            jLabel88.setAlignmentY(0.0F);
+            jLabel88.setFocusable(false);
+            jLabel88.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+            jPanel2.add(jLabel88, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 10, 250, 30));
+
+            jLabel89.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            jLabel89.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel89.setText("de ");
+            jPanel2.add(jLabel89, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 320, 30, 30));
+
+            maxNivelesN1.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            maxNivelesN1.setForeground(new java.awt.Color(0, 0, 0));
+            maxNivelesN1.setText("20");
+            jPanel2.add(maxNivelesN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 350, 30, 30));
+
+            jLabel90.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            jLabel90.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel90.setText("de ");
+            jPanel2.add(jLabel90, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 350, 30, 30));
+
+            maxSpritesN1.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            maxSpritesN1.setForeground(new java.awt.Color(0, 0, 0));
+            maxSpritesN1.setText("55");
+            jPanel2.add(maxSpritesN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 380, 30, 30));
+
+            jLabel91.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            jLabel91.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel91.setText("de ");
+            jPanel2.add(jLabel91, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 380, 30, 30));
+
+            maxSistemasN1.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            maxSistemasN1.setForeground(new java.awt.Color(0, 0, 0));
+            maxSistemasN1.setText("35");
+            jPanel2.add(maxSistemasN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 410, 30, 30));
+
+            jLabel92.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            jLabel92.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel92.setText("de ");
+            jPanel2.add(jLabel92, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 410, 30, 30));
+
+            maxDlcN1.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            maxDlcN1.setForeground(new java.awt.Color(0, 0, 0));
+            maxDlcN1.setText("10");
+            jPanel2.add(maxDlcN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 440, 30, 30));
+
+            jLabel93.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            jLabel93.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel93.setText("de ");
+            jPanel2.add(jLabel93, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 440, 30, 30));
+
+            jLabel94.setBackground(new java.awt.Color(255, 255, 255));
+            jLabel94.setFont(new java.awt.Font("BankGothic Md BT", 0, 18)); // NOI18N
+            jLabel94.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel94.setText("Juegos Totales");
+            jLabel94.setAlignmentX(5.0F);
+            jLabel94.setAlignmentY(0.0F);
+            jLabel94.setFocusable(false);
+            jLabel94.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+            jPanel2.add(jLabel94, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 10, 160, 30));
+
+            jLabel95.setBackground(new java.awt.Color(255, 255, 255));
+            jLabel95.setFont(new java.awt.Font("BankGothic Md BT", 0, 18)); // NOI18N
+            jLabel95.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel95.setText("Juegos entregados");
+            jLabel95.setAlignmentX(5.0F);
+            jLabel95.setAlignmentY(0.0F);
+            jLabel95.setFocusable(false);
+            jLabel95.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+            jPanel2.add(jLabel95, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 10, 210, 30));
+
+            gananciasBrutasN1.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            gananciasBrutasN1.setForeground(new java.awt.Color(0, 0, 0));
+            gananciasBrutasN1.setText("0");
+            jPanel2.add(gananciasBrutasN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 130, 40, 30));
+
+            cantGuionesN7.setFont(new java.awt.Font("BankGothic Md BT", 0, 18)); // NOI18N
+            cantGuionesN7.setForeground(new java.awt.Color(0, 0, 0));
+            cantGuionesN7.setText("0");
+            jPanel2.add(cantGuionesN7, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 10, 40, 30));
+
+            cantGuionesN8.setFont(new java.awt.Font("BankGothic Md BT", 0, 18)); // NOI18N
+            cantGuionesN8.setForeground(new java.awt.Color(0, 0, 0));
+            cantGuionesN8.setText("0");
+            jPanel2.add(cantGuionesN8, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 40, 40, 30));
+
+            cantGuionesN9.setFont(new java.awt.Font("BankGothic Md BT", 0, 18)); // NOI18N
+            cantGuionesN9.setForeground(new java.awt.Color(0, 0, 0));
+            cantGuionesN9.setText("0");
+            jPanel2.add(cantGuionesN9, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 40, 40, 30));
+
+            cantGuionesN10.setFont(new java.awt.Font("BankGothic Md BT", 0, 18)); // NOI18N
+            cantGuionesN10.setForeground(new java.awt.Color(0, 0, 0));
+            cantGuionesN10.setText("0");
+            jPanel2.add(cantGuionesN10, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 10, 40, 30));
+
+            cantGuionesN11.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            cantGuionesN11.setForeground(new java.awt.Color(0, 0, 0));
+            cantGuionesN11.setText("0");
+            jPanel2.add(cantGuionesN11, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 320, 40, 30));
+
+            costosOpeN1.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            costosOpeN1.setForeground(new java.awt.Color(0, 0, 0));
+            costosOpeN1.setText("0");
+            jPanel2.add(costosOpeN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 90, 40, 30));
+
+            label1.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            label1.setForeground(new java.awt.Color(0, 0, 0));
+            label1.setText("Faltas");
+            jPanel2.add(label1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 160, 70, 30));
+
+            label3.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            label3.setForeground(new java.awt.Color(0, 0, 0));
+            label3.setText("Dinero descontado");
+            jPanel2.add(label3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 190, 160, 30));
+
+            jLabel97.setBackground(new java.awt.Color(255, 255, 255));
+            jLabel97.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            jLabel97.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel97.setText("Economia");
+            jLabel97.setAlignmentX(5.0F);
+            jLabel97.setAlignmentY(0.0F);
+            jLabel97.setFocusable(false);
+            jLabel97.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+            jPanel2.add(jLabel97, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 110, 120, 30));
+
+            jLabel98.setBackground(new java.awt.Color(255, 255, 255));
+            jLabel98.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            jLabel98.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel98.setText("Para  entregar");
+            jLabel98.setAlignmentX(5.0F);
+            jLabel98.setAlignmentY(0.0F);
+            jLabel98.setFocusable(false);
+            jLabel98.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+            jPanel2.add(jLabel98, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 220, 170, 30));
+
+            readyToShip3.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            readyToShip3.setForeground(new java.awt.Color(0, 0, 0));
+            readyToShip3.setText("0");
+            jPanel2.add(readyToShip3, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 230, 40, 30));
+
+            jLabel99.setBackground(new java.awt.Color(255, 255, 255));
+            jLabel99.setFont(new java.awt.Font("BankGothic-Medium", 1, 24)); // NOI18N
+            jLabel99.setForeground(new java.awt.Color(255, 0, 0));
+            jLabel99.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/Imagenes/Square_Enix-Logo.wine2.png"))); // NOI18N
+            jLabel99.setAlignmentX(5.0F);
+            jLabel99.setAlignmentY(0.0F);
+            jLabel99.setFocusable(false);
+            jLabel99.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+            jPanel2.add(jLabel99, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 220, 60));
+
+            javax.swing.GroupLayout squarePanelLayout = new javax.swing.GroupLayout(squarePanel);
+            squarePanel.setLayout(squarePanelLayout);
+            squarePanelLayout.setHorizontalGroup(
+                squarePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            );
+            squarePanelLayout.setVerticalGroup(
+                squarePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            );
+
+            jTabbedPane1.addTab("Square Enix", squarePanel);
+
+            nintendoPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+            nintendoPanel.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 77, 1010, -1));
+
+            cantDlcN.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            cantDlcN.setForeground(new java.awt.Color(0, 0, 0));
+            cantDlcN.setText("0");
+            nintendoPanel.add(cantDlcN, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 440, 40, 30));
+
+            jLabel5.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            jLabel5.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel5.setText("Disenadores de niveles");
+            nintendoPanel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 340, 200, 30));
+
+            jLabel6.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            jLabel6.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel6.setText("artistas de sprites");
+            nintendoPanel.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 370, 200, 30));
+
+            jLabel7.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            jLabel7.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel7.setText("Programadores de logica");
+            nintendoPanel.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 400, 200, 30));
+
+            jLabel8.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            jLabel8.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel8.setText("Integrador");
+            nintendoPanel.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 460, 200, 30));
+
+            spinnerIntegradorN.addChangeListener(new javax.swing.event.ChangeListener() {
+                public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                    spinnerIntegradorNStateChanged(evt);
+                }
+            });
+            nintendoPanel.add(spinnerIntegradorN, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 460, 60, -1));
+
+            spinnerNarrativoN.setValue(1);
+            spinnerNarrativoN.addChangeListener(new javax.swing.event.ChangeListener() {
+                public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                    spinnerNarrativoNStateChanged(evt);
+                }
+            });
+            nintendoPanel.add(spinnerNarrativoN, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 310, 60, -1));
+
+            spinnerNivelesN.addChangeListener(new javax.swing.event.ChangeListener() {
+                public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                    spinnerNivelesNStateChanged(evt);
+                }
+            });
+            nintendoPanel.add(spinnerNivelesN, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 340, 60, -1));
+
+            spinnerSpritesN.addChangeListener(new javax.swing.event.ChangeListener() {
+                public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                    spinnerSpritesNStateChanged(evt);
+                }
+            });
+            nintendoPanel.add(spinnerSpritesN, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 370, 60, -1));
+
+            spinnerLogicaN.addChangeListener(new javax.swing.event.ChangeListener() {
+                public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                    spinnerLogicaNStateChanged(evt);
+                }
+            });
+            nintendoPanel.add(spinnerLogicaN, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 400, 60, -1));
+
+            jLabel9.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            jLabel9.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel9.setText("Desarroladores de DLC");
+            nintendoPanel.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 430, 200, 30));
+
+            spinnerDlcN.addChangeListener(new javax.swing.event.ChangeListener() {
+                public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                    spinnerDlcNStateChanged(evt);
+                }
+            });
+            nintendoPanel.add(spinnerDlcN, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 430, 60, -1));
+
+            jLabel2.setBackground(new java.awt.Color(255, 255, 255));
+            jLabel2.setFont(new java.awt.Font("Pretendo", 0, 14)); // NOI18N
+            jLabel2.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel2.setText("Avance de juego");
+            jLabel2.setAlignmentX(5.0F);
+            jLabel2.setAlignmentY(0.0F);
+            jLabel2.setFocusable(false);
+            jLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+            nintendoPanel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 340, 160, 30));
+
+            jLabel10.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            jLabel10.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel10.setText("Desarrolador narrativo");
+            nintendoPanel.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, 200, 30));
+
+            jLabel12.setBackground(new java.awt.Color(255, 255, 255));
+            jLabel12.setFont(new java.awt.Font("Pretendo", 0, 14)); // NOI18N
+            jLabel12.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel12.setText("Juegos  con  DLC ");
+            jLabel12.setAlignmentX(5.0F);
+            jLabel12.setAlignmentY(0.0F);
+            jLabel12.setFocusable(false);
+            jLabel12.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+            nintendoPanel.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 40, 160, 30));
+
+            jLabel13.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            jLabel13.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel13.setText("dlc");
+            nintendoPanel.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 440, 200, 30));
+
+            jLabel15.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            jLabel15.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel15.setText("juegos con DLc");
+            nintendoPanel.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 260, 120, 30));
+
+            jLabel16.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            jLabel16.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel16.setText("Niveles ");
+            nintendoPanel.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 350, 200, 30));
+
+            jLabel17.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            jLabel17.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel17.setText("Sprites");
+            nintendoPanel.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 380, 200, 30));
+
+            jLabel18.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            jLabel18.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel18.setText("sistemas ");
+            nintendoPanel.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 410, 200, 30));
+
+            maxGuionesN.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            maxGuionesN.setForeground(new java.awt.Color(0, 0, 0));
+            maxGuionesN.setText("25");
+            nintendoPanel.add(maxGuionesN, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 320, 30, 30));
+
+            readyToShip.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            readyToShip.setForeground(new java.awt.Color(0, 0, 0));
+            readyToShip.setText("0");
+            nintendoPanel.add(readyToShip, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 130, 40, 30));
+
+            readyToShipDLC.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            readyToShipDLC.setForeground(new java.awt.Color(0, 0, 0));
+            readyToShipDLC.setText("0");
+            nintendoPanel.add(readyToShipDLC, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 260, 40, 30));
+
+            cantSpritesN.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            cantSpritesN.setForeground(new java.awt.Color(0, 0, 0));
+            cantSpritesN.setText("0");
+            nintendoPanel.add(cantSpritesN, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 380, 40, 30));
+
+            cantSistemasN.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            cantSistemasN.setForeground(new java.awt.Color(0, 0, 0));
+            cantSistemasN.setText("0");
+            nintendoPanel.add(cantSistemasN, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 410, 40, 30));
+
+            jLabel3.setBackground(new java.awt.Color(255, 255, 255));
+            jLabel3.setFont(new java.awt.Font("Pretendo", 0, 18)); // NOI18N
+            jLabel3.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel3.setText("Proje ct  Manager");
+            jLabel3.setAlignmentX(5.0F);
+            jLabel3.setAlignmentY(0.0F);
+            jLabel3.setFocusable(false);
+            jLabel3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+            nintendoPanel.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 100, 190, 30));
+            nintendoPanel.add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 370, 130, 20));
+
+            jLabel26.setBackground(new java.awt.Color(255, 255, 255));
+            jLabel26.setFont(new java.awt.Font("Pretendo", 0, 18)); // NOI18N
+            jLabel26.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel26.setText("Drive de elementos");
+            jLabel26.setAlignmentX(5.0F);
+            jLabel26.setAlignmentY(0.0F);
+            jLabel26.setFocusable(false);
+            jLabel26.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+            nintendoPanel.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 290, 200, 30));
+
+            jLabel27.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            jLabel27.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel27.setText("guiones ");
+            nintendoPanel.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 320, 200, 30));
+
+            cantGuionesN.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            cantGuionesN.setForeground(new java.awt.Color(0, 0, 0));
+            cantGuionesN.setText("0");
+            nintendoPanel.add(cantGuionesN, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 40, 40, 30));
+
+            cantNivelesN.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            cantNivelesN.setForeground(new java.awt.Color(0, 0, 0));
+            cantNivelesN.setText("0");
+            nintendoPanel.add(cantNivelesN, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 350, 40, 30));
+
+            jLabel31.setBackground(new java.awt.Color(255, 255, 255));
+            jLabel31.setFont(new java.awt.Font("Pretendo", 0, 18)); // NOI18N
+            jLabel31.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel31.setText("        Desarrolladores");
+            jLabel31.setAlignmentX(5.0F);
+            jLabel31.setAlignmentY(0.0F);
+            jLabel31.setFocusable(false);
+            jLabel31.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+            nintendoPanel.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, 200, 30));
+
+            jLabel32.setBackground(new java.awt.Color(255, 255, 255));
+            jLabel32.setFont(new java.awt.Font("Pretendo", 0, 18)); // NOI18N
+            jLabel32.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel32.setText("Director");
+            jLabel32.setAlignmentX(5.0F);
+            jLabel32.setAlignmentY(0.0F);
+            jLabel32.setFocusable(false);
+            jLabel32.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+            nintendoPanel.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 100, 30));
+
+            jLabel33.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            jLabel33.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel33.setText("Ganancias en bruto");
+            nintendoPanel.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 130, 160, 30));
+
+            estadoDirectorN.setFont(new java.awt.Font("Super Mario 256", 0, 12)); // NOI18N
+            estadoDirectorN.setForeground(new java.awt.Color(0, 0, 0));
+            estadoDirectorN.setText("Estado");
+            nintendoPanel.add(estadoDirectorN, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 70, 30));
+
+            estadoPmN.setFont(new java.awt.Font("Super Mario 256", 0, 12)); // NOI18N
+            estadoPmN.setForeground(new java.awt.Color(0, 0, 0));
+            estadoPmN.setText("Estado");
+            nintendoPanel.add(estadoPmN, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 130, 70, 30));
+
+            descuentoPmN.setFont(new java.awt.Font("Super Mario 256", 0, 12)); // NOI18N
+            descuentoPmN.setForeground(new java.awt.Color(0, 0, 0));
+            descuentoPmN.setText("0");
+            nintendoPanel.add(descuentoPmN, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 160, 20, 30));
+
+            faltasPmN.setFont(new java.awt.Font("Super Mario 256", 0, 12)); // NOI18N
+            faltasPmN.setForeground(new java.awt.Color(0, 0, 0));
+            faltasPmN.setText("0");
+            nintendoPanel.add(faltasPmN, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 160, 70, 30));
+
+            jLabel39.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            jLabel39.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel39.setText("Juegos");
+            nintendoPanel.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 230, 70, 30));
+
+            jLabel40.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            jLabel40.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel40.setText("Costos operativos");
+            nintendoPanel.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 90, 160, 30));
+
+            jLabel41.setBackground(new java.awt.Color(255, 255, 255));
+            jLabel41.setFont(new java.awt.Font("Pretendo", 0, 14)); // NOI18N
+            jLabel41.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel41.setText("Utiliadad: ");
+            jLabel41.setAlignmentX(5.0F);
+            jLabel41.setAlignmentY(0.0F);
+            jLabel41.setFocusable(false);
+            jLabel41.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+            nintendoPanel.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 40, 190, 30));
+
+            jLabel42.setBackground(new java.awt.Color(255, 255, 255));
+            jLabel42.setFont(new java.awt.Font("Pretendo", 0, 18)); // NOI18N
+            jLabel42.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel42.setText("Dias en simulacion ");
+            jLabel42.setAlignmentX(5.0F);
+            jLabel42.setAlignmentY(0.0F);
+            jLabel42.setFocusable(false);
+            jLabel42.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+            nintendoPanel.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 90, 200, 30));
+
+            jLabel43.setBackground(new java.awt.Color(255, 255, 255));
+            jLabel43.setFont(new java.awt.Font("Pretendo", 0, 14)); // NOI18N
+            jLabel43.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel43.setText("Dias  para  la  entrega");
+            jLabel43.setAlignmentX(5.0F);
+            jLabel43.setAlignmentY(0.0F);
+            jLabel43.setFocusable(false);
+            jLabel43.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+            nintendoPanel.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 10, 180, 30));
+
+            jLabel24.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            jLabel24.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel24.setText("de ");
+            nintendoPanel.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 320, 30, 30));
+
+            maxNivelesN.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            maxNivelesN.setForeground(new java.awt.Color(0, 0, 0));
+            maxNivelesN.setText("20");
+            nintendoPanel.add(maxNivelesN, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 350, 30, 30));
+
+            jLabel29.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            jLabel29.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel29.setText("de ");
+            nintendoPanel.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 350, 30, 30));
+
+            maxSpritesN.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            maxSpritesN.setForeground(new java.awt.Color(0, 0, 0));
+            maxSpritesN.setText("55");
+            nintendoPanel.add(maxSpritesN, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 380, 30, 30));
+
+            jLabel44.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            jLabel44.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel44.setText("de ");
+            nintendoPanel.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 380, 30, 30));
+
+            maxSistemasN.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            maxSistemasN.setForeground(new java.awt.Color(0, 0, 0));
+            maxSistemasN.setText("35");
+            nintendoPanel.add(maxSistemasN, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 410, 30, 30));
+
+            jLabel46.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            jLabel46.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel46.setText("de ");
+            nintendoPanel.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 410, 30, 30));
+
+            maxDlcN.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            maxDlcN.setForeground(new java.awt.Color(0, 0, 0));
+            maxDlcN.setText("10");
+            nintendoPanel.add(maxDlcN, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 440, 30, 30));
+
+            jLabel48.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            jLabel48.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel48.setText("de ");
+            nintendoPanel.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 440, 30, 30));
+
+            jLabel67.setBackground(new java.awt.Color(255, 255, 255));
+            jLabel67.setFont(new java.awt.Font("Pretendo", 0, 14)); // NOI18N
+            jLabel67.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel67.setText("Juegos Totales");
+            jLabel67.setAlignmentX(5.0F);
+            jLabel67.setAlignmentY(0.0F);
+            jLabel67.setFocusable(false);
+            jLabel67.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+            nintendoPanel.add(jLabel67, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 10, 160, 30));
+
+            jLabel68.setBackground(new java.awt.Color(255, 255, 255));
+            jLabel68.setFont(new java.awt.Font("Pretendo", 0, 14)); // NOI18N
+            jLabel68.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel68.setText("Juegos entregados");
+            jLabel68.setAlignmentX(5.0F);
+            jLabel68.setAlignmentY(0.0F);
+            jLabel68.setFocusable(false);
+            jLabel68.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+            nintendoPanel.add(jLabel68, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 10, 160, 30));
+
+            jLabel69.setFont(new java.awt.Font("Pretendo", 0, 36)); // NOI18N
+            jLabel69.setForeground(new java.awt.Color(255, 0, 0));
+            jLabel69.setText("Nintendo ");
+            nintendoPanel.add(jLabel69, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 210, 40));
+
+            gananciasBrutasN.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            gananciasBrutasN.setForeground(new java.awt.Color(0, 0, 0));
+            gananciasBrutasN.setText("0");
+            nintendoPanel.add(gananciasBrutasN, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 130, 40, 30));
+
+            cantGuionesN2.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            cantGuionesN2.setForeground(new java.awt.Color(0, 0, 0));
+            cantGuionesN2.setText("0");
+            nintendoPanel.add(cantGuionesN2, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 10, 40, 30));
+
+            cantGuionesN3.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            cantGuionesN3.setForeground(new java.awt.Color(0, 0, 0));
+            cantGuionesN3.setText("0");
+            nintendoPanel.add(cantGuionesN3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 40, 40, 30));
+
+            cantGuionesN4.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            cantGuionesN4.setForeground(new java.awt.Color(0, 0, 0));
+            cantGuionesN4.setText("0");
+            nintendoPanel.add(cantGuionesN4, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 40, 40, 30));
+
+            cantGuionesN5.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            cantGuionesN5.setForeground(new java.awt.Color(0, 0, 0));
+            cantGuionesN5.setText("0");
+            nintendoPanel.add(cantGuionesN5, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 10, 40, 30));
+
+            cantGuionesN6.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            cantGuionesN6.setForeground(new java.awt.Color(0, 0, 0));
+            cantGuionesN6.setText("0");
+            nintendoPanel.add(cantGuionesN6, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 320, 40, 30));
+
+            costosOpeN.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            costosOpeN.setForeground(new java.awt.Color(0, 0, 0));
+            costosOpeN.setText("0");
+            nintendoPanel.add(costosOpeN, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 90, 40, 30));
+
+            label.setFont(new java.awt.Font("Super Mario 256", 0, 12)); // NOI18N
+            label.setForeground(new java.awt.Color(0, 0, 0));
+            label.setText("Faltas");
+            nintendoPanel.add(label, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 160, 70, 30));
+
+            label2.setFont(new java.awt.Font("Super Mario 256", 0, 12)); // NOI18N
+            label2.setForeground(new java.awt.Color(0, 0, 0));
+            label2.setText("Dinero descontado");
+            nintendoPanel.add(label2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 190, 140, 30));
+
+            jLabel73.setBackground(new java.awt.Color(255, 255, 255));
+            jLabel73.setFont(new java.awt.Font("Pretendo", 0, 18)); // NOI18N
+            jLabel73.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel73.setText("Economia");
+            jLabel73.setAlignmentX(5.0F);
+            jLabel73.setAlignmentY(0.0F);
+            jLabel73.setFocusable(false);
+            jLabel73.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+            nintendoPanel.add(jLabel73, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 110, 120, 30));
+
+            jLabel35.setBackground(new java.awt.Color(255, 255, 255));
+            jLabel35.setFont(new java.awt.Font("Pretendo", 0, 18)); // NOI18N
+            jLabel35.setForeground(new java.awt.Color(0, 0, 0));
+            jLabel35.setText("Para  entregar");
+            jLabel35.setAlignmentX(5.0F);
+            jLabel35.setAlignmentY(0.0F);
+            jLabel35.setFocusable(false);
+            jLabel35.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+            nintendoPanel.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 220, 170, 30));
+
+            readyToShip1.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            readyToShip1.setForeground(new java.awt.Color(0, 0, 0));
+            readyToShip1.setText("0");
+            nintendoPanel.add(readyToShip1, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 230, 40, 30));
+
+            jTabbedPane1.addTab("Nintendo", nintendoPanel);
+
+            jPanel1.add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1010, 760));
+
+            getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-4, 0, 1010, 756));
+
+            pack();
+            setLocationRelativeTo(null);
+        }// </editor-fold>//GEN-END:initComponents
 
     private void spinnerNarrativoNStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerNarrativoNStateChanged
         // TODO add your handling code here:
@@ -554,6 +1444,86 @@ public class Dashboard extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.checkCantEmpleados(spinnerNarrativoN, this.spinnerNivelesN,this.spinnerSpritesN, spinnerLogicaN, spinnerDlcN, this.spinnerIntegradorN, 17);
     }//GEN-LAST:event_spinnerIntegradorNStateChanged
+
+    private void txtSimuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSimuActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtSimuActionPerformed
+
+    private void txtSimu1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSimu1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtSimu1ActionPerformed
+
+    private void spinnerIntegradorN1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerIntegradorN1StateChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_spinnerIntegradorN1StateChanged
+
+    private void spinnerNarrativoN1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerNarrativoN1StateChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_spinnerNarrativoN1StateChanged
+
+    private void spinnerNivelesN1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerNivelesN1StateChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_spinnerNivelesN1StateChanged
+
+    private void spinnerSpritesN1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerSpritesN1StateChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_spinnerSpritesN1StateChanged
+
+    private void spinnerLogicaN1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerLogicaN1StateChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_spinnerLogicaN1StateChanged
+
+    private void spinnerDlcN1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerDlcN1StateChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_spinnerDlcN1StateChanged
+
+    private void spinnerIntegradorN2StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerIntegradorN2StateChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_spinnerIntegradorN2StateChanged
+
+    private void spinnerNarrativoN2StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerNarrativoN2StateChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_spinnerNarrativoN2StateChanged
+
+    private void spinnerNivelesN2StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerNivelesN2StateChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_spinnerNivelesN2StateChanged
+
+    private void spinnerSpritesN2StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerSpritesN2StateChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_spinnerSpritesN2StateChanged
+
+    private void spinnerLogicaN2StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerLogicaN2StateChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_spinnerLogicaN2StateChanged
+
+    private void spinnerDlcN2StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerDlcN2StateChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_spinnerDlcN2StateChanged
+
+    private void spinnerIntegradorN3StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerIntegradorN3StateChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_spinnerIntegradorN3StateChanged
+
+    private void spinnerNarrativoN3StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerNarrativoN3StateChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_spinnerNarrativoN3StateChanged
+
+    private void spinnerNivelesN3StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerNivelesN3StateChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_spinnerNivelesN3StateChanged
+
+    private void spinnerSpritesN3StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerSpritesN3StateChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_spinnerSpritesN3StateChanged
+
+    private void spinnerLogicaN3StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerLogicaN3StateChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_spinnerLogicaN3StateChanged
+
+    private void spinnerDlcN3StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerDlcN3StateChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_spinnerDlcN3StateChanged
 
     /**
      * @param args the command line arguments
@@ -593,28 +1563,61 @@ public class Dashboard extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel adminPanel;
     private javax.swing.JLabel cantDlcN;
+    private javax.swing.JLabel cantDlcN1;
     private javax.swing.JLabel cantGuionesN;
+    private javax.swing.JLabel cantGuionesN1;
+    private javax.swing.JLabel cantGuionesN10;
+    private javax.swing.JLabel cantGuionesN11;
+    private javax.swing.JLabel cantGuionesN2;
+    private javax.swing.JLabel cantGuionesN3;
+    private javax.swing.JLabel cantGuionesN4;
+    private javax.swing.JLabel cantGuionesN5;
+    private javax.swing.JLabel cantGuionesN6;
+    private javax.swing.JLabel cantGuionesN7;
+    private javax.swing.JLabel cantGuionesN8;
+    private javax.swing.JLabel cantGuionesN9;
     private javax.swing.JLabel cantNivelesN;
+    private javax.swing.JLabel cantNivelesN1;
     private javax.swing.JLabel cantSistemasN;
+    private javax.swing.JLabel cantSistemasN1;
     private javax.swing.JLabel cantSpritesN;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel cantSpritesN1;
+    private javax.swing.JLabel costosOpeN;
+    private javax.swing.JLabel costosOpeN1;
+    private javax.swing.JLabel descuentoPmN;
+    private javax.swing.JLabel descuentoPmN1;
+    private javax.swing.JLabel estadoDirectorN;
+    private javax.swing.JLabel estadoDirectorN1;
+    private javax.swing.JLabel estadoPmN;
+    private javax.swing.JLabel estadoPmN1;
+    private javax.swing.JLabel faltasPmN;
+    private javax.swing.JLabel faltasPmN1;
+    private javax.swing.JLabel gananciasBrutasN;
+    private javax.swing.JLabel gananciasBrutasN1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
@@ -624,6 +1627,7 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel39;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
@@ -631,29 +1635,127 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel44;
     private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
+    private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel55;
+    private javax.swing.JLabel jLabel56;
+    private javax.swing.JLabel jLabel57;
+    private javax.swing.JLabel jLabel58;
+    private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel60;
+    private javax.swing.JLabel jLabel61;
+    private javax.swing.JLabel jLabel62;
+    private javax.swing.JLabel jLabel63;
+    private javax.swing.JLabel jLabel64;
+    private javax.swing.JLabel jLabel65;
+    private javax.swing.JLabel jLabel66;
+    private javax.swing.JLabel jLabel67;
+    private javax.swing.JLabel jLabel68;
+    private javax.swing.JLabel jLabel69;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel70;
+    private javax.swing.JLabel jLabel71;
+    private javax.swing.JLabel jLabel72;
+    private javax.swing.JLabel jLabel73;
+    private javax.swing.JLabel jLabel74;
+    private javax.swing.JLabel jLabel75;
+    private javax.swing.JLabel jLabel76;
+    private javax.swing.JLabel jLabel77;
+    private javax.swing.JLabel jLabel78;
+    private javax.swing.JLabel jLabel79;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel80;
+    private javax.swing.JLabel jLabel81;
+    private javax.swing.JLabel jLabel82;
+    private javax.swing.JLabel jLabel83;
+    private javax.swing.JLabel jLabel84;
+    private javax.swing.JLabel jLabel85;
+    private javax.swing.JLabel jLabel86;
+    private javax.swing.JLabel jLabel87;
+    private javax.swing.JLabel jLabel88;
+    private javax.swing.JLabel jLabel89;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabel90;
+    private javax.swing.JLabel jLabel91;
+    private javax.swing.JLabel jLabel92;
+    private javax.swing.JLabel jLabel93;
+    private javax.swing.JLabel jLabel94;
+    private javax.swing.JLabel jLabel95;
+    private javax.swing.JLabel jLabel97;
+    private javax.swing.JLabel jLabel98;
+    private javax.swing.JLabel jLabel99;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JProgressBar jProgressBar1;
+    private javax.swing.JProgressBar jProgressBar2;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JSeparator jSeparator3;
+    private javax.swing.JSpinner jSpinner10;
+    private javax.swing.JSpinner jSpinner3;
+    private javax.swing.JSpinner jSpinner4;
+    private javax.swing.JSpinner jSpinner6;
+    private javax.swing.JSpinner jSpinner7;
+    private javax.swing.JSpinner jSpinner8;
+    private javax.swing.JSpinner jSpinner9;
     private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JLabel label;
+    private javax.swing.JLabel label1;
+    private javax.swing.JLabel label2;
+    private javax.swing.JLabel label3;
     private javax.swing.JLabel maxDlcN;
+    private javax.swing.JLabel maxDlcN1;
     private javax.swing.JLabel maxGuionesN;
+    private javax.swing.JLabel maxGuionesN1;
     private javax.swing.JLabel maxNivelesN;
+    private javax.swing.JLabel maxNivelesN1;
     private javax.swing.JLabel maxSistemasN;
+    private javax.swing.JLabel maxSistemasN1;
     private javax.swing.JLabel maxSpritesN;
+    private javax.swing.JLabel maxSpritesN1;
     private javax.swing.JPanel nintendoPanel;
+    private javax.swing.JLabel readyToShip;
+    private javax.swing.JLabel readyToShip1;
+    private javax.swing.JLabel readyToShip2;
+    private javax.swing.JLabel readyToShip3;
+    private javax.swing.JLabel readyToShipDLC;
+    private javax.swing.JLabel readyToShipDLC1;
     private javax.swing.JSpinner spinnerDlcN;
+    private javax.swing.JSpinner spinnerDlcN1;
+    private javax.swing.JSpinner spinnerDlcN2;
+    private javax.swing.JSpinner spinnerDlcN3;
     private javax.swing.JSpinner spinnerIntegradorN;
+    private javax.swing.JSpinner spinnerIntegradorN1;
+    private javax.swing.JSpinner spinnerIntegradorN2;
+    private javax.swing.JSpinner spinnerIntegradorN3;
     private javax.swing.JSpinner spinnerLogicaN;
+    private javax.swing.JSpinner spinnerLogicaN1;
+    private javax.swing.JSpinner spinnerLogicaN2;
+    private javax.swing.JSpinner spinnerLogicaN3;
     private javax.swing.JSpinner spinnerNarrativoN;
+    private javax.swing.JSpinner spinnerNarrativoN1;
+    private javax.swing.JSpinner spinnerNarrativoN2;
+    private javax.swing.JSpinner spinnerNarrativoN3;
     private javax.swing.JSpinner spinnerNivelesN;
+    private javax.swing.JSpinner spinnerNivelesN1;
+    private javax.swing.JSpinner spinnerNivelesN2;
+    private javax.swing.JSpinner spinnerNivelesN3;
     private javax.swing.JSpinner spinnerSpritesN;
+    private javax.swing.JSpinner spinnerSpritesN1;
+    private javax.swing.JSpinner spinnerSpritesN2;
+    private javax.swing.JSpinner spinnerSpritesN3;
     private javax.swing.JPanel squarePanel;
+    private javax.swing.JButton txtSimu;
+    private javax.swing.JButton txtSimu1;
     // End of variables declaration//GEN-END:variables
 }
