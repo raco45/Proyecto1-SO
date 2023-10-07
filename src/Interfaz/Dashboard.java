@@ -89,6 +89,9 @@ public class Dashboard extends javax.swing.JFrame {
     }    
         
     public void guardarParametro(int parametro) {
+        if (posicionParametro == 14) {
+            posicionParametro = 0;
+        }
         parametros[posicionParametro] = parametro;
         posicionParametro++;
     }
@@ -1462,6 +1465,8 @@ public class Dashboard extends javax.swing.JFrame {
     }//GEN-LAST:event_spinnerIntegradorNStateChanged
 
     private void startSimulActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startSimulActionPerformed
+
+        guardarParametro((int) spinnerDuracion.getValue());
         guardarParametro((int) spinnerDeadline.getValue());
         
         guardarParametro((int) spinnerNarrativoN1.getValue());
