@@ -5,6 +5,8 @@
  */
 package Interfaz;
 
+import classes.Tools;
+import javax.swing.JOptionPane;
 import javax.swing.JSpinner;
 import javax.swing.SpinnerModel;
 import javax.swing.SpinnerNumberModel;
@@ -15,13 +17,18 @@ import javax.swing.SpinnerNumberModel;
  */
 public class Dashboard extends javax.swing.JFrame {
     
-
+    int[] parametros = new int[14]; // 14 porque son 14 parametros los que se deben guardar
+    int posicionParametro = 0;
+    Tools tool = new Tools();
+    
     /**
      * Creates new form Dashboard
      */
     public Dashboard() {
         this.setLocationRelativeTo(null);
         this.setVisible(true);
+        this.setResizable(false);
+        this.setLocationRelativeTo(null);
         initComponents();
         this.verifySpinners();
         this.spinnerNarrativoN.setModel(this.verifySpinners());
@@ -81,7 +88,10 @@ public class Dashboard extends javax.swing.JFrame {
         current.setModel(modeloSpinner);
     }    
         
-    
+    public void guardarParametro(int parametro) {
+        parametros[posicionParametro] = parametro;
+        posicionParametro++;
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -108,17 +118,17 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel22 = new javax.swing.JLabel();
         jLabel30 = new javax.swing.JLabel();
         jLabel34 = new javax.swing.JLabel();
-        txtSimu = new javax.swing.JButton();
+        startSimul = new javax.swing.JButton();
         jSpinner3 = new javax.swing.JSpinner();
         jSpinner6 = new javax.swing.JSpinner();
         jSpinner7 = new javax.swing.JSpinner();
         jSpinner8 = new javax.swing.JSpinner();
         jSpinner9 = new javax.swing.JSpinner();
-        txtSimu1 = new javax.swing.JButton();
+        txtSimu = new javax.swing.JButton();
         jLabel25 = new javax.swing.JLabel();
         jLabel47 = new javax.swing.JLabel();
-        jSpinner4 = new javax.swing.JSpinner();
-        jSpinner10 = new javax.swing.JSpinner();
+        spinnerDuracion = new javax.swing.JSpinner();
+        spinnerDeadline = new javax.swing.JSpinner();
         jLabel49 = new javax.swing.JLabel();
         jLabel50 = new javax.swing.JLabel();
         jLabel51 = new javax.swing.JLabel();
@@ -358,28 +368,28 @@ public class Dashboard extends javax.swing.JFrame {
             jLabel34.setText("Drive guiones ");
             adminPanel.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 200, 140, 30));
 
-            txtSimu.setFont(new java.awt.Font("BankGothic Lt BT", 0, 12)); // NOI18N
-            txtSimu.setText("Iniciar simulacion");
-            txtSimu.addActionListener(new java.awt.event.ActionListener() {
+            startSimul.setFont(new java.awt.Font("BankGothic Lt BT", 0, 12)); // NOI18N
+            startSimul.setText("Iniciar simulacion");
+            startSimul.addActionListener(new java.awt.event.ActionListener() {
                 public void actionPerformed(java.awt.event.ActionEvent evt) {
-                    txtSimuActionPerformed(evt);
+                    startSimulActionPerformed(evt);
                 }
             });
-            adminPanel.add(txtSimu, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 130, -1, 30));
+            adminPanel.add(startSimul, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 130, -1, 30));
             adminPanel.add(jSpinner3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 200, 60, 30));
             adminPanel.add(jSpinner6, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 320, 60, 30));
             adminPanel.add(jSpinner7, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 230, 60, 30));
             adminPanel.add(jSpinner8, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 260, 60, 30));
             adminPanel.add(jSpinner9, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 290, 60, 30));
 
-            txtSimu1.setFont(new java.awt.Font("BankGothic Lt BT", 0, 12)); // NOI18N
-            txtSimu1.setText("Cargar archivo de simulacion ");
-            txtSimu1.addActionListener(new java.awt.event.ActionListener() {
+            txtSimu.setFont(new java.awt.Font("BankGothic Lt BT", 0, 12)); // NOI18N
+            txtSimu.setText("Cargar archivo de simulacion ");
+            txtSimu.addActionListener(new java.awt.event.ActionListener() {
                 public void actionPerformed(java.awt.event.ActionEvent evt) {
-                    txtSimu1ActionPerformed(evt);
+                    txtSimuActionPerformed(evt);
                 }
             });
-            adminPanel.add(txtSimu1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, -1, 30));
+            adminPanel.add(txtSimu, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, -1, 30));
 
             jLabel25.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
             jLabel25.setText("Dias entre entregas ");
@@ -388,8 +398,8 @@ public class Dashboard extends javax.swing.JFrame {
             jLabel47.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
             jLabel47.setText("Duracion del dia ");
             adminPanel.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 190, 160, 30));
-            adminPanel.add(jSpinner4, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 190, 60, 30));
-            adminPanel.add(jSpinner10, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 220, 60, 30));
+            adminPanel.add(spinnerDuracion, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 190, 60, 30));
+            adminPanel.add(spinnerDeadline, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 220, 60, 30));
 
             jLabel49.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
             jLabel49.setText("Disenadores de niveles");
@@ -1451,13 +1461,48 @@ public class Dashboard extends javax.swing.JFrame {
         this.checkCantEmpleados(spinnerNarrativoN, this.spinnerNivelesN,this.spinnerSpritesN, spinnerLogicaN, spinnerDlcN, this.spinnerIntegradorN, 17);
     }//GEN-LAST:event_spinnerIntegradorNStateChanged
 
-    private void txtSimuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSimuActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtSimuActionPerformed
+    private void startSimulActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startSimulActionPerformed
+        guardarParametro((int) spinnerDeadline.getValue());
+        
+        guardarParametro((int) spinnerNarrativoN1.getValue());
+        guardarParametro((int) spinnerNivelesN1.getValue());
+        guardarParametro((int) spinnerSpritesN1.getValue());
+        guardarParametro((int) spinnerLogicaN1.getValue());
+        guardarParametro((int) spinnerDlcN1.getValue());
+        guardarParametro((int) spinnerIntegradorN1.getValue());
+        
+        guardarParametro((int) spinnerNarrativoN2.getValue());
+        guardarParametro((int) spinnerNivelesN2.getValue());
+        guardarParametro((int) spinnerSpritesN2.getValue());
+        guardarParametro((int) spinnerLogicaN2.getValue());
+        guardarParametro((int) spinnerDlcN2.getValue());
+        guardarParametro((int) spinnerIntegradorN2.getValue());
+        
+        tool.escribirTXT(parametros);
+    }//GEN-LAST:event_startSimulActionPerformed
 
-    private void txtSimu1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSimu1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtSimu1ActionPerformed
+    private void txtSimuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSimuActionPerformed
+        parametros = tool.leerTXT();
+        
+        spinnerDuracion.setValue((int) parametros[0]);
+        spinnerDeadline.setValue((int) parametros[1]);
+        
+        spinnerNarrativoN1.setValue((int) parametros[2]);
+        spinnerNivelesN1.setValue((int) parametros[3]);
+        spinnerSpritesN1.setValue((int) parametros[4]);
+        spinnerLogicaN1.setValue((int) parametros[5]);
+        spinnerDlcN1.setValue((int) parametros[6]);
+        spinnerIntegradorN1.setValue((int) parametros[7]);
+        
+        spinnerNarrativoN2.setValue((int) parametros[8]);
+        spinnerNivelesN2.setValue((int) parametros[9]);
+        spinnerSpritesN2.setValue((int) parametros[10]);
+        spinnerLogicaN2.setValue((int) parametros[11]);
+        spinnerDlcN2.setValue((int) parametros[12]);
+        spinnerIntegradorN2.setValue((int) parametros[13]);
+        
+        JOptionPane.showMessageDialog(null, "Lectura exitosa");
+    }//GEN-LAST:event_txtSimuActionPerformed
 
     private void spinnerIntegradorN1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerIntegradorN1StateChanged
         // TODO add your handling code here:
@@ -1705,9 +1750,7 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
-    private javax.swing.JSpinner jSpinner10;
     private javax.swing.JSpinner jSpinner3;
-    private javax.swing.JSpinner jSpinner4;
     private javax.swing.JSpinner jSpinner6;
     private javax.swing.JSpinner jSpinner7;
     private javax.swing.JSpinner jSpinner8;
@@ -1736,10 +1779,12 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel readyToShipDLC;
     private javax.swing.JLabel readyToShipDLCSq;
     private javax.swing.JLabel readyToShipSq;
+    private javax.swing.JSpinner spinnerDeadline;
     private javax.swing.JSpinner spinnerDlcN;
     private javax.swing.JSpinner spinnerDlcN1;
     private javax.swing.JSpinner spinnerDlcN2;
     private javax.swing.JSpinner spinnerDlcS;
+    private javax.swing.JSpinner spinnerDuracion;
     private javax.swing.JSpinner spinnerIntegradorN;
     private javax.swing.JSpinner spinnerIntegradorN1;
     private javax.swing.JSpinner spinnerIntegradorN2;
@@ -1761,7 +1806,7 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JSpinner spinnerSpritesN2;
     private javax.swing.JSpinner spinnerSpritesS;
     private javax.swing.JPanel squarePanel;
+    private javax.swing.JButton startSimul;
     private javax.swing.JButton txtSimu;
-    private javax.swing.JButton txtSimu1;
     // End of variables declaration//GEN-END:variables
 }
