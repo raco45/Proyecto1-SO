@@ -782,7 +782,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="cantDlcN1">
+                    <Component class="javax.swing.JLabel" name="cantDlcS">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="BankGothic Md BT" size="14" style="0"/>
@@ -862,9 +862,9 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JSpinner" name="spinnerIntegradorN3">
+                    <Component class="javax.swing.JSpinner" name="spinnerIntegradorS">
                       <Events>
-                        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="spinnerIntegradorN3StateChanged"/>
+                        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="spinnerIntegradorSStateChanged"/>
                       </Events>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -872,14 +872,14 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JSpinner" name="spinnerNarrativoN3">
+                    <Component class="javax.swing.JSpinner" name="spinnerNarrativoS">
                       <Properties>
                         <Property name="value" type="java.lang.Object" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
                           <Connection code="1" type="code"/>
                         </Property>
                       </Properties>
                       <Events>
-                        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="spinnerNarrativoN3StateChanged"/>
+                        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="spinnerNarrativoSStateChanged"/>
                       </Events>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -887,9 +887,9 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JSpinner" name="spinnerNivelesN3">
+                    <Component class="javax.swing.JSpinner" name="spinnerNivelesS">
                       <Events>
-                        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="spinnerNivelesN3StateChanged"/>
+                        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="spinnerNivelesSStateChanged"/>
                       </Events>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -897,9 +897,9 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JSpinner" name="spinnerSpritesN3">
+                    <Component class="javax.swing.JSpinner" name="spinnerSpritesS">
                       <Events>
-                        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="spinnerSpritesN3StateChanged"/>
+                        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="spinnerSpritesSStateChanged"/>
                       </Events>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -907,9 +907,9 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JSpinner" name="spinnerLogicaN3">
+                    <Component class="javax.swing.JSpinner" name="spinnerLogicaS">
                       <Events>
-                        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="spinnerLogicaN3StateChanged"/>
+                        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="spinnerLogicaSStateChanged"/>
                       </Events>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -933,9 +933,9 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JSpinner" name="spinnerDlcN3">
+                    <Component class="javax.swing.JSpinner" name="spinnerDlcS">
                       <Events>
-                        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="spinnerDlcN3StateChanged"/>
+                        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="spinnerDlcSStateChanged"/>
                       </Events>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -1085,7 +1085,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="maxGuionesN1">
+                    <Component class="javax.swing.JLabel" name="maxGuionesS">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="BankGothic Md BT" size="14" style="0"/>
@@ -1101,7 +1101,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="readyToShip2">
+                    <Component class="javax.swing.JLabel" name="diasTotalesSq">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="BankGothic Md BT" size="14" style="0"/>
@@ -1117,7 +1117,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="readyToShipDLC1">
+                    <Component class="javax.swing.JLabel" name="readyToShipDLCSq">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="BankGothic Md BT" size="14" style="0"/>
@@ -1133,7 +1133,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="cantSpritesN1">
+                    <Component class="javax.swing.JLabel" name="cantSpritesS">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="BankGothic Md BT" size="14" style="0"/>
@@ -1149,7 +1149,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="cantSistemasN1">
+                    <Component class="javax.swing.JLabel" name="cantSistemasS">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="BankGothic Md BT" size="14" style="0"/>
@@ -1188,7 +1188,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JProgressBar" name="jProgressBar2">
+                    <Component class="javax.swing.JProgressBar" name="progresBarS">
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
                           <AbsoluteConstraints x="460" y="370" width="130" height="20"/>
@@ -1234,7 +1234,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="cantGuionesN1">
+                    <Component class="javax.swing.JLabel" name="fechaEntregaSq">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="BankGothic Md BT" size="18" style="0"/>
@@ -1250,7 +1250,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="cantNivelesN1">
+                    <Component class="javax.swing.JLabel" name="cantNivelesS">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="BankGothic Md BT" size="14" style="0"/>
@@ -1328,7 +1328,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="estadoDirectorN1">
+                    <Component class="javax.swing.JLabel" name="estadoDirectorS">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="BankGothic Md BT" size="14" style="0"/>
@@ -1344,7 +1344,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="estadoPmN1">
+                    <Component class="javax.swing.JLabel" name="estadoPmS">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="BankGothic Md BT" size="14" style="0"/>
@@ -1360,7 +1360,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="descuentoPmN1">
+                    <Component class="javax.swing.JLabel" name="descuentoPmS">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="BankGothic Md BT" size="14" style="0"/>
@@ -1376,7 +1376,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="faltasPmN1">
+                    <Component class="javax.swing.JLabel" name="faltasPmS">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="BankGothic Md BT" size="14" style="0"/>
@@ -1443,7 +1443,7 @@
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="320" y="40" width="190" height="30"/>
+                          <AbsoluteConstraints x="320" y="40" width="110" height="30"/>
                         </Constraint>
                       </Constraints>
                     </Component>
@@ -1509,7 +1509,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="maxNivelesN1">
+                    <Component class="javax.swing.JLabel" name="maxNivelesS">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="BankGothic Md BT" size="14" style="0"/>
@@ -1541,7 +1541,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="maxSpritesN1">
+                    <Component class="javax.swing.JLabel" name="maxSpritesS">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="BankGothic Md BT" size="14" style="0"/>
@@ -1573,7 +1573,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="maxSistemasN1">
+                    <Component class="javax.swing.JLabel" name="maxSistemasS">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="BankGothic Md BT" size="14" style="0"/>
@@ -1605,7 +1605,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="maxDlcN1">
+                    <Component class="javax.swing.JLabel" name="maxDlcS">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="BankGothic Md BT" size="14" style="0"/>
@@ -1683,7 +1683,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="gananciasBrutasN1">
+                    <Component class="javax.swing.JLabel" name="gananciasBrutasS">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="BankGothic Md BT" size="14" style="0"/>
@@ -1699,7 +1699,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="cantGuionesN7">
+                    <Component class="javax.swing.JLabel" name="juegosTotalesSq">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="BankGothic Md BT" size="18" style="0"/>
@@ -1715,7 +1715,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="cantGuionesN8">
+                    <Component class="javax.swing.JLabel" name="gananciaTotalSq">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="BankGothic Md BT" size="18" style="0"/>
@@ -1731,7 +1731,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="cantGuionesN9">
+                    <Component class="javax.swing.JLabel" name="historicoDlcSq">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="BankGothic Md BT" size="18" style="0"/>
@@ -1747,7 +1747,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="cantGuionesN10">
+                    <Component class="javax.swing.JLabel" name="historicoJuegosSq">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="BankGothic Md BT" size="18" style="0"/>
@@ -1763,7 +1763,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="cantGuionesN11">
+                    <Component class="javax.swing.JLabel" name="cantGuionesS">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="BankGothic Md BT" size="14" style="0"/>
@@ -1779,7 +1779,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="costosOpeN1">
+                    <Component class="javax.swing.JLabel" name="costosOpeS">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="BankGothic Md BT" size="14" style="0"/>
@@ -1873,7 +1873,7 @@
                         </Constraint>
                       </Constraints>
                     </Component>
-                    <Component class="javax.swing.JLabel" name="readyToShip3">
+                    <Component class="javax.swing.JLabel" name="readyToShipSq">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="BankGothic Md BT" size="14" style="0"/>
@@ -2257,7 +2257,7 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JLabel" name="readyToShip">
+                <Component class="javax.swing.JLabel" name="diasTotalesN">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Super Mario 256" size="13" style="0"/>
@@ -2390,7 +2390,7 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JLabel" name="cantGuionesN">
+                <Component class="javax.swing.JLabel" name="fechaEntregaN">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Super Mario 256" size="13" style="0"/>
@@ -2599,7 +2599,7 @@
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="320" y="40" width="190" height="30"/>
+                      <AbsoluteConstraints x="320" y="40" width="80" height="30"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -2812,7 +2812,7 @@
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="290" y="10" width="160" height="30"/>
+                      <AbsoluteConstraints x="290" y="10" width="130" height="30"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -2871,7 +2871,7 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JLabel" name="cantGuionesN2">
+                <Component class="javax.swing.JLabel" name="juegosTotalesN">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Super Mario 256" size="13" style="0"/>
@@ -2887,7 +2887,7 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JLabel" name="cantGuionesN3">
+                <Component class="javax.swing.JLabel" name="gananciaTotalN">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Super Mario 256" size="13" style="0"/>
@@ -2903,7 +2903,7 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JLabel" name="cantGuionesN4">
+                <Component class="javax.swing.JLabel" name="historicoDlcN">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Super Mario 256" size="13" style="0"/>
@@ -2919,7 +2919,7 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JLabel" name="cantGuionesN5">
+                <Component class="javax.swing.JLabel" name="historicoJuegosN">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Super Mario 256" size="13" style="0"/>

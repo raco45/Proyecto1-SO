@@ -30,6 +30,12 @@ public class Dashboard extends javax.swing.JFrame {
         this.spinnerSpritesN.setModel(this.verifySpinners());
         this.spinnerNivelesN.setModel(this.verifySpinners());
         this.spinnerIntegradorN.setModel(this.verifySpinners());
+        this.spinnerNarrativoS.setModel(this.verifySpinners());
+        this.spinnerLogicaS.setModel(this.verifySpinners());
+        this.spinnerDlcS.setModel(this.verifySpinners());
+        this.spinnerSpritesS.setModel(this.verifySpinners());
+        this.spinnerNivelesS.setModel(this.verifySpinners());
+        this.spinnerIntegradorS.setModel(this.verifySpinners());
     }
     
     
@@ -146,18 +152,18 @@ public class Dashboard extends javax.swing.JFrame {
         squarePanel = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jSeparator3 = new javax.swing.JSeparator();
-        cantDlcN1 = new javax.swing.JLabel();
+        cantDlcS = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
         jLabel36 = new javax.swing.JLabel();
-        spinnerIntegradorN3 = new javax.swing.JSpinner();
-        spinnerNarrativoN3 = new javax.swing.JSpinner();
-        spinnerNivelesN3 = new javax.swing.JSpinner();
-        spinnerSpritesN3 = new javax.swing.JSpinner();
-        spinnerLogicaN3 = new javax.swing.JSpinner();
+        spinnerIntegradorS = new javax.swing.JSpinner();
+        spinnerNarrativoS = new javax.swing.JSpinner();
+        spinnerNivelesS = new javax.swing.JSpinner();
+        spinnerSpritesS = new javax.swing.JSpinner();
+        spinnerLogicaS = new javax.swing.JSpinner();
         jLabel37 = new javax.swing.JLabel();
-        spinnerDlcN3 = new javax.swing.JSpinner();
+        spinnerDlcS = new javax.swing.JSpinner();
         jLabel38 = new javax.swing.JLabel();
         jLabel70 = new javax.swing.JLabel();
         jLabel71 = new javax.swing.JLabel();
@@ -166,52 +172,52 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel75 = new javax.swing.JLabel();
         jLabel76 = new javax.swing.JLabel();
         jLabel77 = new javax.swing.JLabel();
-        maxGuionesN1 = new javax.swing.JLabel();
-        readyToShip2 = new javax.swing.JLabel();
-        readyToShipDLC1 = new javax.swing.JLabel();
-        cantSpritesN1 = new javax.swing.JLabel();
-        cantSistemasN1 = new javax.swing.JLabel();
+        maxGuionesS = new javax.swing.JLabel();
+        diasTotalesSq = new javax.swing.JLabel();
+        readyToShipDLCSq = new javax.swing.JLabel();
+        cantSpritesS = new javax.swing.JLabel();
+        cantSistemasS = new javax.swing.JLabel();
         jLabel78 = new javax.swing.JLabel();
-        jProgressBar2 = new javax.swing.JProgressBar();
+        progresBarS = new javax.swing.JProgressBar();
         jLabel79 = new javax.swing.JLabel();
         jLabel80 = new javax.swing.JLabel();
-        cantGuionesN1 = new javax.swing.JLabel();
-        cantNivelesN1 = new javax.swing.JLabel();
+        fechaEntregaSq = new javax.swing.JLabel();
+        cantNivelesS = new javax.swing.JLabel();
         jLabel81 = new javax.swing.JLabel();
         jLabel82 = new javax.swing.JLabel();
         jLabel83 = new javax.swing.JLabel();
-        estadoDirectorN1 = new javax.swing.JLabel();
-        estadoPmN1 = new javax.swing.JLabel();
-        descuentoPmN1 = new javax.swing.JLabel();
-        faltasPmN1 = new javax.swing.JLabel();
+        estadoDirectorS = new javax.swing.JLabel();
+        estadoPmS = new javax.swing.JLabel();
+        descuentoPmS = new javax.swing.JLabel();
+        faltasPmS = new javax.swing.JLabel();
         jLabel84 = new javax.swing.JLabel();
         jLabel85 = new javax.swing.JLabel();
         jLabel86 = new javax.swing.JLabel();
         jLabel87 = new javax.swing.JLabel();
         jLabel88 = new javax.swing.JLabel();
         jLabel89 = new javax.swing.JLabel();
-        maxNivelesN1 = new javax.swing.JLabel();
+        maxNivelesS = new javax.swing.JLabel();
         jLabel90 = new javax.swing.JLabel();
-        maxSpritesN1 = new javax.swing.JLabel();
+        maxSpritesS = new javax.swing.JLabel();
         jLabel91 = new javax.swing.JLabel();
-        maxSistemasN1 = new javax.swing.JLabel();
+        maxSistemasS = new javax.swing.JLabel();
         jLabel92 = new javax.swing.JLabel();
-        maxDlcN1 = new javax.swing.JLabel();
+        maxDlcS = new javax.swing.JLabel();
         jLabel93 = new javax.swing.JLabel();
         jLabel94 = new javax.swing.JLabel();
         jLabel95 = new javax.swing.JLabel();
-        gananciasBrutasN1 = new javax.swing.JLabel();
-        cantGuionesN7 = new javax.swing.JLabel();
-        cantGuionesN8 = new javax.swing.JLabel();
-        cantGuionesN9 = new javax.swing.JLabel();
-        cantGuionesN10 = new javax.swing.JLabel();
-        cantGuionesN11 = new javax.swing.JLabel();
-        costosOpeN1 = new javax.swing.JLabel();
+        gananciasBrutasS = new javax.swing.JLabel();
+        juegosTotalesSq = new javax.swing.JLabel();
+        gananciaTotalSq = new javax.swing.JLabel();
+        historicoDlcSq = new javax.swing.JLabel();
+        historicoJuegosSq = new javax.swing.JLabel();
+        cantGuionesS = new javax.swing.JLabel();
+        costosOpeS = new javax.swing.JLabel();
         label1 = new javax.swing.JLabel();
         label3 = new javax.swing.JLabel();
         jLabel97 = new javax.swing.JLabel();
         jLabel98 = new javax.swing.JLabel();
-        readyToShip3 = new javax.swing.JLabel();
+        readyToShipSq = new javax.swing.JLabel();
         jLabel99 = new javax.swing.JLabel();
         nintendoPanel = new javax.swing.JPanel();
         jSeparator1 = new javax.swing.JSeparator();
@@ -236,7 +242,7 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         maxGuionesN = new javax.swing.JLabel();
-        readyToShip = new javax.swing.JLabel();
+        diasTotalesN = new javax.swing.JLabel();
         readyToShipDLC = new javax.swing.JLabel();
         cantSpritesN = new javax.swing.JLabel();
         cantSistemasN = new javax.swing.JLabel();
@@ -244,7 +250,7 @@ public class Dashboard extends javax.swing.JFrame {
         jProgressBar1 = new javax.swing.JProgressBar();
         jLabel26 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
-        cantGuionesN = new javax.swing.JLabel();
+        fechaEntregaN = new javax.swing.JLabel();
         cantNivelesN = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
         jLabel32 = new javax.swing.JLabel();
@@ -271,10 +277,10 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel68 = new javax.swing.JLabel();
         jLabel69 = new javax.swing.JLabel();
         gananciasBrutasN = new javax.swing.JLabel();
-        cantGuionesN2 = new javax.swing.JLabel();
-        cantGuionesN3 = new javax.swing.JLabel();
-        cantGuionesN4 = new javax.swing.JLabel();
-        cantGuionesN5 = new javax.swing.JLabel();
+        juegosTotalesN = new javax.swing.JLabel();
+        gananciaTotalN = new javax.swing.JLabel();
+        historicoDlcN = new javax.swing.JLabel();
+        historicoJuegosN = new javax.swing.JLabel();
         cantGuionesN6 = new javax.swing.JLabel();
         costosOpeN = new javax.swing.JLabel();
         label = new javax.swing.JLabel();
@@ -566,10 +572,10 @@ public class Dashboard extends javax.swing.JFrame {
             jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
             jPanel2.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 77, 1010, -1));
 
-            cantDlcN1.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
-            cantDlcN1.setForeground(new java.awt.Color(0, 0, 0));
-            cantDlcN1.setText("0");
-            jPanel2.add(cantDlcN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 440, 40, 30));
+            cantDlcS.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            cantDlcS.setForeground(new java.awt.Color(0, 0, 0));
+            cantDlcS.setText("0");
+            jPanel2.add(cantDlcS, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 440, 40, 30));
 
             jLabel11.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
             jLabel11.setForeground(new java.awt.Color(0, 0, 0));
@@ -591,53 +597,53 @@ public class Dashboard extends javax.swing.JFrame {
             jLabel36.setText("Integrador");
             jPanel2.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 460, 200, 30));
 
-            spinnerIntegradorN3.addChangeListener(new javax.swing.event.ChangeListener() {
+            spinnerIntegradorS.addChangeListener(new javax.swing.event.ChangeListener() {
                 public void stateChanged(javax.swing.event.ChangeEvent evt) {
-                    spinnerIntegradorN3StateChanged(evt);
+                    spinnerIntegradorSStateChanged(evt);
                 }
             });
-            jPanel2.add(spinnerIntegradorN3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 460, 60, -1));
+            jPanel2.add(spinnerIntegradorS, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 460, 60, -1));
 
-            spinnerNarrativoN3.setValue(1);
-            spinnerNarrativoN3.addChangeListener(new javax.swing.event.ChangeListener() {
+            spinnerNarrativoS.setValue(1);
+            spinnerNarrativoS.addChangeListener(new javax.swing.event.ChangeListener() {
                 public void stateChanged(javax.swing.event.ChangeEvent evt) {
-                    spinnerNarrativoN3StateChanged(evt);
+                    spinnerNarrativoSStateChanged(evt);
                 }
             });
-            jPanel2.add(spinnerNarrativoN3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 310, 60, -1));
+            jPanel2.add(spinnerNarrativoS, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 310, 60, -1));
 
-            spinnerNivelesN3.addChangeListener(new javax.swing.event.ChangeListener() {
+            spinnerNivelesS.addChangeListener(new javax.swing.event.ChangeListener() {
                 public void stateChanged(javax.swing.event.ChangeEvent evt) {
-                    spinnerNivelesN3StateChanged(evt);
+                    spinnerNivelesSStateChanged(evt);
                 }
             });
-            jPanel2.add(spinnerNivelesN3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 340, 60, -1));
+            jPanel2.add(spinnerNivelesS, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 340, 60, -1));
 
-            spinnerSpritesN3.addChangeListener(new javax.swing.event.ChangeListener() {
+            spinnerSpritesS.addChangeListener(new javax.swing.event.ChangeListener() {
                 public void stateChanged(javax.swing.event.ChangeEvent evt) {
-                    spinnerSpritesN3StateChanged(evt);
+                    spinnerSpritesSStateChanged(evt);
                 }
             });
-            jPanel2.add(spinnerSpritesN3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 370, 60, -1));
+            jPanel2.add(spinnerSpritesS, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 370, 60, -1));
 
-            spinnerLogicaN3.addChangeListener(new javax.swing.event.ChangeListener() {
+            spinnerLogicaS.addChangeListener(new javax.swing.event.ChangeListener() {
                 public void stateChanged(javax.swing.event.ChangeEvent evt) {
-                    spinnerLogicaN3StateChanged(evt);
+                    spinnerLogicaSStateChanged(evt);
                 }
             });
-            jPanel2.add(spinnerLogicaN3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 400, 60, -1));
+            jPanel2.add(spinnerLogicaS, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 400, 60, -1));
 
             jLabel37.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
             jLabel37.setForeground(new java.awt.Color(0, 0, 0));
             jLabel37.setText("Desarroladores de DLC");
             jPanel2.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 430, 200, 30));
 
-            spinnerDlcN3.addChangeListener(new javax.swing.event.ChangeListener() {
+            spinnerDlcS.addChangeListener(new javax.swing.event.ChangeListener() {
                 public void stateChanged(javax.swing.event.ChangeEvent evt) {
-                    spinnerDlcN3StateChanged(evt);
+                    spinnerDlcSStateChanged(evt);
                 }
             });
-            jPanel2.add(spinnerDlcN3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 430, 60, -1));
+            jPanel2.add(spinnerDlcS, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 430, 60, -1));
 
             jLabel38.setBackground(new java.awt.Color(255, 255, 255));
             jLabel38.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
@@ -689,30 +695,30 @@ public class Dashboard extends javax.swing.JFrame {
             jLabel77.setText("sistemas ");
             jPanel2.add(jLabel77, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 410, 200, 30));
 
-            maxGuionesN1.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
-            maxGuionesN1.setForeground(new java.awt.Color(0, 0, 0));
-            maxGuionesN1.setText("25");
-            jPanel2.add(maxGuionesN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 320, 30, 30));
+            maxGuionesS.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            maxGuionesS.setForeground(new java.awt.Color(0, 0, 0));
+            maxGuionesS.setText("25");
+            jPanel2.add(maxGuionesS, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 320, 30, 30));
 
-            readyToShip2.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
-            readyToShip2.setForeground(new java.awt.Color(0, 0, 0));
-            readyToShip2.setText("0");
-            jPanel2.add(readyToShip2, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 130, 40, 30));
+            diasTotalesSq.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            diasTotalesSq.setForeground(new java.awt.Color(0, 0, 0));
+            diasTotalesSq.setText("0");
+            jPanel2.add(diasTotalesSq, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 130, 40, 30));
 
-            readyToShipDLC1.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
-            readyToShipDLC1.setForeground(new java.awt.Color(0, 0, 0));
-            readyToShipDLC1.setText("0");
-            jPanel2.add(readyToShipDLC1, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 260, 40, 30));
+            readyToShipDLCSq.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            readyToShipDLCSq.setForeground(new java.awt.Color(0, 0, 0));
+            readyToShipDLCSq.setText("0");
+            jPanel2.add(readyToShipDLCSq, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 260, 40, 30));
 
-            cantSpritesN1.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
-            cantSpritesN1.setForeground(new java.awt.Color(0, 0, 0));
-            cantSpritesN1.setText("0");
-            jPanel2.add(cantSpritesN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 380, 40, 30));
+            cantSpritesS.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            cantSpritesS.setForeground(new java.awt.Color(0, 0, 0));
+            cantSpritesS.setText("0");
+            jPanel2.add(cantSpritesS, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 380, 40, 30));
 
-            cantSistemasN1.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
-            cantSistemasN1.setForeground(new java.awt.Color(0, 0, 0));
-            cantSistemasN1.setText("0");
-            jPanel2.add(cantSistemasN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 410, 40, 30));
+            cantSistemasS.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            cantSistemasS.setForeground(new java.awt.Color(0, 0, 0));
+            cantSistemasS.setText("0");
+            jPanel2.add(cantSistemasS, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 410, 40, 30));
 
             jLabel78.setBackground(new java.awt.Color(255, 255, 255));
             jLabel78.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
@@ -723,7 +729,7 @@ public class Dashboard extends javax.swing.JFrame {
             jLabel78.setFocusable(false);
             jLabel78.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
             jPanel2.add(jLabel78, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 100, 190, 30));
-            jPanel2.add(jProgressBar2, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 370, 130, 20));
+            jPanel2.add(progresBarS, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 370, 130, 20));
 
             jLabel79.setBackground(new java.awt.Color(255, 255, 255));
             jLabel79.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
@@ -740,15 +746,15 @@ public class Dashboard extends javax.swing.JFrame {
             jLabel80.setText("guiones ");
             jPanel2.add(jLabel80, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 320, 200, 30));
 
-            cantGuionesN1.setFont(new java.awt.Font("BankGothic Md BT", 0, 18)); // NOI18N
-            cantGuionesN1.setForeground(new java.awt.Color(0, 0, 0));
-            cantGuionesN1.setText("0");
-            jPanel2.add(cantGuionesN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 40, 40, 30));
+            fechaEntregaSq.setFont(new java.awt.Font("BankGothic Md BT", 0, 18)); // NOI18N
+            fechaEntregaSq.setForeground(new java.awt.Color(0, 0, 0));
+            fechaEntregaSq.setText("0");
+            jPanel2.add(fechaEntregaSq, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 40, 40, 30));
 
-            cantNivelesN1.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
-            cantNivelesN1.setForeground(new java.awt.Color(0, 0, 0));
-            cantNivelesN1.setText("0");
-            jPanel2.add(cantNivelesN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 350, 40, 30));
+            cantNivelesS.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            cantNivelesS.setForeground(new java.awt.Color(0, 0, 0));
+            cantNivelesS.setText("0");
+            jPanel2.add(cantNivelesS, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 350, 40, 30));
 
             jLabel81.setBackground(new java.awt.Color(255, 255, 255));
             jLabel81.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
@@ -775,25 +781,25 @@ public class Dashboard extends javax.swing.JFrame {
             jLabel83.setText("Ganancias en bruto");
             jPanel2.add(jLabel83, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 130, 160, 30));
 
-            estadoDirectorN1.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
-            estadoDirectorN1.setForeground(new java.awt.Color(0, 0, 0));
-            estadoDirectorN1.setText("Estado");
-            jPanel2.add(estadoDirectorN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 70, 30));
+            estadoDirectorS.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            estadoDirectorS.setForeground(new java.awt.Color(0, 0, 0));
+            estadoDirectorS.setText("Estado");
+            jPanel2.add(estadoDirectorS, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 70, 30));
 
-            estadoPmN1.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
-            estadoPmN1.setForeground(new java.awt.Color(0, 0, 0));
-            estadoPmN1.setText("Estado");
-            jPanel2.add(estadoPmN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 130, 70, 30));
+            estadoPmS.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            estadoPmS.setForeground(new java.awt.Color(0, 0, 0));
+            estadoPmS.setText("Estado");
+            jPanel2.add(estadoPmS, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 130, 70, 30));
 
-            descuentoPmN1.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
-            descuentoPmN1.setForeground(new java.awt.Color(0, 0, 0));
-            descuentoPmN1.setText("0");
-            jPanel2.add(descuentoPmN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 160, 20, 30));
+            descuentoPmS.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            descuentoPmS.setForeground(new java.awt.Color(0, 0, 0));
+            descuentoPmS.setText("0");
+            jPanel2.add(descuentoPmS, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 160, 20, 30));
 
-            faltasPmN1.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
-            faltasPmN1.setForeground(new java.awt.Color(0, 0, 0));
-            faltasPmN1.setText("0");
-            jPanel2.add(faltasPmN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 160, 70, 30));
+            faltasPmS.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            faltasPmS.setForeground(new java.awt.Color(0, 0, 0));
+            faltasPmS.setText("0");
+            jPanel2.add(faltasPmS, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 160, 70, 30));
 
             jLabel84.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
             jLabel84.setForeground(new java.awt.Color(0, 0, 0));
@@ -813,7 +819,7 @@ public class Dashboard extends javax.swing.JFrame {
             jLabel86.setAlignmentY(0.0F);
             jLabel86.setFocusable(false);
             jLabel86.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-            jPanel2.add(jLabel86, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 40, 190, 30));
+            jPanel2.add(jLabel86, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 40, 110, 30));
 
             jLabel87.setBackground(new java.awt.Color(255, 255, 255));
             jLabel87.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
@@ -840,40 +846,40 @@ public class Dashboard extends javax.swing.JFrame {
             jLabel89.setText("de ");
             jPanel2.add(jLabel89, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 320, 30, 30));
 
-            maxNivelesN1.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
-            maxNivelesN1.setForeground(new java.awt.Color(0, 0, 0));
-            maxNivelesN1.setText("20");
-            jPanel2.add(maxNivelesN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 350, 30, 30));
+            maxNivelesS.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            maxNivelesS.setForeground(new java.awt.Color(0, 0, 0));
+            maxNivelesS.setText("20");
+            jPanel2.add(maxNivelesS, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 350, 30, 30));
 
             jLabel90.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
             jLabel90.setForeground(new java.awt.Color(0, 0, 0));
             jLabel90.setText("de ");
             jPanel2.add(jLabel90, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 350, 30, 30));
 
-            maxSpritesN1.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
-            maxSpritesN1.setForeground(new java.awt.Color(0, 0, 0));
-            maxSpritesN1.setText("55");
-            jPanel2.add(maxSpritesN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 380, 30, 30));
+            maxSpritesS.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            maxSpritesS.setForeground(new java.awt.Color(0, 0, 0));
+            maxSpritesS.setText("55");
+            jPanel2.add(maxSpritesS, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 380, 30, 30));
 
             jLabel91.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
             jLabel91.setForeground(new java.awt.Color(0, 0, 0));
             jLabel91.setText("de ");
             jPanel2.add(jLabel91, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 380, 30, 30));
 
-            maxSistemasN1.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
-            maxSistemasN1.setForeground(new java.awt.Color(0, 0, 0));
-            maxSistemasN1.setText("35");
-            jPanel2.add(maxSistemasN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 410, 30, 30));
+            maxSistemasS.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            maxSistemasS.setForeground(new java.awt.Color(0, 0, 0));
+            maxSistemasS.setText("35");
+            jPanel2.add(maxSistemasS, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 410, 30, 30));
 
             jLabel92.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
             jLabel92.setForeground(new java.awt.Color(0, 0, 0));
             jLabel92.setText("de ");
             jPanel2.add(jLabel92, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 410, 30, 30));
 
-            maxDlcN1.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
-            maxDlcN1.setForeground(new java.awt.Color(0, 0, 0));
-            maxDlcN1.setText("10");
-            jPanel2.add(maxDlcN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 440, 30, 30));
+            maxDlcS.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            maxDlcS.setForeground(new java.awt.Color(0, 0, 0));
+            maxDlcS.setText("10");
+            jPanel2.add(maxDlcS, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 440, 30, 30));
 
             jLabel93.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
             jLabel93.setForeground(new java.awt.Color(0, 0, 0));
@@ -900,40 +906,40 @@ public class Dashboard extends javax.swing.JFrame {
             jLabel95.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
             jPanel2.add(jLabel95, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 10, 210, 30));
 
-            gananciasBrutasN1.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
-            gananciasBrutasN1.setForeground(new java.awt.Color(0, 0, 0));
-            gananciasBrutasN1.setText("0");
-            jPanel2.add(gananciasBrutasN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 130, 40, 30));
+            gananciasBrutasS.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            gananciasBrutasS.setForeground(new java.awt.Color(0, 0, 0));
+            gananciasBrutasS.setText("0");
+            jPanel2.add(gananciasBrutasS, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 130, 40, 30));
 
-            cantGuionesN7.setFont(new java.awt.Font("BankGothic Md BT", 0, 18)); // NOI18N
-            cantGuionesN7.setForeground(new java.awt.Color(0, 0, 0));
-            cantGuionesN7.setText("0");
-            jPanel2.add(cantGuionesN7, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 10, 40, 30));
+            juegosTotalesSq.setFont(new java.awt.Font("BankGothic Md BT", 0, 18)); // NOI18N
+            juegosTotalesSq.setForeground(new java.awt.Color(0, 0, 0));
+            juegosTotalesSq.setText("0");
+            jPanel2.add(juegosTotalesSq, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 10, 40, 30));
 
-            cantGuionesN8.setFont(new java.awt.Font("BankGothic Md BT", 0, 18)); // NOI18N
-            cantGuionesN8.setForeground(new java.awt.Color(0, 0, 0));
-            cantGuionesN8.setText("0");
-            jPanel2.add(cantGuionesN8, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 40, 40, 30));
+            gananciaTotalSq.setFont(new java.awt.Font("BankGothic Md BT", 0, 18)); // NOI18N
+            gananciaTotalSq.setForeground(new java.awt.Color(0, 0, 0));
+            gananciaTotalSq.setText("0");
+            jPanel2.add(gananciaTotalSq, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 40, 40, 30));
 
-            cantGuionesN9.setFont(new java.awt.Font("BankGothic Md BT", 0, 18)); // NOI18N
-            cantGuionesN9.setForeground(new java.awt.Color(0, 0, 0));
-            cantGuionesN9.setText("0");
-            jPanel2.add(cantGuionesN9, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 40, 40, 30));
+            historicoDlcSq.setFont(new java.awt.Font("BankGothic Md BT", 0, 18)); // NOI18N
+            historicoDlcSq.setForeground(new java.awt.Color(0, 0, 0));
+            historicoDlcSq.setText("0");
+            jPanel2.add(historicoDlcSq, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 40, 40, 30));
 
-            cantGuionesN10.setFont(new java.awt.Font("BankGothic Md BT", 0, 18)); // NOI18N
-            cantGuionesN10.setForeground(new java.awt.Color(0, 0, 0));
-            cantGuionesN10.setText("0");
-            jPanel2.add(cantGuionesN10, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 10, 40, 30));
+            historicoJuegosSq.setFont(new java.awt.Font("BankGothic Md BT", 0, 18)); // NOI18N
+            historicoJuegosSq.setForeground(new java.awt.Color(0, 0, 0));
+            historicoJuegosSq.setText("0");
+            jPanel2.add(historicoJuegosSq, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 10, 40, 30));
 
-            cantGuionesN11.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
-            cantGuionesN11.setForeground(new java.awt.Color(0, 0, 0));
-            cantGuionesN11.setText("0");
-            jPanel2.add(cantGuionesN11, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 320, 40, 30));
+            cantGuionesS.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            cantGuionesS.setForeground(new java.awt.Color(0, 0, 0));
+            cantGuionesS.setText("0");
+            jPanel2.add(cantGuionesS, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 320, 40, 30));
 
-            costosOpeN1.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
-            costosOpeN1.setForeground(new java.awt.Color(0, 0, 0));
-            costosOpeN1.setText("0");
-            jPanel2.add(costosOpeN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 90, 40, 30));
+            costosOpeS.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            costosOpeS.setForeground(new java.awt.Color(0, 0, 0));
+            costosOpeS.setText("0");
+            jPanel2.add(costosOpeS, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 90, 40, 30));
 
             label1.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
             label1.setForeground(new java.awt.Color(0, 0, 0));
@@ -965,10 +971,10 @@ public class Dashboard extends javax.swing.JFrame {
             jLabel98.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
             jPanel2.add(jLabel98, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 220, 170, 30));
 
-            readyToShip3.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
-            readyToShip3.setForeground(new java.awt.Color(0, 0, 0));
-            readyToShip3.setText("0");
-            jPanel2.add(readyToShip3, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 230, 40, 30));
+            readyToShipSq.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
+            readyToShipSq.setForeground(new java.awt.Color(0, 0, 0));
+            readyToShipSq.setText("0");
+            jPanel2.add(readyToShipSq, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 230, 40, 30));
 
             jLabel99.setBackground(new java.awt.Color(255, 255, 255));
             jLabel99.setFont(new java.awt.Font("BankGothic-Medium", 1, 24)); // NOI18N
@@ -1124,10 +1130,10 @@ public class Dashboard extends javax.swing.JFrame {
             maxGuionesN.setText("25");
             nintendoPanel.add(maxGuionesN, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 320, 30, 30));
 
-            readyToShip.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-            readyToShip.setForeground(new java.awt.Color(0, 0, 0));
-            readyToShip.setText("0");
-            nintendoPanel.add(readyToShip, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 130, 40, 30));
+            diasTotalesN.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            diasTotalesN.setForeground(new java.awt.Color(0, 0, 0));
+            diasTotalesN.setText("0");
+            nintendoPanel.add(diasTotalesN, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 130, 40, 30));
 
             readyToShipDLC.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
             readyToShipDLC.setForeground(new java.awt.Color(0, 0, 0));
@@ -1170,10 +1176,10 @@ public class Dashboard extends javax.swing.JFrame {
             jLabel27.setText("guiones ");
             nintendoPanel.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 320, 200, 30));
 
-            cantGuionesN.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-            cantGuionesN.setForeground(new java.awt.Color(0, 0, 0));
-            cantGuionesN.setText("0");
-            nintendoPanel.add(cantGuionesN, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 40, 40, 30));
+            fechaEntregaN.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            fechaEntregaN.setForeground(new java.awt.Color(0, 0, 0));
+            fechaEntregaN.setText("0");
+            nintendoPanel.add(fechaEntregaN, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 40, 40, 30));
 
             cantNivelesN.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
             cantNivelesN.setForeground(new java.awt.Color(0, 0, 0));
@@ -1243,7 +1249,7 @@ public class Dashboard extends javax.swing.JFrame {
             jLabel41.setAlignmentY(0.0F);
             jLabel41.setFocusable(false);
             jLabel41.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-            nintendoPanel.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 40, 190, 30));
+            nintendoPanel.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 40, 80, 30));
 
             jLabel42.setBackground(new java.awt.Color(255, 255, 255));
             jLabel42.setFont(new java.awt.Font("Pretendo", 0, 18)); // NOI18N
@@ -1318,7 +1324,7 @@ public class Dashboard extends javax.swing.JFrame {
             jLabel67.setAlignmentY(0.0F);
             jLabel67.setFocusable(false);
             jLabel67.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-            nintendoPanel.add(jLabel67, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 10, 160, 30));
+            nintendoPanel.add(jLabel67, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 10, 130, 30));
 
             jLabel68.setBackground(new java.awt.Color(255, 255, 255));
             jLabel68.setFont(new java.awt.Font("Pretendo", 0, 14)); // NOI18N
@@ -1340,25 +1346,25 @@ public class Dashboard extends javax.swing.JFrame {
             gananciasBrutasN.setText("0");
             nintendoPanel.add(gananciasBrutasN, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 130, 40, 30));
 
-            cantGuionesN2.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-            cantGuionesN2.setForeground(new java.awt.Color(0, 0, 0));
-            cantGuionesN2.setText("0");
-            nintendoPanel.add(cantGuionesN2, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 10, 40, 30));
+            juegosTotalesN.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            juegosTotalesN.setForeground(new java.awt.Color(0, 0, 0));
+            juegosTotalesN.setText("0");
+            nintendoPanel.add(juegosTotalesN, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 10, 40, 30));
 
-            cantGuionesN3.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-            cantGuionesN3.setForeground(new java.awt.Color(0, 0, 0));
-            cantGuionesN3.setText("0");
-            nintendoPanel.add(cantGuionesN3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 40, 40, 30));
+            gananciaTotalN.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            gananciaTotalN.setForeground(new java.awt.Color(0, 0, 0));
+            gananciaTotalN.setText("0");
+            nintendoPanel.add(gananciaTotalN, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 40, 40, 30));
 
-            cantGuionesN4.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-            cantGuionesN4.setForeground(new java.awt.Color(0, 0, 0));
-            cantGuionesN4.setText("0");
-            nintendoPanel.add(cantGuionesN4, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 40, 40, 30));
+            historicoDlcN.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            historicoDlcN.setForeground(new java.awt.Color(0, 0, 0));
+            historicoDlcN.setText("0");
+            nintendoPanel.add(historicoDlcN, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 40, 40, 30));
 
-            cantGuionesN5.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
-            cantGuionesN5.setForeground(new java.awt.Color(0, 0, 0));
-            cantGuionesN5.setText("0");
-            nintendoPanel.add(cantGuionesN5, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 10, 40, 30));
+            historicoJuegosN.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
+            historicoJuegosN.setForeground(new java.awt.Color(0, 0, 0));
+            historicoJuegosN.setText("0");
+            nintendoPanel.add(historicoJuegosN, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 10, 40, 30));
 
             cantGuionesN6.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
             cantGuionesN6.setForeground(new java.awt.Color(0, 0, 0));
@@ -1501,29 +1507,29 @@ public class Dashboard extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_spinnerDlcN2StateChanged
 
-    private void spinnerIntegradorN3StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerIntegradorN3StateChanged
+    private void spinnerIntegradorSStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerIntegradorSStateChanged
         // TODO add your handling code here:
-    }//GEN-LAST:event_spinnerIntegradorN3StateChanged
+    }//GEN-LAST:event_spinnerIntegradorSStateChanged
 
-    private void spinnerNarrativoN3StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerNarrativoN3StateChanged
+    private void spinnerNarrativoSStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerNarrativoSStateChanged
         // TODO add your handling code here:
-    }//GEN-LAST:event_spinnerNarrativoN3StateChanged
+    }//GEN-LAST:event_spinnerNarrativoSStateChanged
 
-    private void spinnerNivelesN3StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerNivelesN3StateChanged
+    private void spinnerNivelesSStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerNivelesSStateChanged
         // TODO add your handling code here:
-    }//GEN-LAST:event_spinnerNivelesN3StateChanged
+    }//GEN-LAST:event_spinnerNivelesSStateChanged
 
-    private void spinnerSpritesN3StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerSpritesN3StateChanged
+    private void spinnerSpritesSStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerSpritesSStateChanged
         // TODO add your handling code here:
-    }//GEN-LAST:event_spinnerSpritesN3StateChanged
+    }//GEN-LAST:event_spinnerSpritesSStateChanged
 
-    private void spinnerLogicaN3StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerLogicaN3StateChanged
+    private void spinnerLogicaSStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerLogicaSStateChanged
         // TODO add your handling code here:
-    }//GEN-LAST:event_spinnerLogicaN3StateChanged
+    }//GEN-LAST:event_spinnerLogicaSStateChanged
 
-    private void spinnerDlcN3StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerDlcN3StateChanged
+    private void spinnerDlcSStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerDlcSStateChanged
         // TODO add your handling code here:
-    }//GEN-LAST:event_spinnerDlcN3StateChanged
+    }//GEN-LAST:event_spinnerDlcSStateChanged
 
     /**
      * @param args the command line arguments
@@ -1563,37 +1569,37 @@ public class Dashboard extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel adminPanel;
     private javax.swing.JLabel cantDlcN;
-    private javax.swing.JLabel cantDlcN1;
-    private javax.swing.JLabel cantGuionesN;
-    private javax.swing.JLabel cantGuionesN1;
-    private javax.swing.JLabel cantGuionesN10;
-    private javax.swing.JLabel cantGuionesN11;
-    private javax.swing.JLabel cantGuionesN2;
-    private javax.swing.JLabel cantGuionesN3;
-    private javax.swing.JLabel cantGuionesN4;
-    private javax.swing.JLabel cantGuionesN5;
+    private javax.swing.JLabel cantDlcS;
     private javax.swing.JLabel cantGuionesN6;
-    private javax.swing.JLabel cantGuionesN7;
-    private javax.swing.JLabel cantGuionesN8;
-    private javax.swing.JLabel cantGuionesN9;
+    private javax.swing.JLabel cantGuionesS;
     private javax.swing.JLabel cantNivelesN;
-    private javax.swing.JLabel cantNivelesN1;
+    private javax.swing.JLabel cantNivelesS;
     private javax.swing.JLabel cantSistemasN;
-    private javax.swing.JLabel cantSistemasN1;
+    private javax.swing.JLabel cantSistemasS;
     private javax.swing.JLabel cantSpritesN;
-    private javax.swing.JLabel cantSpritesN1;
+    private javax.swing.JLabel cantSpritesS;
     private javax.swing.JLabel costosOpeN;
-    private javax.swing.JLabel costosOpeN1;
+    private javax.swing.JLabel costosOpeS;
     private javax.swing.JLabel descuentoPmN;
-    private javax.swing.JLabel descuentoPmN1;
+    private javax.swing.JLabel descuentoPmS;
+    private javax.swing.JLabel diasTotalesN;
+    private javax.swing.JLabel diasTotalesSq;
     private javax.swing.JLabel estadoDirectorN;
-    private javax.swing.JLabel estadoDirectorN1;
+    private javax.swing.JLabel estadoDirectorS;
     private javax.swing.JLabel estadoPmN;
-    private javax.swing.JLabel estadoPmN1;
+    private javax.swing.JLabel estadoPmS;
     private javax.swing.JLabel faltasPmN;
-    private javax.swing.JLabel faltasPmN1;
+    private javax.swing.JLabel faltasPmS;
+    private javax.swing.JLabel fechaEntregaN;
+    private javax.swing.JLabel fechaEntregaSq;
+    private javax.swing.JLabel gananciaTotalN;
+    private javax.swing.JLabel gananciaTotalSq;
     private javax.swing.JLabel gananciasBrutasN;
-    private javax.swing.JLabel gananciasBrutasN1;
+    private javax.swing.JLabel gananciasBrutasS;
+    private javax.swing.JLabel historicoDlcN;
+    private javax.swing.JLabel historicoDlcSq;
+    private javax.swing.JLabel historicoJuegosN;
+    private javax.swing.JLabel historicoJuegosSq;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -1695,7 +1701,6 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JProgressBar jProgressBar1;
-    private javax.swing.JProgressBar jProgressBar2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
@@ -1709,51 +1714,52 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JSpinner jSpinner9;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JLabel juegosTotalesN;
+    private javax.swing.JLabel juegosTotalesSq;
     private javax.swing.JLabel label;
     private javax.swing.JLabel label1;
     private javax.swing.JLabel label2;
     private javax.swing.JLabel label3;
     private javax.swing.JLabel maxDlcN;
-    private javax.swing.JLabel maxDlcN1;
+    private javax.swing.JLabel maxDlcS;
     private javax.swing.JLabel maxGuionesN;
-    private javax.swing.JLabel maxGuionesN1;
+    private javax.swing.JLabel maxGuionesS;
     private javax.swing.JLabel maxNivelesN;
-    private javax.swing.JLabel maxNivelesN1;
+    private javax.swing.JLabel maxNivelesS;
     private javax.swing.JLabel maxSistemasN;
-    private javax.swing.JLabel maxSistemasN1;
+    private javax.swing.JLabel maxSistemasS;
     private javax.swing.JLabel maxSpritesN;
-    private javax.swing.JLabel maxSpritesN1;
+    private javax.swing.JLabel maxSpritesS;
     private javax.swing.JPanel nintendoPanel;
-    private javax.swing.JLabel readyToShip;
+    private javax.swing.JProgressBar progresBarS;
     private javax.swing.JLabel readyToShip1;
-    private javax.swing.JLabel readyToShip2;
-    private javax.swing.JLabel readyToShip3;
     private javax.swing.JLabel readyToShipDLC;
-    private javax.swing.JLabel readyToShipDLC1;
+    private javax.swing.JLabel readyToShipDLCSq;
+    private javax.swing.JLabel readyToShipSq;
     private javax.swing.JSpinner spinnerDlcN;
     private javax.swing.JSpinner spinnerDlcN1;
     private javax.swing.JSpinner spinnerDlcN2;
-    private javax.swing.JSpinner spinnerDlcN3;
+    private javax.swing.JSpinner spinnerDlcS;
     private javax.swing.JSpinner spinnerIntegradorN;
     private javax.swing.JSpinner spinnerIntegradorN1;
     private javax.swing.JSpinner spinnerIntegradorN2;
-    private javax.swing.JSpinner spinnerIntegradorN3;
+    private javax.swing.JSpinner spinnerIntegradorS;
     private javax.swing.JSpinner spinnerLogicaN;
     private javax.swing.JSpinner spinnerLogicaN1;
     private javax.swing.JSpinner spinnerLogicaN2;
-    private javax.swing.JSpinner spinnerLogicaN3;
+    private javax.swing.JSpinner spinnerLogicaS;
     private javax.swing.JSpinner spinnerNarrativoN;
     private javax.swing.JSpinner spinnerNarrativoN1;
     private javax.swing.JSpinner spinnerNarrativoN2;
-    private javax.swing.JSpinner spinnerNarrativoN3;
+    private javax.swing.JSpinner spinnerNarrativoS;
     private javax.swing.JSpinner spinnerNivelesN;
     private javax.swing.JSpinner spinnerNivelesN1;
     private javax.swing.JSpinner spinnerNivelesN2;
-    private javax.swing.JSpinner spinnerNivelesN3;
+    private javax.swing.JSpinner spinnerNivelesS;
     private javax.swing.JSpinner spinnerSpritesN;
     private javax.swing.JSpinner spinnerSpritesN1;
     private javax.swing.JSpinner spinnerSpritesN2;
-    private javax.swing.JSpinner spinnerSpritesN3;
+    private javax.swing.JSpinner spinnerSpritesS;
     private javax.swing.JPanel squarePanel;
     private javax.swing.JButton txtSimu;
     private javax.swing.JButton txtSimu1;
