@@ -25,6 +25,10 @@ public class Drive {
         this.games = games;
     }
 
+    Drive(int i, int i0, int i1, int i2, int i3) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     public int getLevels() {
         return levels;
     }
