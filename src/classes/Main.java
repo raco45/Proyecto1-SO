@@ -18,19 +18,29 @@ public class Main {
     public static void main(String[] args) {
         
         Semaphore mutex = new Semaphore(1);
-       Drive drive = new Drive(0,0, 0, 0, 0);
+       Drive drive = new Drive(0,0, 0, 0, 0,0);
         
-        Developer dev1 = new Developer(0, 0.34f, 10000,drive,mutex);
-        Developer dev2 = new Developer(0, 1f, 10000,drive, mutex);
-        Developer dev3 = new Developer(0, 0.5f,10000 ,drive,mutex);
-        Developer dev4 = new Developer(0, 2f,10000 ,drive,mutex);
-        Developer dev5 = new Developer(0, 0.34f, 10000,drive,mutex);
+        Developer dev1 = new Developer(0, 2500,drive,mutex);
+        Developer dev2 = new Developer(1, 2500,drive, mutex);
+        Developer dev3 = new Developer(2, 2500 ,drive,mutex);
+        Developer dev4 = new Developer(3, 2500 ,drive,mutex);
+        Developer dev5 = new Developer(4, 2500,drive,mutex);
+        Developer dev6 = new Developer(0, 2500,drive,mutex);
+        Developer dev7 = new Developer(1, 2500,drive, mutex);
+        Developer dev8 = new Developer(2, 2500 ,drive,mutex);
+        Developer dev9 = new Developer(3, 2500 ,drive,mutex);
+        Developer dev10 = new Developer(4, 2500,drive,mutex);
         
         dev1.start();
           dev2.start();
             dev3.start();
               dev4.start();
                 dev5.start();
+        dev6.start();
+          dev7.start();
+            dev8.start();
+              dev9.start();
+                dev10.start();
         
         
     }

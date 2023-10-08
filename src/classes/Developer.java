@@ -21,9 +21,8 @@ public class Developer extends Thread {
     private Drive drive;
     private Semaphore mutex;
     
-    public Developer (int type, float pp, int dayDuration, Drive drive, Semaphore m){
+    public Developer (int type,int dayDuration, Drive drive, Semaphore m){
         this.type = type;
-        this.productionPerDay = pp;
         this.dayDuration = dayDuration;
         this.drive = drive;
         this.mutex = m;
@@ -31,10 +30,14 @@ public class Developer extends Thread {
     
     @Override
     public void run() {
+       int cont=0;
         while(true) {
             try {
                 work();
                 sleep(getDayDuration());
+                cont+=1;
+                System.out.println("Dias "+cont);
+                this.drive.printDrives(this.type);
             } catch (InterruptedException ex) {
                 Logger.getLogger(Developer.class.getName()).log(Level.SEVERE, null, ex);
             }
@@ -42,22 +45,52 @@ public class Developer extends Thread {
     }
     
     public void work(){
+        this.calcPpd();
         this.setAcc(this.getAcc() + this.getProductionPerDay());
-        if (this.getAcc() >= 1){
+        if ( this.getAcc() >= 1 ){
             try {
                  // sección critica
                  this.getMutex().acquire(1);
-                 this.getDrive().addProduct(1, getType());
+                 if(this.getAcc()>=5){
+                     this.getDrive().addProduct(5, getType());
+                 }else{
+                     
+                    this.getDrive().addProduct(1, getType());
+                 }
                  this.setAcc(0);
                  this.getMutex().release();
                 
             } catch (InterruptedException ex) {
                 Logger.getLogger(Developer.class.getName()).log(Level.SEVERE, null, ex);
             }
+        }
+        
            
             
+    }
+    
+    public void calcPpd(){
+        float aux;
+        if (this.type==0){
+            aux=(float) 1/4;
+            this.setProductionPerDay(aux);
         }
-        System.out.println(this.getDrive().getLevels());
+        else if (this.type==1){
+            aux=(float)1/4;
+            this.setProductionPerDay(aux);
+        }
+        else if (this.type==2){
+            aux=1;
+            this.setProductionPerDay(aux);
+        }
+        else if (this.type==3){
+            aux=5;
+            this.setProductionPerDay(aux);
+        }
+        else if (this.type==4){
+            aux=(float)1/2;
+            this.setProductionPerDay(aux);
+        }
     }
 
     /**
