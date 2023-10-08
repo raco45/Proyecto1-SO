@@ -32,7 +32,6 @@ public class Developer extends Thread {
     @Override
     public void run() {
         while(true) {
-           
             try {
                 work();
                 sleep(getDayDuration());

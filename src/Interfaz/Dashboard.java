@@ -5,6 +5,7 @@
  */
 package Interfaz;
 
+import classes.Simulation;
 import classes.Tools;
 import javax.swing.JOptionPane;
 import javax.swing.JSpinner;
@@ -20,6 +21,7 @@ public class Dashboard extends javax.swing.JFrame {
     int[] parametros = new int[14]; // 14 porque son 14 parametros los que se deben guardar
     int posicionParametro = 0;
     Tools tool = new Tools();
+    
     
     /**
      * Creates new form Dashboard

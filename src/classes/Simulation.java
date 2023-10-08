@@ -4,18 +4,52 @@
  */
 package classes;
 
+import java.util.concurrent.Semaphore;
+
 /**
  *
  * @author luisa
  */
 public class Simulation {
     
-    int lastDigitRicardo;
-    int lastDigitLuis;
+    private int lastDigit;
+    private int[] parameters;
+    Semaphore mutex;
     
-    public Simulation(int lastDigitRicardo, int lastDigitLuis) {
-        this.lastDigitRicardo = lastDigitRicardo;
-        this.lastDigitLuis = lastDigitLuis;
+    public Simulation(int lastDigit, int[] parameters, Semaphore m) {
+        this.lastDigit = lastDigit;
+        this.parameters = parameters;
+        this.mutex = m;
+    }
+    
+    
+
+    /**
+     * @return the lastDigit
+     */
+    public int getLastDigit() {
+        return lastDigit;
+    }
+
+    /**
+     * @param lastDigit the lastDigit to set
+     */
+    public void setLastDigit(int lastDigit) {
+        this.lastDigit = lastDigit;
+    }
+
+    /**
+     * @return the parameters
+     */
+    public int[] getParameters() {
+        return parameters;
+    }
+
+    /**
+     * @param parameters the parameters to set
+     */
+    public void setParameters(int[] parameters) {
+        this.parameters = parameters;
     }
     
 }

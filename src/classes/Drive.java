@@ -14,13 +14,15 @@ public class Drive {
     private int sprites;
     private int gameSystems;
     private int dlcs;
+    private int games;
 
-    public Drive(int levels, int scripts, int sprites, int gameSystems, int dlcs) {
-        this.levels = levels;
+    public Drive(int levels, int scripts, int sprites, int gameSystems, int dlcs, int games) {
         this.scripts = scripts;
+        this.levels = levels;
         this.sprites = sprites;
         this.gameSystems = gameSystems;
         this.dlcs = dlcs;
+        this.games = games;
     }
 
     public int getLevels() {
@@ -40,9 +42,23 @@ public class Drive {
     }
     
     public void addProduct(int productQty, int type){
-    if(type == 0){
-        setLevels(getLevels()+productQty);
-    }
+        switch (type) {
+            case 0:
+                setLevels(this.getScripts() + productQty);
+                break;
+            case 1:
+                setLevels(this.getLevels() + productQty);
+                break;
+            case 2:
+                setLevels(this.getSprites() + productQty);
+                break;
+            case 3:
+                setLevels(this.getGameSystems() + productQty);
+                break;
+            case 4:
+                setLevels(this.getDlcs() + productQty);
+                break;
+        }
     }
 
     /**
@@ -99,5 +115,19 @@ public class Drive {
      */
     public void setDlcs(int dlcs) {
         this.dlcs = dlcs;
+    }
+
+    /**
+     * @return the games
+     */
+    public int getGames() {
+        return games;
+    }
+
+    /**
+     * @param games the games to set
+     */
+    public void setGames(int games) {
+        this.games = games;
     }
 }
