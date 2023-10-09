@@ -55,7 +55,7 @@ public final class Developer extends Thread {
         while(true) {
             try {
                 System.out.println("Dias "+cont);
-                System.out.println("Juegos:" + this.drive.getGames());
+                System.out.println("Juegos:" + this.getDrive().getGames());
                 work();
                 sleep(getDayDuration());
                 cont+=1;
@@ -114,29 +114,33 @@ public final class Developer extends Thread {
     //Funcion para calcular la PPd
     public void calcPpd(){
         float aux;
-        if (this.type==0){
-            aux=(float) 1/4;
-            this.setProductionPerDay(aux);
-        }
-        else if (this.type==1){
-            aux=(float)1/4;
-            this.setProductionPerDay(aux);
-        }
-        else if (this.type==2){
-            aux=1;
-            this.setProductionPerDay(aux);
-        }
-        else if (this.type==3){
-            aux=5;
-            this.setProductionPerDay(aux);
-        }
-        else if (this.type==4){
-            aux=(float)1/2;
-            this.setProductionPerDay(aux);
-        }
-        else if (this.type==5){
-            aux=(float)1/2;
-            this.setProductionPerDay(aux);
+        switch (getType()) {
+            case 0:
+                aux=(float) 1/4;
+                this.setProductionPerDay(aux);
+                break;
+            case 1:
+                aux=(float)1/4;
+                this.setProductionPerDay(aux);
+                break;
+            case 2:
+                aux=1;
+                this.setProductionPerDay(aux);
+                break;
+            case 3:
+                aux=5;
+                this.setProductionPerDay(aux);
+                break;
+            case 4:
+                aux=(float)1/2;
+                this.setProductionPerDay(aux);
+                break;
+            case 5:
+                aux=(float)1/2;
+                this.setProductionPerDay(aux);
+                break;
+            default:
+                break;
         }
     }
 

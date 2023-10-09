@@ -57,26 +57,30 @@ public class Drive {
                 break;
             case 5:
                 setGames(this.getGames() + productQty);
-
+                break;
+            default:
                 break;
         }
     }
     public void printDrives(int type){
-        if (type==0){
-            System.out.println("scripts "+ this.getScripts());
-            
-        }
-        else if (type==1){
-            System.out.println("Levels "+ this.getLevels());
-        }
-        else if (type==2){
-            System.out.println("Sprites "+this.getSprites());
-        }
-        else if (type==3){
-            System.out.println("Game systems "+ this.getGameSystems());
-        }
-        else if (type==4){
-            System.out.println("dlc "+this.getDlcs());
+        switch (type) {
+            case 0:
+                System.out.println("scripts "+ this.getScripts());
+                break;
+            case 1:
+                System.out.println("Levels "+ this.getLevels());
+                break;
+            case 2:
+                System.out.println("Sprites "+this.getSprites());
+                break;
+            case 3:
+                System.out.println("Game systems "+ this.getGameSystems());
+                break;
+            case 4:
+                System.out.println("dlc "+this.getDlcs());
+                break;
+            default:
+                break;
         }
     }
     

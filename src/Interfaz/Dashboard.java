@@ -18,9 +18,11 @@ import javax.swing.SpinnerNumberModel;
  */
 public class Dashboard extends javax.swing.JFrame {
     
-    int[] parametros = new int[14]; // 14 porque son 14 parametros los que se deben guardar
-    int posicionParametro = 0;
+    int[] valoresIniciales = new int[14]; // 14 porque son 14 valoresIniciales los que se deben guardar
+    int posicionValorInicial = 0;
     Tools tool = new Tools();
+    int[] cantidadDevsNintendo = new int[6];
+    int[] cantidadDevsSquare = new int[6];
     
     
     /**
@@ -112,12 +114,12 @@ public class Dashboard extends javax.swing.JFrame {
         arrival.setModel(modeloSpinner);
     }    
         
-    public void guardarParametro(int parametro) {
-        if (posicionParametro == 14) {
-            posicionParametro = 0;
+    public void guardarValorInicial(int ValorInicial) {
+        if (posicionValorInicial == 14) {
+            posicionValorInicial = 0;
         }
-        parametros[posicionParametro] = parametro;
-        posicionParametro++;
+        valoresIniciales[posicionValorInicial] = ValorInicial;
+        posicionValorInicial++;
     }
 
 
@@ -1503,45 +1505,51 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void startSimulActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startSimulActionPerformed
 
-        guardarParametro((int) spinnerDuracion.getValue());
-        guardarParametro((int) spinnerDeadline.getValue());
+        guardarValorInicial((int) spinnerDuracion.getValue());
+        guardarValorInicial((int) spinnerDeadline.getValue());
         
-        guardarParametro((int) spinnerNarrativoN1.getValue());
-        guardarParametro((int) spinnerNivelesN1.getValue());
-        guardarParametro((int) spinnerSpritesN1.getValue());
-        guardarParametro((int) spinnerLogicaN1.getValue());
-        guardarParametro((int) spinnerDlcN1.getValue());
-        guardarParametro((int) spinnerIntegradorN1.getValue());
+        guardarValorInicial((int) spinnerNarrativoN1.getValue());
+        guardarValorInicial((int) spinnerNivelesN1.getValue());
+        guardarValorInicial((int) spinnerSpritesN1.getValue());
+        guardarValorInicial((int) spinnerLogicaN1.getValue());
+        guardarValorInicial((int) spinnerDlcN1.getValue());
+        guardarValorInicial((int) spinnerIntegradorN1.getValue());
         
-        guardarParametro((int) spinnerNarrativoN2.getValue());
-        guardarParametro((int) spinnerNivelesN2.getValue());
-        guardarParametro((int) spinnerSpritesN2.getValue());
-        guardarParametro((int) spinnerLogicaN2.getValue());
-        guardarParametro((int) spinnerDlcN2.getValue());
-        guardarParametro((int) spinnerIntegradorN2.getValue());
+        guardarValorInicial((int) spinnerNarrativoN2.getValue());
+        guardarValorInicial((int) spinnerNivelesN2.getValue());
+        guardarValorInicial((int) spinnerSpritesN2.getValue());
+        guardarValorInicial((int) spinnerLogicaN2.getValue());
+        guardarValorInicial((int) spinnerDlcN2.getValue());
+        guardarValorInicial((int) spinnerIntegradorN2.getValue());
         
-        tool.escribirTXT(parametros);
+        tool.escribirTXT(valoresIniciales);
+        
+        // Se llena arreglos para pasarlos a los objetos Simulation
+        for (int i = 0; i < 6; i++) {
+            cantidadDevsNintendo[i] = valoresIniciales[i + 2];
+            cantidadDevsSquare[i] = valoresIniciales[i + 8];
+        }
     }//GEN-LAST:event_startSimulActionPerformed
 
     private void txtSimuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSimuActionPerformed
-        parametros = tool.leerTXT();
+        valoresIniciales = tool.leerTXT();
         
-        spinnerDuracion.setValue((int) parametros[0]);
-        spinnerDeadline.setValue((int) parametros[1]);
+        spinnerDuracion.setValue((int) valoresIniciales[0]);
+        spinnerDeadline.setValue((int) valoresIniciales[1]);
         
-        spinnerNarrativoN1.setValue((int) parametros[2]);
-        spinnerNivelesN1.setValue((int) parametros[3]);
-        spinnerSpritesN1.setValue((int) parametros[4]);
-        spinnerLogicaN1.setValue((int) parametros[5]);
-        spinnerDlcN1.setValue((int) parametros[6]);
-        spinnerIntegradorN1.setValue((int) parametros[7]);
+        spinnerNarrativoN1.setValue((int) valoresIniciales[2]);
+        spinnerNivelesN1.setValue((int) valoresIniciales[3]);
+        spinnerSpritesN1.setValue((int) valoresIniciales[4]);
+        spinnerLogicaN1.setValue((int) valoresIniciales[5]);
+        spinnerDlcN1.setValue((int) valoresIniciales[6]);
+        spinnerIntegradorN1.setValue((int) valoresIniciales[7]);
         
-        spinnerNarrativoN2.setValue((int) parametros[8]);
-        spinnerNivelesN2.setValue((int) parametros[9]);
-        spinnerSpritesN2.setValue((int) parametros[10]);
-        spinnerLogicaN2.setValue((int) parametros[11]);
-        spinnerDlcN2.setValue((int) parametros[12]);
-        spinnerIntegradorN2.setValue((int) parametros[13]);
+        spinnerNarrativoN2.setValue((int) valoresIniciales[8]);
+        spinnerNivelesN2.setValue((int) valoresIniciales[9]);
+        spinnerSpritesN2.setValue((int) valoresIniciales[10]);
+        spinnerLogicaN2.setValue((int) valoresIniciales[11]);
+        spinnerDlcN2.setValue((int) valoresIniciales[12]);
+        spinnerIntegradorN2.setValue((int) valoresIniciales[13]);
         
         JOptionPane.showMessageDialog(null, "Lectura exitosa");
     }//GEN-LAST:event_txtSimuActionPerformed
