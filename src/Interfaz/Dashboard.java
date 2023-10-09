@@ -33,12 +33,27 @@ public class Dashboard extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);
         initComponents();
         this.verifySpinners();
+        //Spinners desarroladores ventana Nintendo
         this.spinnerNarrativoN.setModel(this.verifySpinners());
         this.spinnerLogicaN.setModel(this.verifySpinners());
         this.spinnerDlcN.setModel(this.verifySpinners());
         this.spinnerSpritesN.setModel(this.verifySpinners());
         this.spinnerNivelesN.setModel(this.verifySpinners());
         this.spinnerIntegradorN.setModel(this.verifySpinners());
+        //Spinners desarrolladores ventana admin 
+        this.spinnerNarrativoN1.setModel(this.verifySpinners());
+        this.spinnerLogicaN1.setModel(this.verifySpinners());
+        this.spinnerDlcN1.setModel(this.verifySpinners());
+        this.spinnerSpritesN1.setModel(this.verifySpinners());
+        this.spinnerNivelesN1.setModel(this.verifySpinners());
+        this.spinnerIntegradorN1.setModel(this.verifySpinners());
+        this.spinnerNarrativoN2.setModel(this.verifySpinners());
+        this.spinnerLogicaN2.setModel(this.verifySpinners());
+        this.spinnerDlcN2.setModel(this.verifySpinners());
+        this.spinnerSpritesN2.setModel(this.verifySpinners());
+        this.spinnerNivelesN2.setModel(this.verifySpinners());
+        this.spinnerIntegradorN2.setModel(this.verifySpinners());
+        //spinners desarrolladores ventana Square
         this.spinnerNarrativoS.setModel(this.verifySpinners());
         this.spinnerLogicaS.setModel(this.verifySpinners());
         this.spinnerDlcS.setModel(this.verifySpinners());
@@ -89,6 +104,13 @@ public class Dashboard extends javax.swing.JFrame {
         modeloSpinner.setValue((int) current.getValue());
         current.setModel(modeloSpinner);
     }    
+    public void setSameSpinners(JSpinner current, JSpinner arrival){
+        SpinnerNumberModel modeloSpinner = new SpinnerNumberModel();
+        
+        modeloSpinner.setMinimum(1);
+        modeloSpinner.setValue((int) current.getValue());
+        arrival.setModel(modeloSpinner);
+    }    
         
     public void guardarParametro(int parametro) {
         if (posicionParametro == 14) {
@@ -97,6 +119,7 @@ public class Dashboard extends javax.swing.JFrame {
         parametros[posicionParametro] = parametro;
         posicionParametro++;
     }
+
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -1439,31 +1462,43 @@ public class Dashboard extends javax.swing.JFrame {
     private void spinnerNarrativoNStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerNarrativoNStateChanged
         // TODO add your handling code here:
         this.checkCantEmpleados(spinnerNarrativoN, this.spinnerNivelesN,this.spinnerSpritesN, spinnerLogicaN, spinnerDlcN, this.spinnerIntegradorN, 17);
+        this.setSameSpinners(this.spinnerNarrativoN, this.spinnerNarrativoN1);
+        this.checkCantEmpleados(spinnerNarrativoN1, this.spinnerNivelesN1,this.spinnerSpritesN1, spinnerLogicaN1, spinnerDlcN1, this.spinnerIntegradorN1, 17);
     }//GEN-LAST:event_spinnerNarrativoNStateChanged
 
     private void spinnerNivelesNStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerNivelesNStateChanged
         // TODO add your handling code here:
         this.checkCantEmpleados(spinnerNarrativoN, this.spinnerNivelesN,this.spinnerSpritesN, spinnerLogicaN, spinnerDlcN, this.spinnerIntegradorN, 17);
+        this.setSameSpinners(this.spinnerNivelesN, this.spinnerNivelesN1);
+        this.checkCantEmpleados(spinnerNarrativoN1, this.spinnerNivelesN1,this.spinnerSpritesN1, spinnerLogicaN1, spinnerDlcN1, this.spinnerIntegradorN1, 17);
     }//GEN-LAST:event_spinnerNivelesNStateChanged
 
     private void spinnerSpritesNStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerSpritesNStateChanged
         // TODO add your handling code here:
         this.checkCantEmpleados(spinnerNarrativoN, this.spinnerNivelesN,this.spinnerSpritesN, spinnerLogicaN, spinnerDlcN, this.spinnerIntegradorN, 17);
+        this.setSameSpinners(this.spinnerSpritesN, this.spinnerSpritesN1);
+        this.checkCantEmpleados(spinnerNarrativoN1, this.spinnerNivelesN1,this.spinnerSpritesN1, spinnerLogicaN1, spinnerDlcN1, this.spinnerIntegradorN1, 17);
     }//GEN-LAST:event_spinnerSpritesNStateChanged
 
     private void spinnerLogicaNStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerLogicaNStateChanged
         // TODO add your handling code here:
         this.checkCantEmpleados(spinnerNarrativoN, this.spinnerNivelesN,this.spinnerSpritesN, spinnerLogicaN, spinnerDlcN, this.spinnerIntegradorN, 17);
+        this.setSameSpinners(this.spinnerLogicaN, this.spinnerLogicaN1);
+        this.checkCantEmpleados(spinnerNarrativoN1, this.spinnerNivelesN1,this.spinnerSpritesN1, spinnerLogicaN1, spinnerDlcN1, this.spinnerIntegradorN1, 17);
     }//GEN-LAST:event_spinnerLogicaNStateChanged
 
     private void spinnerDlcNStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerDlcNStateChanged
         // TODO add your handling code here:
         this.checkCantEmpleados(spinnerNarrativoN, this.spinnerNivelesN,this.spinnerSpritesN, spinnerLogicaN, spinnerDlcN, this.spinnerIntegradorN, 17);
+        this.setSameSpinners(this.spinnerDlcN, this.spinnerDlcN1);
+        this.checkCantEmpleados(spinnerNarrativoN1, this.spinnerNivelesN1,this.spinnerSpritesN1, spinnerLogicaN1, spinnerDlcN1, this.spinnerIntegradorN1, 17);
     }//GEN-LAST:event_spinnerDlcNStateChanged
 
     private void spinnerIntegradorNStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerIntegradorNStateChanged
         // TODO add your handling code here:
         this.checkCantEmpleados(spinnerNarrativoN, this.spinnerNivelesN,this.spinnerSpritesN, spinnerLogicaN, spinnerDlcN, this.spinnerIntegradorN, 17);
+        this.setSameSpinners(this.spinnerIntegradorN, this.spinnerIntegradorN1);
+        this.checkCantEmpleados(spinnerNarrativoN1, this.spinnerNivelesN1,this.spinnerSpritesN1, spinnerLogicaN1, spinnerDlcN1, this.spinnerIntegradorN1, 17);
     }//GEN-LAST:event_spinnerIntegradorNStateChanged
 
     private void startSimulActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startSimulActionPerformed
@@ -1513,74 +1548,132 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void spinnerIntegradorN1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerIntegradorN1StateChanged
         // TODO add your handling code here:
+        this.checkCantEmpleados(spinnerNarrativoN1, this.spinnerNivelesN1,this.spinnerSpritesN1, spinnerLogicaN1, spinnerDlcN1, this.spinnerIntegradorN1, 17);
+        this.setSameSpinners(this.spinnerIntegradorN1, this.spinnerIntegradorN);
+        this.checkCantEmpleados(spinnerNarrativoN, this.spinnerNivelesN,this.spinnerSpritesN, spinnerLogicaN, spinnerDlcN, this.spinnerIntegradorN, 17);
     }//GEN-LAST:event_spinnerIntegradorN1StateChanged
 
     private void spinnerNarrativoN1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerNarrativoN1StateChanged
         // TODO add your handling code here:
+        this.checkCantEmpleados(spinnerNarrativoN1, this.spinnerNivelesN1,this.spinnerSpritesN1, spinnerLogicaN1, spinnerDlcN1, this.spinnerIntegradorN1, 17);
+        this.setSameSpinners(this.spinnerNarrativoN1, this.spinnerNarrativoN);
+        this.checkCantEmpleados(spinnerNarrativoN, this.spinnerNivelesN,this.spinnerSpritesN, spinnerLogicaN, spinnerDlcN, this.spinnerIntegradorN, 17);
     }//GEN-LAST:event_spinnerNarrativoN1StateChanged
 
     private void spinnerNivelesN1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerNivelesN1StateChanged
         // TODO add your handling code here:
+        this.checkCantEmpleados(spinnerNarrativoN1, this.spinnerNivelesN1,this.spinnerSpritesN1, spinnerLogicaN1, spinnerDlcN1, this.spinnerIntegradorN1, 17);
+        this.setSameSpinners(this.spinnerNivelesN1, this.spinnerNivelesN);
+        this.checkCantEmpleados(spinnerNarrativoN, this.spinnerNivelesN,this.spinnerSpritesN, spinnerLogicaN, spinnerDlcN, this.spinnerIntegradorN, 17);
     }//GEN-LAST:event_spinnerNivelesN1StateChanged
 
     private void spinnerSpritesN1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerSpritesN1StateChanged
         // TODO add your handling code here:
+        this.checkCantEmpleados(spinnerNarrativoN1, this.spinnerNivelesN1,this.spinnerSpritesN1, spinnerLogicaN1, spinnerDlcN1, this.spinnerIntegradorN1, 17);
+        this.setSameSpinners(this.spinnerSpritesN1, this.spinnerSpritesN);
+        this.checkCantEmpleados(spinnerNarrativoN, this.spinnerNivelesN,this.spinnerSpritesN, spinnerLogicaN, spinnerDlcN, this.spinnerIntegradorN, 17);
     }//GEN-LAST:event_spinnerSpritesN1StateChanged
 
     private void spinnerLogicaN1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerLogicaN1StateChanged
         // TODO add your handling code here:
+        this.checkCantEmpleados(spinnerNarrativoN1, this.spinnerNivelesN1,this.spinnerSpritesN1, spinnerLogicaN1, spinnerDlcN1, this.spinnerIntegradorN1, 17);
+        this.setSameSpinners(this.spinnerLogicaN1, this.spinnerLogicaN);
+        this.checkCantEmpleados(spinnerNarrativoN, this.spinnerNivelesN,this.spinnerSpritesN, spinnerLogicaN, spinnerDlcN, this.spinnerIntegradorN, 17);
     }//GEN-LAST:event_spinnerLogicaN1StateChanged
 
     private void spinnerDlcN1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerDlcN1StateChanged
         // TODO add your handling code here:
+        this.checkCantEmpleados(spinnerNarrativoN1, this.spinnerNivelesN1,this.spinnerSpritesN1, spinnerLogicaN1, spinnerDlcN1, this.spinnerIntegradorN1, 17);
+        this.setSameSpinners(this.spinnerDlcN1, this.spinnerDlcN);
+        this.checkCantEmpleados(spinnerNarrativoN, this.spinnerNivelesN,this.spinnerSpritesN, spinnerLogicaN, spinnerDlcN, this.spinnerIntegradorN, 17);
     }//GEN-LAST:event_spinnerDlcN1StateChanged
 
     private void spinnerIntegradorN2StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerIntegradorN2StateChanged
         // TODO add your handling code here:
+        this.checkCantEmpleados(spinnerNarrativoN2, this.spinnerNivelesN2,this.spinnerSpritesN2, spinnerLogicaN2, spinnerDlcN2, this.spinnerIntegradorN2, 17);
+        this.setSameSpinners(this.spinnerIntegradorN2, this.spinnerIntegradorS);
+        this.checkCantEmpleados(spinnerNarrativoS, this.spinnerNivelesS,this.spinnerSpritesS, spinnerLogicaS, spinnerDlcS, this.spinnerIntegradorS, 17);
     }//GEN-LAST:event_spinnerIntegradorN2StateChanged
 
     private void spinnerNarrativoN2StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerNarrativoN2StateChanged
         // TODO add your handling code here:
+        this.checkCantEmpleados(spinnerNarrativoN2, this.spinnerNivelesN2,this.spinnerSpritesN2, spinnerLogicaN2, spinnerDlcN2, this.spinnerIntegradorN2, 17);
+        this.setSameSpinners(this.spinnerNarrativoN2, this.spinnerNarrativoS);
+        this.checkCantEmpleados(spinnerNarrativoS, this.spinnerNivelesS,this.spinnerSpritesS, spinnerLogicaS, spinnerDlcS, this.spinnerIntegradorS, 17);
     }//GEN-LAST:event_spinnerNarrativoN2StateChanged
 
     private void spinnerNivelesN2StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerNivelesN2StateChanged
         // TODO add your handling code here:
+        this.checkCantEmpleados(spinnerNarrativoN2, this.spinnerNivelesN2,this.spinnerSpritesN2, spinnerLogicaN2, spinnerDlcN2, this.spinnerIntegradorN2, 17);
+        this.setSameSpinners(this.spinnerNivelesN2, this.spinnerNivelesS);
+        this.checkCantEmpleados(spinnerNarrativoS, this.spinnerNivelesS,this.spinnerSpritesS, spinnerLogicaS, spinnerDlcS, this.spinnerIntegradorS, 17);
     }//GEN-LAST:event_spinnerNivelesN2StateChanged
 
     private void spinnerSpritesN2StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerSpritesN2StateChanged
         // TODO add your handling code here:
+        this.checkCantEmpleados(spinnerNarrativoN2, this.spinnerNivelesN2,this.spinnerSpritesN2, spinnerLogicaN2, spinnerDlcN2, this.spinnerIntegradorN2, 17);
+        this.setSameSpinners(this.spinnerSpritesN2, this.spinnerSpritesS);
+        this.checkCantEmpleados(spinnerNarrativoS, this.spinnerNivelesS,this.spinnerSpritesS, spinnerLogicaS, spinnerDlcS, this.spinnerIntegradorS, 17);
     }//GEN-LAST:event_spinnerSpritesN2StateChanged
 
     private void spinnerLogicaN2StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerLogicaN2StateChanged
         // TODO add your handling code here:
+        this.checkCantEmpleados(spinnerNarrativoN2, this.spinnerNivelesN2,this.spinnerSpritesN2, spinnerLogicaN2, spinnerDlcN2, this.spinnerIntegradorN2, 17);
+        this.setSameSpinners(this.spinnerLogicaN2, this.spinnerLogicaS);
+        this.checkCantEmpleados(spinnerNarrativoS, this.spinnerNivelesS,this.spinnerSpritesS, spinnerLogicaS, spinnerDlcS, this.spinnerIntegradorS, 17);
     }//GEN-LAST:event_spinnerLogicaN2StateChanged
 
     private void spinnerDlcN2StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerDlcN2StateChanged
         // TODO add your handling code here:
+        this.checkCantEmpleados(spinnerNarrativoN2, this.spinnerNivelesN2,this.spinnerSpritesN2, spinnerLogicaN2, spinnerDlcN2, this.spinnerIntegradorN2, 17);
+        this.setSameSpinners(this.spinnerDlcN2, this.spinnerDlcS);
+        this.checkCantEmpleados(spinnerNarrativoS, this.spinnerNivelesS,this.spinnerSpritesS, spinnerLogicaS, spinnerDlcS, this.spinnerIntegradorS, 17);
     }//GEN-LAST:event_spinnerDlcN2StateChanged
 
     private void spinnerIntegradorSStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerIntegradorSStateChanged
         // TODO add your handling code here:
+        this.checkCantEmpleados(spinnerNarrativoS, this.spinnerNivelesS,this.spinnerSpritesS, spinnerLogicaS, spinnerDlcS, this.spinnerIntegradorS, 17);
+        this.setSameSpinners(this.spinnerIntegradorS, this.spinnerIntegradorN2);
+        this.checkCantEmpleados(spinnerNarrativoN2, this.spinnerNivelesN2,this.spinnerSpritesN2, spinnerLogicaN2, spinnerDlcN2, this.spinnerIntegradorN2, 17);
+
     }//GEN-LAST:event_spinnerIntegradorSStateChanged
 
     private void spinnerNarrativoSStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerNarrativoSStateChanged
         // TODO add your handling code here:
+        this.checkCantEmpleados(spinnerNarrativoS, this.spinnerNivelesS,this.spinnerSpritesS, spinnerLogicaS, spinnerDlcS, this.spinnerIntegradorS, 17);
+        this.setSameSpinners(this.spinnerNarrativoS, this.spinnerNarrativoN2);
+        this.checkCantEmpleados(spinnerNarrativoN2, this.spinnerNivelesN2,this.spinnerSpritesN2, spinnerLogicaN2, spinnerDlcN2, this.spinnerIntegradorN2, 17);
     }//GEN-LAST:event_spinnerNarrativoSStateChanged
 
     private void spinnerNivelesSStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerNivelesSStateChanged
         // TODO add your handling code here:
+        this.checkCantEmpleados(spinnerNarrativoS, this.spinnerNivelesS,this.spinnerSpritesS, spinnerLogicaS, spinnerDlcS, this.spinnerIntegradorS, 17);
+        this.setSameSpinners(this.spinnerNivelesS, this.spinnerNivelesN2);
+        this.checkCantEmpleados(spinnerNarrativoN2, this.spinnerNivelesN2,this.spinnerSpritesN2, spinnerLogicaN2, spinnerDlcN2, this.spinnerIntegradorN2, 17);
     }//GEN-LAST:event_spinnerNivelesSStateChanged
 
     private void spinnerSpritesSStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerSpritesSStateChanged
         // TODO add your handling code here:
+        this.checkCantEmpleados(spinnerNarrativoS, this.spinnerNivelesS,this.spinnerSpritesS, spinnerLogicaS, spinnerDlcS, this.spinnerIntegradorS, 17);
+        this.setSameSpinners(this.spinnerSpritesS, this.spinnerSpritesN2);
+        this.checkCantEmpleados(spinnerNarrativoN2, this.spinnerNivelesN2,this.spinnerSpritesN2, spinnerLogicaN2, spinnerDlcN2, this.spinnerIntegradorN2, 17);
+
     }//GEN-LAST:event_spinnerSpritesSStateChanged
 
     private void spinnerLogicaSStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerLogicaSStateChanged
         // TODO add your handling code here:
+        this.checkCantEmpleados(spinnerNarrativoS, this.spinnerNivelesS,this.spinnerSpritesS, spinnerLogicaS, spinnerDlcS, this.spinnerIntegradorS, 17);
+        this.setSameSpinners(this.spinnerLogicaS, this.spinnerLogicaN2);
+        this.checkCantEmpleados(spinnerNarrativoN2, this.spinnerNivelesN2,this.spinnerSpritesN2, spinnerLogicaN2, spinnerDlcN2, this.spinnerIntegradorN2, 17);
+
     }//GEN-LAST:event_spinnerLogicaSStateChanged
 
     private void spinnerDlcSStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerDlcSStateChanged
         // TODO add your handling code here:
+        this.checkCantEmpleados(spinnerNarrativoS, this.spinnerNivelesS,this.spinnerSpritesS, spinnerLogicaS, spinnerDlcS, this.spinnerIntegradorS, 17);
+        this.setSameSpinners(this.spinnerDlcS, this.spinnerDlcN2);
+        this.checkCantEmpleados(spinnerNarrativoN2, this.spinnerNivelesN2,this.spinnerSpritesN2, spinnerLogicaN2, spinnerDlcN2, this.spinnerIntegradorN2, 17);
+
     }//GEN-LAST:event_spinnerDlcSStateChanged
 
     /**

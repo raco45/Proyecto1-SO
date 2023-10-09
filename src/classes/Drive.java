@@ -25,6 +25,10 @@ public class Drive {
         this.games = games;
     }
 
+//    Drive(int i, int i0, int i1, int i2, int i3) {
+//        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+//    }
+
     public int getLevels() {
         return levels;
     }
@@ -33,13 +37,6 @@ public class Drive {
         this.levels = levels;
     }
 
-    public int getNarrative() {
-        return getScripts();
-    }
-
-    public void setNarrative(int narrative) {
-        this.setScripts(narrative);
-    }
     
     public void addProduct(int productQty, int type){
         switch (type) {
@@ -60,10 +57,29 @@ public class Drive {
                 break;
             case 5:
                 setGames(this.getGames() + productQty);
+
                 break;
         }
     }
-
+    public void printDrives(int type){
+        if (type==0){
+            System.out.println("scripts "+ this.getScripts());
+            
+        }
+        else if (type==1){
+            System.out.println("Levels "+ this.getLevels());
+        }
+        else if (type==2){
+            System.out.println("Sprites "+this.getSprites());
+        }
+        else if (type==3){
+            System.out.println("Game systems "+ this.getGameSystems());
+        }
+        else if (type==4){
+            System.out.println("dlc "+this.getDlcs());
+        }
+    }
+    
     /**
      * @return the scripts
      */
