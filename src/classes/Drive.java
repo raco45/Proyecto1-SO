@@ -55,6 +55,10 @@ public class Drive {
             case 4:
                 setDlcs(this.getDlcs() + productQty);
                 break;
+            case 5:
+                setGames(this.getGames() + productQty);
+
+                break;
         }
     }
     public void printDrives(int type){
