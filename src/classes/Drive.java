@@ -44,19 +44,22 @@ public class Drive {
     public void addProduct(int productQty, int type){
         switch (type) {
             case 0:
-                setLevels(this.getScripts() + productQty);
+                setScripts(this.getScripts() + productQty);
                 break;
             case 1:
                 setLevels(this.getLevels() + productQty);
                 break;
             case 2:
-                setLevels(this.getSprites() + productQty);
+                setSprites(this.getSprites() + productQty);
                 break;
             case 3:
-                setLevels(this.getGameSystems() + productQty);
+                setGameSystems(this.getGameSystems() + productQty);
                 break;
             case 4:
-                setLevels(this.getDlcs() + productQty);
+                setDlcs(this.getDlcs() + productQty);
+                break;
+            case 5:
+                setGames(this.getGames() + productQty);
                 break;
         }
     }

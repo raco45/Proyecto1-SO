@@ -14,12 +14,10 @@ public class Simulation {
     
     private int lastDigit;
     private int[] parameters;
-    Semaphore mutex;
     
-    public Simulation(int lastDigit, int[] parameters, Semaphore m) {
+    public Simulation(int lastDigit, int[] parameters) {
         this.lastDigit = lastDigit;
         this.parameters = parameters;
-        this.mutex = m;
     }
     
     
