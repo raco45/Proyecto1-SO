@@ -2,9 +2,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package classes;
+package Developer;
 
+import classes.Drive;
 import static java.lang.Thread.sleep;
+import java.util.Timer;
+import java.util.TimerTask;
 import java.util.concurrent.Semaphore;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -16,6 +19,8 @@ import java.util.logging.Logger;
 public final class Developer extends Thread {
     private String company;
     private int type;
+    private float sueldo;
+    private int sueldoPorHora;
     private float productionPerDay;
     private int dayDuration;
     private float acc = 0;
@@ -28,13 +33,14 @@ public final class Developer extends Thread {
     
     
     //La produccion por dia la calcula una funcion de trabajador. Asi que estos son los unicos parametros de inicializacion. 
-    public Developer (String company,int type,int dayDuration, Drive drive, Semaphore m){
+    public Developer (String company,int type,int dayDuration, Drive drive, Semaphore m, int sueldoPH){
 
         this.company = company;
         this.type = type;
         this.dayDuration = dayDuration;
         this.drive = drive;
         this.mutex = m;
+        this.sueldoPorHora=sueldoPH;
         
         if (getCompany().compareTo("Nintendo") == 0) {
             this.scriptsForGame = 2;
@@ -57,6 +63,7 @@ public final class Developer extends Thread {
                 System.out.println("Dias "+cont);
                 System.out.println("Juegos:" + this.drive.getGames());
                 work();
+                cobrar();
                 sleep(getDayDuration());
                 cont+=1;
             } catch (InterruptedException ex) {
@@ -140,6 +147,20 @@ public final class Developer extends Thread {
         }
     }
 
+    public void cobrar() throws InterruptedException{
+        Timer timer = new Timer(true);
+        TimerTask task = new Cobrar(getSueldo(), this.type, sueldoPorHora);
+        long hora= (long) dayDuration/24;
+        timer.scheduleAtFixedRate(task, hora, hora);
+    }
+    
+    
+    
+    
+    
+    
+    
+    
     /**
      * @return the type
      */
@@ -292,5 +313,19 @@ public final class Developer extends Thread {
      */
     public void setGameSystemsForGame(int gameSystemsForGame) {
         this.gameSystemsForGame = gameSystemsForGame;
+    }
+
+    /**
+     * @return the sueldo
+     */
+    public float getSueldo() {
+        return sueldo;
+    }
+
+    /**
+     * @param sueldo the sueldo to set
+     */
+    public void setSueldo(float sueldo) {
+        this.sueldo = sueldo;
     }
 }

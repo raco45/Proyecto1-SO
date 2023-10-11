@@ -326,6 +326,7 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel73 = new javax.swing.JLabel();
         jLabel35 = new javax.swing.JLabel();
         readyToShip1 = new javax.swing.JLabel();
+        jLabel96 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -1449,6 +1450,10 @@ public class Dashboard extends javax.swing.JFrame {
             readyToShip1.setText("0");
             nintendoPanel.add(readyToShip1, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 230, 40, 30));
 
+            jLabel96.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/Imagenes/fondobueno.png"))); // NOI18N
+            jLabel96.setText("jLabel96");
+            nintendoPanel.add(jLabel96, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 76, 1010, 650));
+
             jTabbedPane1.addTab("Nintendo", nintendoPanel);
 
             jPanel1.add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1010, 760));
@@ -1840,6 +1845,7 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel93;
     private javax.swing.JLabel jLabel94;
     private javax.swing.JLabel jLabel95;
+    private javax.swing.JLabel jLabel96;
     private javax.swing.JLabel jLabel97;
     private javax.swing.JLabel jLabel98;
     private javax.swing.JLabel jLabel99;
