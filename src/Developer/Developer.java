@@ -19,7 +19,7 @@ import java.util.logging.Logger;
 public final class Developer extends Thread {
     private String company;
     private int type;
-    private float sueldo;
+    private float sueldo=0;
     private int sueldoPorHora;
     private float productionPerDay;
     private int dayDuration;
@@ -30,7 +30,9 @@ public final class Developer extends Thread {
     private int levelsForGame;
     private int spritesForGame;
     private int gameSystemsForGame;
-    
+    private int dlcForGame;
+    int contParaDlc;
+    int contJuegosDlc=0;
     
     //La produccion por dia la calcula una funcion de trabajador. Asi que estos son los unicos parametros de inicializacion. 
     public Developer (String company,int type,int dayDuration, Drive drive, Semaphore m, int sueldoPH){
@@ -47,11 +49,14 @@ public final class Developer extends Thread {
             this.levelsForGame = 1;
             this.spritesForGame = 4;
             this.gameSystemsForGame = 4;
+            this.dlcForGame=2;
+            this.contParaDlc=5;
         } else {
             this.scriptsForGame = 1;
             this.levelsForGame = 1;
             this.spritesForGame = 2;
             this.gameSystemsForGame = 4;
+            this.dlcForGame=3;
         }
     }
     
@@ -60,10 +65,10 @@ public final class Developer extends Thread {
        int cont=0;
         while(true) {
             try {
-                System.out.println("Dias "+cont);
-                System.out.println("Juegos:" + this.getDrive().getGames());
+//                System.out.println("Dias "+cont);
+//                System.out.println("Juegos:" + this.getDrive().getGames());
                 work();
-                cobrar();
+//                cobrar();
                 sleep(getDayDuration());
                 cont+=1;
             } catch (InterruptedException ex) {
@@ -74,23 +79,47 @@ public final class Developer extends Thread {
     
     
     public void work(){
+        
         this.calcPpd();
         if (this.getType() == 5 && (getDrive().getScripts() >= this.scriptsForGame && getDrive().getLevels() >= this.levelsForGame && getDrive().getSprites() >= this.spritesForGame && getDrive().getGameSystems() >= this.gameSystemsForGame)) {
+            if(contJuegosDlc==this.contParaDlc && this.getDrive().getDlcs()>=this.dlcForGame){
                 this.setAcc(this.getAcc() + this.getProductionPerDay());
                 if (this.getAcc() >= 1){
                     try {
                          // sección critica
                          this.getMutex().acquire(1);
-                         this.getDrive().addProduct(1, getType());
+                         this.getDrive().addProduct(1, getType(),true);
+                         this.setAcc(0);
+                         this.getDrive().setScripts(getDrive().getScripts() - this.scriptsForGame);
+                         this.getDrive().setLevels(getDrive().getLevels() - this.levelsForGame);
+                         this.getDrive().setSprites(getDrive().getSprites() - this.spritesForGame);
+                         this.getDrive().setGameSystems(getDrive().getGameSystems() - this.gameSystemsForGame);
+                         this.getDrive().setDlcs(this.getDrive().getDlcs()-this.dlcForGame);
+                         this.getMutex().release();
+                         contJuegosDlc=0;
+                    } catch (InterruptedException ex) {
+                        Logger.getLogger(Developer.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+            }
+            }else{
+                
+                this.setAcc(this.getAcc() + this.getProductionPerDay());
+                if (this.getAcc() >= 1){
+                    try {
+                         // sección critica
+                         this.getMutex().acquire(1);
+                         this.getDrive().addProduct(1, getType(), false);
                          this.setAcc(0);
                          this.getDrive().setScripts(getDrive().getScripts() - this.scriptsForGame);
                          this.getDrive().setLevels(getDrive().getLevels() - this.levelsForGame);
                          this.getDrive().setSprites(getDrive().getSprites() - this.spritesForGame);
                          this.getDrive().setGameSystems(getDrive().getGameSystems() - this.gameSystemsForGame);
                          this.getMutex().release();
+                         contJuegosDlc+=1;
                     } catch (InterruptedException ex) {
                         Logger.getLogger(Developer.class.getName()).log(Level.SEVERE, null, ex);
                     }
+            }
             }
         }
         //Aqui se calcula la produccion diaria dependiendo del tipo de trabajador y su insercion al drive 
@@ -102,10 +131,21 @@ public final class Developer extends Thread {
                  // sección critica
                  this.getMutex().acquire(1);
                  if(this.getAcc()>=5){
-                     this.getDrive().addProduct(5, getType());
+                     if(!this.drive.returnDrive(this.getType())){
+                        this.getDrive().addProduct(5, getType(),false);
+                        if(this.getDrive().getGameSystems()>=35){
+                            this.getDrive().setGameSystems(35);
+                        }
+                     }else {
+                         System.out.println("drive lleno");
+                     }
+                         
                  }else{
-                     
-                    this.getDrive().addProduct(1, getType());
+                     if(!this.drive.returnDrive(this.getType())){
+                        this.getDrive().addProduct(1, getType(), false);
+                     }else{
+                         System.out.println("Drive lleno");
+                     }
                  }
                  this.setAcc(0);
                  this.getMutex().release();
@@ -114,7 +154,8 @@ public final class Developer extends Thread {
                 Logger.getLogger(Developer.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
-        
+                         
+       this.setSueldo(this.getSueldo() + 24*this.sueldoPorHora); 
            
             
     }
@@ -151,12 +192,12 @@ public final class Developer extends Thread {
         }
     }
 
-    public void cobrar() throws InterruptedException{
-        Timer timer = new Timer(true);
-        TimerTask task = new Cobrar(getSueldo(), this.type, sueldoPorHora);
-        long hora= (long) dayDuration/24;
-        timer.scheduleAtFixedRate(task, hora, hora);
-    }
+//    public void cobrar() throws InterruptedException{
+//        Timer timer = new Timer(true);
+//        TimerTask task = new Cobrar(this.sueldo, sueldoPorHora);
+//        long hora= (long) dayDuration/24;
+//        timer.scheduleAtFixedRate(task, hora, hora);
+//    }
     
     
     
