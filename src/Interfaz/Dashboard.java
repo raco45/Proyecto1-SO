@@ -19,11 +19,6 @@ import javax.swing.SpinnerNumberModel;
  */
 public class Dashboard extends javax.swing.JFrame {
     
-    int[] valoresIniciales = new int[14]; // 14 porque son 14 valoresIniciales los que se deben guardar
-    int posicionValorInicial = 0;
-    Tools tool = new Tools();
-    int[] cantidadDevsNintendo = new int[6];
-    int[] cantidadDevsSquare = new int[6];
     // Es 7 ya que ambos tenemos el mismo ultimo numero de carnet
     InitialValues initialValues = new InitialValues(7, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1);
     
@@ -115,16 +110,7 @@ public class Dashboard extends javax.swing.JFrame {
         modeloSpinner.setMinimum(1);
         modeloSpinner.setValue((int) current.getValue());
         arrival.setModel(modeloSpinner);
-    }    
-        
-    public void guardarValorInicial(int ValorInicial) {
-        if (posicionValorInicial == 14) {
-            posicionValorInicial = 0;
-        }
-        valoresIniciales[posicionValorInicial] = ValorInicial;
-        posicionValorInicial++;
-    }
-
+    } 
 
     /**
      * This method is called from within the constructor to initialize the form.

@@ -24,8 +24,10 @@ public class Cobrar extends TimerTask {
 }
    @Override
     public void run(){
-        if(type==0)
+        if(type==0) {
             sueldo+=this.sueldoPH;
             System.out.println(sueldo);
+        
+        }
     }
 }

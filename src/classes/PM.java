@@ -34,7 +34,7 @@ public class PM {
                 this.changeOfStatus();
                 // 8 horas restantes, se resta un dia antes de distancia del deadline
                 this.daysUntilDeadline -= 1;
-                sleep(this.dayDuration * (4/3)); // Es 4/3 ya que ese es el 
+                sleep(this.dayDuration * (4/3)); // Es 4/3 ya que esa es la equivalencia para llevar a 16 horas
             } catch (InterruptedException ex) {
                 Logger.getLogger(Developer.class.getName()).log(Level.SEVERE, null, ex);
             }
