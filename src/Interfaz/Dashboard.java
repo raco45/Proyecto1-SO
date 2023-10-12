@@ -1534,6 +1534,9 @@ public class Dashboard extends javax.swing.JFrame {
             cantidadDevsNintendo[i] = valoresIniciales[i + 2];
             cantidadDevsSquare[i] = valoresIniciales[i + 8];
         }
+        
+        
+        
     }//GEN-LAST:event_startSimulActionPerformed
 
     private void txtSimuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSimuActionPerformed

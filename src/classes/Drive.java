@@ -9,21 +9,31 @@ package classes;
  * @author luisa
  */
 public class Drive {
-    private int scripts;
-    private int levels;
-    private int sprites;
-    private int gameSystems;
-    private int dlcs;
-    private int games;
-    private int gamesWithDlc;
-
-    public Drive(int levels, int scripts, int sprites, int gameSystems, int dlcs, int games) {
-        this.scripts = scripts;
-        this.levels = levels;
-        this.sprites = sprites;
-        this.gameSystems = gameSystems;
-        this.dlcs = dlcs;
-        this.games = games;
+    private int scripts=0;
+    private int levels=0;
+    private int sprites=0;
+    private int gameSystems=0;
+    private int dlcs=0;
+    private int games=0;
+    private int gamesWithDlc=0;
+    private String empresa;
+    private int maxScripts;
+    private int maxLevels;
+    private int maxSprites;
+    private int maxGameSystems;
+    private int maxDlcs;
+    private int contParaDlc;
+    int cont=0;
+    public Drive(int levels, int scripts, int sprites, int gameSystems, int dlcs, int games, String empresa) {
+        this.maxScripts = scripts;
+        this.maxLevels = levels;
+        this.maxSprites = sprites;
+        this.maxGameSystems = gameSystems;
+        this.maxDlcs = dlcs;
+        this.games = 0;
+        this.empresa=empresa;
+        
+     
     }
 
 //    Drive(int i, int i0, int i1, int i2, int i3) {
@@ -39,7 +49,7 @@ public class Drive {
     }
 
     
-    public void addProduct(int productQty, int type){
+    public void addProduct(int productQty, int type, boolean esDlc){
         switch (type) {
             case 0:
                 setScripts(this.getScripts() + productQty);
@@ -58,31 +68,52 @@ public class Drive {
                 break;
             case 5:
                 // if games>=4...  comparo hacer en una funcion aparte
-                setGames(this.getGames() + productQty);
+                if(esDlc==true){
+                    this.setGamesWithDlc(this.getGamesWithDlc()+productQty);
+                    
+                }else{
+                    setGames(this.getGames() + productQty);
+                    
+                }
                 break;
             default:
                 break;
         }
     }
-    public void printDrives(int type){
+    public boolean returnDrive(int type){
         switch (type) {
             case 0:
-                System.out.println("scripts "+ this.getScripts());
-                break;
+                if (this.getScripts()>=25){
+                    return true;
+                }else {
+                    return false;
+                }
             case 1:
-                System.out.println("Levels "+ this.getLevels());
-                break;
+                if(this.getLevels()>=20){
+                    return true;
+                }else{
+                    return false;
+                }
             case 2:
-                System.out.println("Sprites "+this.getSprites());
-                break;
+                if(this.getSprites()>=20){
+                    return true;
+                }else{
+                    return false;
+                }
             case 3:
-                System.out.println("Game systems "+ this.getGameSystems());
-                break;
+                if(this.getGameSystems()>=35){
+                    return true;
+                }else{
+                    return false;
+                }
             case 4:
-                System.out.println("dlc "+this.getDlcs());
-                break;
+                if(this.getDlcs()>=10){
+                    return true;
+                }else{
+                    return false;
+                }
             default:
-                break;
+                return false;
         }
     }
     
@@ -154,5 +185,19 @@ public class Drive {
      */
     public void setGames(int games) {
         this.games = games;
+    }
+
+    /**
+     * @return the gamesWithDlc
+     */
+    public int getGamesWithDlc() {
+        return gamesWithDlc;
+    }
+
+    /**
+     * @param gamesWithDlc the gamesWithDlc to set
+     */
+    public void setGamesWithDlc(int gamesWithDlc) {
+        this.gamesWithDlc = gamesWithDlc;
     }
 }
