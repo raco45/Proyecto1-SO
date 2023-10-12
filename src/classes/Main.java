@@ -30,12 +30,13 @@ public class Main {
         Developer dev8 = new Developer("Nitendo",2, 2500 ,drive,mutex);
         Developer dev9 = new Developer("Nintendo",3, 2500 ,drive,mutex);
         Developer dev10 = new Developer("Nintendo",4, 2500,drive,mutex);
-        
+        /*
         dev1.start();
           dev2.start();
             dev3.start();
               dev4.start();
                 dev5.start();
+                
 //        dev6.start();
 //          dev7.start();
 //            dev8.start();
@@ -44,7 +45,10 @@ public class Main {
         
         Developer inte1 = new Developer("Nintendo", 5, 2500, drive, mutex);
         inte1.start();
+        */
         
+        PM pm = new PM(8, 10);
+        pm.work();
 
     }
 }
