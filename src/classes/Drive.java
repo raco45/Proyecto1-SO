@@ -15,6 +15,7 @@ public class Drive {
     private int gameSystems;
     private int dlcs;
     private int games;
+    private int gamesWithDlc;
 
     public Drive(int levels, int scripts, int sprites, int gameSystems, int dlcs, int games) {
         this.scripts = scripts;
@@ -56,6 +57,7 @@ public class Drive {
                 setDlcs(this.getDlcs() + productQty);
                 break;
             case 5:
+                // if games>=4...  comparo hacer en una funcion aparte
                 setGames(this.getGames() + productQty);
 
                 break;
