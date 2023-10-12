@@ -4,7 +4,10 @@
  */
 package classes;
 
+import Developer.Cobrar;
 import static java.lang.Thread.sleep;
+import java.util.Timer;
+import java.util.TimerTask;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import Developer.Developer;
@@ -13,50 +16,200 @@ import Developer.Developer;
  *
  * @author luisa
  */
-public class PM {
-    
-    int daysUntilDeadline;
-    boolean isWorking;
-    int dayDuration;
-    int deadline;
+public class PM extends Thread {
+
+  
+    private int diasSimulacion;
+    private String estado;
+    private int daysUntilDeadline;
+    private int deadline;
+    private boolean isWorking;
+    private int dayDuration;
+    private int sueldo=0;
+    private int sueldoPorHora=20;
+    private int dineroDescontado=0;
+    private int faltas;
     
     public PM(int deadline, int dayDuration) {
         this.deadline = deadline;
         this.dayDuration = dayDuration;
         this.isWorking = true;
         this.daysUntilDeadline = deadline; // Para diferenciar mejor los dias restantes al deadline como tal
+        this.estado="Supervisando estado de proyecto";
+        this.faltas=0;
     }
-    
-    public void work() {
+
+    PM() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    @Override
+    public void run() {
+       int cont=0;
         while(true) {
             try {
-                // Primeras 16 horas
+//                System.out.println("inicio");
                 this.changeOfStatus();
-                // 8 horas restantes, se resta un dia antes de distancia del deadline
-                this.daysUntilDeadline -= 1;
-                sleep(this.dayDuration * (4/3)); // Es 4/3 ya que esa es la equivalencia para llevar a 16 horas
+                work();
+//                cobrar();
+                sleep(this.dayDuration);
+                cont+=1;
+//                System.out.println("dia: "+ cont);
+//                System.out.println("Sueldo: "+this.getSueldo());
             } catch (InterruptedException ex) {
-                Logger.getLogger(Developer.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PM.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
+    }
+    public void work() {
+        this.setDiasSimulacion(this.getDiasSimulacion() + 1);
+        if(this.getDaysUntilDeadline()>0){
+            this.setDaysUntilDeadline(this.getDaysUntilDeadline() - 1);
+            
+        }else{
+//            System.out.println("Esperando por reinico de contador");
+        }
+        this.setSueldo(this.getSueldo() + 24*this.sueldoPorHora);
+//        System.out.println("Dias para la entrega : "+ this.getDaysUntilDeadline());
+//        System.out.println("dias transcurridos: "+this.getDiasSimulacion());
+//        while(true) {
+//            try {
+//                // Primeras 16 horas
+//                this.changeOfStatus();
+//                // 8 horas restantes, se resta un dia antes de distancia del deadline
+//                this.daysUntilDeadline -= 1;
+//                sleep(this.dayDuration * (4/3)); // Es 4/3 ya que ese es el 
+//            } catch (InterruptedException ex) {
+//                Logger.getLogger(PM.class.getName()).log(Level.SEVERE, null, ex);
+//            }
+//        }
     }
     
     public void changeOfStatus() {
         // Primero se haya el valor de la hora segun dayDuration
         int hourDuration = this.dayDuration/24;
         int statusDuration = hourDuration/2;
+        int cont=0;
         // Se hace un ciclo for para las 16 primeras horas
         for (int i = 0; i < 2 * 16; i++) { // 2 * 16 veces ya que en 16 horas hay 32 cambios de estado
             try {
+//                System.out.println("Estatus: " + this.getEstado());
                 // Se duerme el codigo durante los 30 mins
                 sleep(statusDuration);      
                 // Cambia de estado
                 this.isWorking = !this.isWorking;
-                System.out.println("Dias hasta el deadline: " + this.daysUntilDeadline);
-                System.out.println("Estatus: " + this.isWorking);
+                if(this.isWorking==true){
+                    this.setEstado("Supervisando estado de proyecto");
+                }else if (this.isWorking==false){
+                    this.setEstado("Among us");
+                }
+                cont+=1;
+//                System.out.println(cont);
             } catch (InterruptedException ex) {
-                Logger.getLogger(Developer.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(PM.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
+    }
+//        public void cobrar() throws InterruptedException{
+//        Timer timer = new Timer(true);
+//        TimerTask task = new Cobrar(this.sueldo, sueldoPorHora);
+//        long hora= (long) dayDuration/24;
+//        timer.scheduleAtFixedRate(task, hora, hora);
+//    }
+
+    /**
+     * @return the diasSimulacion
+     */
+    public int getDiasSimulacion() {
+        return diasSimulacion;
+    }
+
+    /**
+     * @param diasSimulacion the diasSimulacion to set
+     */
+    public void setDiasSimulacion(int diasSimulacion) {
+        this.diasSimulacion = diasSimulacion;
+    }
+
+    /**
+     * @return the estado
+     */
+    public String getEstado() {
+        return estado;
+    }
+
+    /**
+     * @param estado the estado to set
+     */
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
+
+    /**
+     * @return the daysUntilDeadline
+     */
+    public int getDaysUntilDeadline() {
+        return daysUntilDeadline;
+    }
+
+    /**
+     * @param daysUntilDeadline the daysUntilDeadline to set
+     */
+    public void setDaysUntilDeadline(int daysUntilDeadline) {
+        this.daysUntilDeadline = daysUntilDeadline;
+    }
+
+    /**
+     * @return the deadline
+     */
+    public int getDeadline() {
+        return deadline;
+    }
+
+    /**
+     * @param deadline the deadline to set
+     */
+    public void setDeadline(int deadline) {
+        this.deadline = deadline;
+    }
+
+    /**
+     * @return the sueldo
+     */
+    public int getSueldo() {
+        return sueldo;
+    }
+
+    /**
+     * @param sueldo the sueldo to set
+     */
+    public void setSueldo(int sueldo) {
+        this.sueldo = sueldo;
+    }
+
+    /**
+     * @return the dineroDescontado
+     */
+    public int getDineroDescontado() {
+        return dineroDescontado;
+    }
+
+    /**
+     * @param dineroDescontado the dineroDescontado to set
+     */
+    public void setDineroDescontado(int dineroDescontado) {
+        this.dineroDescontado = dineroDescontado;
+    }
+      /**
+     * @return the faltas
+     */
+    public int getFaltas() {
+        return faltas;
+    }
+
+    /**
+     * @param faltas the faltas to set
+     */
+    public void setFaltas(int faltas) {
+        this.faltas = faltas;
     }
 }

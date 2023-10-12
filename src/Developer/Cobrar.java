@@ -17,17 +17,13 @@ public class Cobrar extends TimerTask {
    private int sueldoPH;
    
     
-    public Cobrar(float sueldo, int type, int sueldoPorHora){
+    public Cobrar(float sueldo, int sueldoPorHora){
         this.sueldo=sueldo;
-        this.type=type;
         this.sueldoPH=sueldoPorHora;
 }
    @Override
     public void run(){
-        if(type==0) {
             sueldo+=this.sueldoPH;
-            System.out.println(sueldo);
-        
-        }
+//            System.out.println(sueldo);
     }
 }
