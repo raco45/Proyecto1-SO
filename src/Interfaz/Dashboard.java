@@ -5,6 +5,7 @@
  */
 package Interfaz;
 
+import classes.InitialValues;
 import classes.Simulation;
 import classes.Tools;
 import javax.swing.JOptionPane;
@@ -23,6 +24,8 @@ public class Dashboard extends javax.swing.JFrame {
     Tools tool = new Tools();
     int[] cantidadDevsNintendo = new int[6];
     int[] cantidadDevsSquare = new int[6];
+    // Es 7 ya que ambos tenemos el mismo ultimo numero de carnet
+    InitialValues initialValues = new InitialValues(7, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1);
     
     
     /**
@@ -396,14 +399,14 @@ public class Dashboard extends javax.swing.JFrame {
             jLabel25.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
             jLabel25.setForeground(new java.awt.Color(0, 0, 0));
             jLabel25.setText("Días entre entregas ");
-            adminPanel.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 180, 180, 30));
+            adminPanel.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 180, 180, 40));
 
             jLabel47.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
             jLabel47.setForeground(new java.awt.Color(0, 0, 0));
             jLabel47.setText("Duración del día ");
-            adminPanel.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 150, 160, 30));
-            adminPanel.add(spinnerDuracion, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 150, 60, 30));
-            adminPanel.add(spinnerDeadline, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 180, 60, 30));
+            adminPanel.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 150, 160, 40));
+            adminPanel.add(spinnerDuracion, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 160, 60, 20));
+            adminPanel.add(spinnerDeadline, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 190, 60, 20));
 
             jLabel49.setFont(new java.awt.Font("Super Mario 256", 0, 14)); // NOI18N
             jLabel49.setForeground(new java.awt.Color(0, 0, 0));
@@ -493,7 +496,8 @@ public class Dashboard extends javax.swing.JFrame {
             jLabel56.setText("Parámetros de simulación");
             adminPanel.add(jLabel56, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 110, 230, -1));
 
-            jLabel57.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+            jLabel57.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
+            jLabel57.setForeground(new java.awt.Color(0, 0, 0));
             jLabel57.setText("0");
             adminPanel.add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 200, 20, 30));
 
@@ -590,7 +594,8 @@ public class Dashboard extends javax.swing.JFrame {
             jLabel65.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
             adminPanel.add(jLabel65, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 490, 200, 30));
 
-            jLabel66.setFont(new java.awt.Font("Segoe UI Light", 0, 14)); // NOI18N
+            jLabel66.setFont(new java.awt.Font("Segoe UI Light", 1, 14)); // NOI18N
+            jLabel66.setForeground(new java.awt.Color(0, 0, 0));
             jLabel66.setText("0");
             adminPanel.add(jLabel66, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 490, 20, 30));
 
@@ -1556,53 +1561,50 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void startSimulActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startSimulActionPerformed
 
-        guardarValorInicial((int) spinnerDuracion.getValue());
-        guardarValorInicial((int) spinnerDeadline.getValue());
+        this.initialValues.setDayDuration((int) spinnerDuracion.getValue());
+        this.initialValues.setDeadline((int) spinnerDeadline.getValue());
         
-        guardarValorInicial((int) spinnerNarrativoN1.getValue());
-        guardarValorInicial((int) spinnerNivelesN1.getValue());
-        guardarValorInicial((int) spinnerSpritesN1.getValue());
-        guardarValorInicial((int) spinnerLogicaN1.getValue());
-        guardarValorInicial((int) spinnerDlcN1.getValue());
-        guardarValorInicial((int) spinnerIntegradorN1.getValue());
+        this.initialValues.setQuantityScriptsDevsN((int) spinnerNarrativoN1.getValue());
+        this.initialValues.setQuantityLevelsDevsN((int) spinnerNivelesN1.getValue());
+        this.initialValues.setQuantitySpritesDevsN((int) spinnerSpritesN1.getValue());
+        this.initialValues.setQuantitySystemsDevsN((int) spinnerLogicaN1.getValue());
+        this.initialValues.setQuantityDLCsDevsN((int) spinnerDlcN1.getValue());
+        this.initialValues.setQuantityIntegratorsN((int) spinnerIntegradorN1.getValue());
         
-        guardarValorInicial((int) spinnerNarrativoN2.getValue());
-        guardarValorInicial((int) spinnerNivelesN2.getValue());
-        guardarValorInicial((int) spinnerSpritesN2.getValue());
-        guardarValorInicial((int) spinnerLogicaN2.getValue());
-        guardarValorInicial((int) spinnerDlcN2.getValue());
-        guardarValorInicial((int) spinnerIntegradorN2.getValue());
+        this.initialValues.setQuantityScriptsDevsS((int) spinnerNarrativoN2.getValue());
+        this.initialValues.setQuantityLevelsDevsS((int) spinnerNivelesN2.getValue());
+        this.initialValues.setQuantitySpritesDevsS((int) spinnerSpritesN2.getValue());
+        this.initialValues.setQuantitySystemsDevsS((int) spinnerLogicaN2.getValue());
+        this.initialValues.setQuantityDLCsDevsS((int) spinnerDlcN2.getValue());
+        this.initialValues.setQuantityIntegratorsS((int) spinnerIntegradorN2.getValue());
         
-        tool.escribirTXT(valoresIniciales);
+        initialValues.escribirTXT();
         
         // Se llena arreglos para pasarlos a los objetos Simulation
-        for (int i = 0; i < 6; i++) {
-            cantidadDevsNintendo[i] = valoresIniciales[i + 2];
-            cantidadDevsSquare[i] = valoresIniciales[i + 8];
-        }
+        
     }//GEN-LAST:event_startSimulActionPerformed
 
     private void txtSimuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSimuActionPerformed
-        valoresIniciales = tool.leerTXT();
+
+        initialValues.leerTXT();
+
+        spinnerDuracion.setValue((int) initialValues.getDayDuration());
+        spinnerDeadline.setValue((int) initialValues.getDeadline());
+
+        spinnerNarrativoN1.setValue((int) initialValues.getQuantityScriptsDevsN());
+        spinnerNivelesN1.setValue((int) initialValues.getQuantityLevelsDevsN());
+        spinnerSpritesN1.setValue((int) initialValues.getQuantitySpritesDevsN());
+        spinnerLogicaN1.setValue((int) initialValues.getQuantitySystemsDevsN());
+        spinnerDlcN1.setValue((int) initialValues.getQuantityDLCsDevsN());
+        spinnerIntegradorN1.setValue((int) initialValues.getQuantityIntegratorsN());
+
+        spinnerNarrativoN2.setValue((int) initialValues.getQuantityScriptsDevsS());
+        spinnerNivelesN2.setValue((int) initialValues.getQuantityLevelsDevsS());
+        spinnerSpritesN2.setValue((int) initialValues.getQuantitySpritesDevsS());
+        spinnerLogicaN2.setValue((int) initialValues.getQuantitySystemsDevsS());
+        spinnerDlcN2.setValue((int) initialValues.getQuantityDLCsDevsS());
+        spinnerIntegradorN2.setValue((int) initialValues.getQuantityIntegratorsS());
         
-        spinnerDuracion.setValue((int) valoresIniciales[0]);
-        spinnerDeadline.setValue((int) valoresIniciales[1]);
-        
-        spinnerNarrativoN1.setValue((int) valoresIniciales[2]);
-        spinnerNivelesN1.setValue((int) valoresIniciales[3]);
-        spinnerSpritesN1.setValue((int) valoresIniciales[4]);
-        spinnerLogicaN1.setValue((int) valoresIniciales[5]);
-        spinnerDlcN1.setValue((int) valoresIniciales[6]);
-        spinnerIntegradorN1.setValue((int) valoresIniciales[7]);
-        
-        spinnerNarrativoN2.setValue((int) valoresIniciales[8]);
-        spinnerNivelesN2.setValue((int) valoresIniciales[9]);
-        spinnerSpritesN2.setValue((int) valoresIniciales[10]);
-        spinnerLogicaN2.setValue((int) valoresIniciales[11]);
-        spinnerDlcN2.setValue((int) valoresIniciales[12]);
-        spinnerIntegradorN2.setValue((int) valoresIniciales[13]);
-        
-        JOptionPane.showMessageDialog(null, "Lectura exitosa");
     }//GEN-LAST:event_txtSimuActionPerformed
 
     private void spinnerIntegradorN1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerIntegradorN1StateChanged
