@@ -4,6 +4,7 @@
  */
 package classes;
 
+import Developer.Developer;
 import java.util.concurrent.Semaphore;
 
 /**
@@ -14,12 +15,33 @@ public class Simulation {
     
     private int lastDigit;
     private int[] parameters;
+    int dayDuration;
+    int deadline;
+    int quantityScriptsDevs;
+    int quantityLevelsDevs;
+    int quantitySpritesDevs;
+    int quantitySystemsDevs;
+    int quantityDlcsDevs;
+    int quantityIntegrators;
+    Developer[] developers = new Developer[6];
     
-    public Simulation(int lastDigit, int[] parameters) {
+    // devsQuantity es el arreglo donde la posicion i-esima indica la cantidad de devs del tipo i
+    public Simulation(int lastDigit, int[] initialValues, int[] devsQuantity) {
         this.lastDigit = lastDigit;
-        this.parameters = parameters;
+        this.dayDuration = initialValues[0];
+        this.deadline = initialValues[1];
+        this.quantityScriptsDevs = devsQuantity[0];
+        this.quantityLevelsDevs = devsQuantity[1];
+        this.quantitySpritesDevs = devsQuantity[2];
+        this.quantitySystemsDevs = devsQuantity[3];
+        this.quantityDlcsDevs = devsQuantity[4];
+        this.quantityIntegrators = devsQuantity[5];
+        this.developers = developers;
     }
     
+    public void spawnDevelopers(int[] devsQuantity) {
+        
+    }
     
 
     /**

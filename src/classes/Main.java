@@ -1,51 +1,24 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package classes;
 
-//import java.util.concurrent.Semaphore;
-
-import Developer.Developer;
-import java.util.concurrent.Semaphore;
-
-
 /**
  *
- * @author luisa
+ * @author raco1
  */
 public class Main {
-    
+
+    /**
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
-
-        Semaphore mutex = new Semaphore(1);
-       Drive drive = new Drive(0,0, 0, 0, 0,0);
+        // TODO code application logic here
         
-        Developer dev1 = new Developer("Nintendo",0, 2500,drive,mutex,10);
-//        Developer dev2 = new Developer("Nintendo",1, 2500,drive, mutex);
-//        Developer dev3 = new Developer("Nintendo",2, 2500 ,drive,mutex);
-//        Developer dev4 = new Developer("Nintendo",3, 2500 ,drive,mutex);
-//        Developer dev5 = new Developer("Nitnendo",4, 2500,drive,mutex);
-//        Developer dev6 = new Developer("Nitnendo",0, 2500,drive,mutex);
-//        Developer dev7 = new Developer("Nintendo",1, 2500,drive, mutex);
-//        Developer dev8 = new Developer("Nitendo",2, 2500 ,drive,mutex);
-//        Developer dev9 = new Developer("Nintendo",3, 2500 ,drive,mutex);
-//        Developer dev10 = new Developer("Nintendo",4, 2500,drive,mutex);
-        
-        dev1.start();
-//          dev2.start();
-//            dev3.start();
-//              dev4.start();
-//                dev5.start();
-////        dev6.start();
-//          dev7.start();
-//            dev8.start();
-//              dev9.start();
-//                dev10.start();
-        
-        Developer inte1 = new Developer("Nintendo", 5, 2500, drive, mutex,10);
-        inte1.start();
-        
-
+       PM projectManager = new PM(10, 2500);
+       projectManager.run();
     }
+    
 }
