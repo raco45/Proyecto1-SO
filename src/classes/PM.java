@@ -11,6 +11,7 @@ import java.util.TimerTask;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import Developer.Developer;
+import Interfaz.Dashboard;
 
 /**
  *
@@ -29,8 +30,9 @@ public class PM extends Thread {
     private int sueldoPorHora;
     private int dineroDescontado=0;
     private int faltas;
+    private String company;
     
-    public PM(int sueldoPorHora, int deadline, int dayDuration) {
+    public PM(int sueldoPorHora, int deadline, int dayDuration,String company) {
         this.sueldoPorHora = sueldoPorHora;
         this.deadline = deadline;
         this.dayDuration = dayDuration;
@@ -38,6 +40,7 @@ public class PM extends Thread {
         this.daysUntilDeadline = deadline; // Para diferenciar mejor los dias restantes al deadline como tal
         this.estado="Supervisando estado de proyecto";
         this.faltas=0;
+        this.company=company;
     }
     
     @Override
@@ -49,11 +52,14 @@ public class PM extends Thread {
                 work();
                 sleep(this.getDayDuration());
                 cont+=1;
+                this.setDashboard();
             } catch (InterruptedException ex) {
                 Logger.getLogger(PM.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
     }
+    
+    
     
     public void changeOfStatus() {
         // Primero se haya el valor de la hora segun dayDuration
@@ -63,6 +69,7 @@ public class PM extends Thread {
         // Se hace un ciclo for para las 16 primeras horas
         for (int i = 0; i < 2 * 16; i++) { // 2 * 16 veces ya que en 16 horas hay 32 cambios de estado
             try {
+                
                //System.out.println("Estatus PM (en su clase): " + this.getEstado());
                 // Se duerme el codigo durante los 30 mins
                 sleep(statusDuration);      
@@ -70,14 +77,37 @@ public class PM extends Thread {
                 this.setIsWorking(!this.isIsWorking());
                 if(this.isIsWorking()){
                     this.setEstado("Supervisando estado de proyecto");
+                    this.setDashboard2();
                 }else {
                     this.setEstado("Among us");
+                    this.setDashboard2();
                 }
                 cont+=1;
 //                System.out.println(cont);
             } catch (InterruptedException ex) {
                 Logger.getLogger(PM.class.getName()).log(Level.SEVERE, null, ex);
             }
+        }
+    }
+    
+    public void setDashboard(){
+        if(this.company.equals("Nintendo")){
+            Dashboard.getDiasTotalesN().setText(Integer.toString(this.diasSimulacion));
+            Dashboard.getFechaEntregaN().setText(Integer.toString(this.daysUntilDeadline));
+        }else{
+            Dashboard.getDiasTotalesSq().setText(Integer.toString(this.diasSimulacion));
+            Dashboard.getFechaEntregaSq().setText(Integer.toString(this.daysUntilDeadline));
+        }
+    }
+    public void setDashboard2(){
+        if(this.company.equals("Nintendo")){
+            Dashboard.getEstadoPmN1().setText(this.estado);
+            Dashboard.getFaltasPmN().setText(Integer.toString(faltas));
+            Dashboard.getDescuentoPmN().setText(Integer.toString(this.dineroDescontado));
+        }else{
+            Dashboard.getEstadoPmS().setText(this.estado);
+            Dashboard.getFaltasPmS().setText(Integer.toString(faltas));
+            Dashboard.getDescuentoPmS().setText(Integer.toString(this.dineroDescontado));
         }
     }
     

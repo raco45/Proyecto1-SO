@@ -4,11 +4,13 @@
  */
 package classes;
 
+import Developer.Developer;
+
 /**
  *
  * @author luisa
  */
-public class ListaSimple<T> {
+public class ListaSimple {
 
     private int longitud;
     private Nodo nodoPrimero;
@@ -29,7 +31,7 @@ public class ListaSimple<T> {
         this.longitud = 0;
     }
 
-    public void agregarAlInicio(T datos) {
+    public void agregarAlInicio(Developer datos) {
         Nodo nuevoNodo = new Nodo(datos);
         if (this.esVacia()) {
             this.nodoPrimero = nuevoNodo;
@@ -53,7 +55,7 @@ public class ListaSimple<T> {
         }
     }
 
-    public void agregarAlFinal(T datos) {
+    public void agregarAlFinal(Developer datos) {
         Nodo nuevoNodo = new Nodo(datos);
         if (this.esVacia()) {
             this.nodoPrimero = nuevoNodo;
@@ -106,7 +108,7 @@ public class ListaSimple<T> {
         return impresion + "//";
     }
 
-    public boolean buscarNodoBool(T dato) {
+    public boolean buscarNodoBool(Developer dato) {
         boolean hallado = false;
         if (!this.esVacia()) {
             Nodo nodoAux = this.getNodoPrimero();
@@ -123,7 +125,7 @@ public class ListaSimple<T> {
         return hallado;
     }
 
-    public void eliminar(T dato) {
+    public void eliminar(Developer dato) {
         if (!this.esVacia()) {
             boolean estaEnLista = this.buscarNodoBool(dato);
             Nodo nodoAux = this.getNodoPrimero();

@@ -117,6 +117,27 @@ public class Drive {
                 return false;
         }
     }
+    public int returnCantDrive(int type){
+        switch (type) {
+            case 0:
+                return this.getScripts();
+                
+            case 1:
+                return this.getLevels();
+                
+            case 2:
+                return this.getSprites();
+                
+            case 3:
+                return this.getGameSystems();
+                
+            case 4:
+                return this.getDlcs();
+                
+            default:
+                return 0;
+        }
+    }
     
     /**
      * @return the scripts

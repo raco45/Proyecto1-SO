@@ -1,6 +1,7 @@
 
 package Director;
 
+import Interfaz.Dashboard;
 import classes.Drive;
 import classes.PM;
 import classes.Tienda;
@@ -45,7 +46,7 @@ public class Director extends Thread{
         
         while(true) {
             Random random = new Random();
-            this.setHoraElegida(random.nextInt(0, 24));
+            this.horaElegida=random.nextInt(24);
             try {
                 for (int i = 0; i < 24; i++) {
                     /*
@@ -79,7 +80,14 @@ public class Director extends Thread{
             this.getProjectManager().setDaysUntilDeadline(this.getDeadline());
         }
         this.setSueldo(this.getSueldo() + this.getSueldoPorHora() * 24);
-        
+        this.setDashboard();
+    }
+    public void setDashboard(){
+        if(this.company.equals("Nintendo")){
+            Dashboard.getEstadoPmN().setText(this.estado);
+        }else{
+           Dashboard.getEstadoDirectorS().setText(this.estado);
+        }
     }
     
     public void entregarJuegos(){

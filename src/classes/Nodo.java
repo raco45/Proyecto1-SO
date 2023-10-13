@@ -4,16 +4,18 @@
  */
 package classes;
 
+import Developer.Developer;
+
 /**
  *
  * @author luisa
  */
-public class Nodo<T> {
+public class Nodo {
     
     private Nodo nodoSiguiente;
-    private T datos;
+    private Developer datos;
     
-    public Nodo(T datos) {
+    public Nodo(Developer datos) {
         this.nodoSiguiente = null;
         this.datos = datos;
     }
@@ -35,14 +37,14 @@ public class Nodo<T> {
     /**
      * @return the datos
      */
-    public Object getDatos() {
+    public Developer getDatos() {
         return datos;
     }
 
     /**
      * @param datos the datos to set
      */
-    public void setDatos(T datos) {
+    public void setDatos(Developer datos) {
         this.datos = datos;
     }
     

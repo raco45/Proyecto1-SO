@@ -14,6 +14,34 @@ import java.util.concurrent.Semaphore;
  * @author luisa
  */
 public class Simulation {
+
+    /**
+     * @return the devsMutex
+     */
+    public Semaphore getDevsMutex() {
+        return devsMutex;
+    }
+
+    /**
+     * @param devsMutex the devsMutex to set
+     */
+    public void setDevsMutex(Semaphore devsMutex) {
+        this.devsMutex = devsMutex;
+    }
+
+    /**
+     * @return the integratorsMutex
+     */
+    public Semaphore getIntegratorsMutex() {
+        return integratorsMutex;
+    }
+
+    /**
+     * @param integratorsMutex the integratorsMutex to set
+     */
+    public void setIntegratorsMutex(Semaphore integratorsMutex) {
+        this.integratorsMutex = integratorsMutex;
+    }
     
     private int lastDigit;
     private int dayDuration;
@@ -49,11 +77,12 @@ public class Simulation {
     private ListaSimple systemsDevs = new ListaSimple();
     private ListaSimple dlcsDevs = new ListaSimple();
     private ListaSimple integrators = new ListaSimple();
-    
+    private Drive drive;
     private int operativeCost = 0;
     private float profit = 0;
     private float income = 0;
-    
+    private Semaphore devsMutex = new Semaphore(1);
+    private Semaphore integratorsMutex = new Semaphore(1);
     public Simulation(int lastDigit, int dayDuration, int deadline, int quantityScriptsDevs, int quantityLevelsDevs, int quantitySpritesDevs, int quantitySystemsDevs, int quantityDlcsDevs, int quantityIntegrators, String companyName) {
         
         this.lastDigit = lastDigit;
@@ -66,20 +95,21 @@ public class Simulation {
         this.quantityDlcsDevs = quantityDlcsDevs;
         this.quantityIntegrators = quantityIntegrators;
         this.companyName = companyName;
+        this.drive=new Drive(25, 20, 55, 35, 10, this.getCompanyName());
     }
     
     public void start() {
-        Semaphore devsMutex = new Semaphore(1);
-        Semaphore integratorsMutex = new Semaphore(1);
         
-        Drive drive = new Drive(25, 20, 55, 35, 10, this.getCompanyName());
+        
+//        Drive drive = new Drive(25, 20, 55, 35, 10, this.getCompanyName());
         Tienda shop = new Tienda();
         
-        PM projectManager = new PM(20, this.getDeadline(), this.getDayDuration());
+        PM projectManager = new PM(20, this.getDeadline(), this.getDayDuration(), this.companyName);
         Director director = new Director(30, getDayDuration(), drive, projectManager, shop, this.getCompanyName(), this.getDeadline());
         
-        this.spawnWorkers(drive, devsMutex, integratorsMutex);
-        
+        this.spawnWorkers(drive, getDevsMutex(), getIntegratorsMutex());
+        projectManager.start();
+        director.start();
         this.calculateCost(projectManager);
         this.getIncome(shop);
         this.calculateProfit();
@@ -579,6 +609,20 @@ public class Simulation {
      */
     public void setIncome(float income) {
         this.income = income;
+    }
+
+    /**
+     * @return the drive
+     */
+    public Drive getDrive() {
+        return drive;
+    }
+
+    /**
+     * @param drive the drive to set
+     */
+    public void setDrive(Drive drive) {
+        this.drive = drive;
     }
 
 }

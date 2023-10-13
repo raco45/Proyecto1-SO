@@ -5,9 +5,11 @@
  */
 package Interfaz;
 
+import Developer.Developer;
 import classes.InitialValues;
 import classes.Simulation;
 import classes.Tools;
+import javax.management.timer.Timer;
 import javax.swing.JOptionPane;
 import javax.swing.JSpinner;
 import javax.swing.SpinnerModel;
@@ -18,11 +20,284 @@ import javax.swing.SpinnerNumberModel;
  * @author raco1
  */
 public class Dashboard extends javax.swing.JFrame {
+
+    /**
+     * @return the cantDlcN
+     */
+    public static javax.swing.JLabel getCantDlcN() {
+        return cantDlcN;
+    }
+
+    /**
+     * @return the cantDlcS
+     */
+    public static javax.swing.JLabel getCantDlcS() {
+        return cantDlcS;
+    }
+
+    /**
+     * @return the cantGuionesN6
+     */
+    public static javax.swing.JLabel getCantGuionesN6() {
+        return cantGuionesN6;
+    }
+
+    /**
+     * @return the cantNivelesN
+     */
+    public static javax.swing.JLabel getCantNivelesN() {
+        return cantNivelesN;
+    }
+
+    /**
+     * @return the cantNivelesS
+     */
+    public static javax.swing.JLabel getCantNivelesS() {
+        return cantNivelesS;
+    }
+
+    /**
+     * @return the cantSistemasN
+     */
+    public static javax.swing.JLabel getCantSistemasN() {
+        return cantSistemasN;
+    }
+
+    /**
+     * @return the cantSistemasS
+     */
+    public static javax.swing.JLabel getCantSistemasS() {
+        return cantSistemasS;
+    }
+
+    /**
+     * @return the cantSpritesN
+     */
+    public static javax.swing.JLabel getCantSpritesN() {
+        return cantSpritesN;
+    }
+
+    /**
+     * @return the cantSpritesS
+     */
+    public static javax.swing.JLabel getCantSpritesS() {
+        return cantSpritesS;
+    }
+
+    /**
+     * @return the costosOpeN
+     */
+    public static javax.swing.JLabel getCostosOpeN() {
+        return costosOpeN;
+    }
+
+    /**
+     * @return the costosOpeS
+     */
+    public static javax.swing.JLabel getCostosOpeS() {
+        return costosOpeS;
+    }
+
+    /**
+     * @return the descuentoPmN
+     */
+    public static javax.swing.JLabel getDescuentoPmN() {
+        return descuentoPmN;
+    }
+
+    /**
+     * @return the descuentoPmS
+     */
+    public static javax.swing.JLabel getDescuentoPmS() {
+        return descuentoPmS;
+    }
+
+    /**
+     * @return the diasTotalesN
+     */
+    public static javax.swing.JLabel getDiasTotalesN() {
+        return diasTotalesN;
+    }
+
+    /**
+     * @return the diasTotalesSq
+     */
+    public static javax.swing.JLabel getDiasTotalesSq() {
+        return diasTotalesSq;
+    }
+
+    /**
+     * @return the estadoDirectorS
+     */
+    public static javax.swing.JLabel getEstadoDirectorS() {
+        return estadoDirectorS;
+    }
+
+    /**
+     * @return the estadoPmN
+     */
+    public static javax.swing.JLabel getEstadoPmN() {
+        return estadoPmN;
+    }
+
+    /**
+     * @return the estadoPmN1
+     */
+    public static javax.swing.JLabel getEstadoPmN1() {
+        return estadoPmN1;
+    }
+
+    /**
+     * @return the estadoPmS
+     */
+    public static javax.swing.JLabel getEstadoPmS() {
+        return estadoPmS;
+    }
+
+    /**
+     * @return the faltasPmN
+     */
+    public static javax.swing.JLabel getFaltasPmN() {
+        return faltasPmN;
+    }
+
+    /**
+     * @return the faltasPmS
+     */
+    public static javax.swing.JLabel getFaltasPmS() {
+        return faltasPmS;
+    }
+
+    /**
+     * @return the fechaEntregaN
+     */
+    public static javax.swing.JLabel getFechaEntregaN() {
+        return fechaEntregaN;
+    }
+
+    /**
+     * @return the fechaEntregaSq
+     */
+    public static javax.swing.JLabel getFechaEntregaSq() {
+        return fechaEntregaSq;
+    }
+
+    /**
+     * @return the gananciaTotalN
+     */
+    public static javax.swing.JLabel getGananciaTotalN() {
+        return gananciaTotalN;
+    }
+
+    /**
+     * @return the gananciaTotalSq
+     */
+    public static javax.swing.JLabel getGananciaTotalSq() {
+        return gananciaTotalSq;
+    }
+
+    /**
+     * @return the gananciasBrutasN
+     */
+    public static javax.swing.JLabel getGananciasBrutasN() {
+        return gananciasBrutasN;
+    }
+
+    /**
+     * @return the gananciasBrutasS
+     */
+    public static javax.swing.JLabel getGananciasBrutasS() {
+        return gananciasBrutasS;
+    }
+
+    /**
+     * @return the historicoDlcN
+     */
+    public static javax.swing.JLabel getHistoricoDlcN() {
+        return historicoDlcN;
+    }
+
+    /**
+     * @return the historicoDlcSq
+     */
+    public static javax.swing.JLabel getHistoricoDlcSq() {
+        return historicoDlcSq;
+    }
+
+    /**
+     * @return the historicoJuegosN
+     */
+    public static javax.swing.JLabel getHistoricoJuegosN() {
+        return historicoJuegosN;
+    }
+
+    /**
+     * @return the historicoJuegosSq
+     */
+    public static javax.swing.JLabel getHistoricoJuegosSq() {
+        return historicoJuegosSq;
+    }
+
+    /**
+     * @return the juegosTotalesN
+     */
+    public static javax.swing.JLabel getJuegosTotalesN() {
+        return juegosTotalesN;
+    }
+
+    /**
+     * @return the juegosTotalesSq
+     */
+    public static javax.swing.JLabel getJuegosTotalesSq() {
+        return juegosTotalesSq;
+    }
+
+    /**
+     * @return the readyToShip1
+     */
+    public static javax.swing.JLabel getReadyToShip1() {
+        return readyToShip1;
+    }
+
+    /**
+     * @return the readyToShipDLC
+     */
+    public static javax.swing.JLabel getReadyToShipDLC() {
+        return readyToShipDLC;
+    }
+
+    /**
+     * @return the readyToShipDLCSq
+     */
+    public static javax.swing.JLabel getReadyToShipDLCSq() {
+        return readyToShipDLCSq;
+    }
+
+    /**
+     * @return the readyToShipSq
+     */
+    public static javax.swing.JLabel getReadyToShipSq() {
+        return readyToShipSq;
+    }
+
+    /**
+     * @return the adminPanel
+     */
+
+    /**
+     * @return the cantGuionesS
+     */
+    public static javax.swing.JLabel getCantGuionesS() {
+        return  cantGuionesS;
+    }
+
+  
     
     // Es 7 ya que ambos tenemos el mismo ultimo numero de carnet
     InitialValues initialValues = new InitialValues(7, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1);
-    
-    
+    Simulation nintendo;
+    Simulation square;
+    boolean flag=false;
     /**
      * Creates new form Dashboard
      */
@@ -60,6 +335,9 @@ public class Dashboard extends javax.swing.JFrame {
         this.spinnerSpritesS.setModel(this.verifySpinners());
         this.spinnerNivelesS.setModel(this.verifySpinners());
         this.spinnerIntegradorS.setModel(this.verifySpinners());
+        
+        this.spinnerDuracion.setModel(this.verifySpinners());
+        this.spinnerDeadline.setModel(this.verifySpinners());
     }
     
     
@@ -241,12 +519,12 @@ public class Dashboard extends javax.swing.JFrame {
         readyToShipSq = new javax.swing.JLabel();
         jLabel99 = new javax.swing.JLabel();
         jLabel104 = new javax.swing.JLabel();
-        estadoDirectorS1 = new javax.swing.JLabel();
-        estadoPmS1 = new javax.swing.JLabel();
         jLabel103 = new javax.swing.JLabel();
         jLabel100 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         nintendoPanel = new javax.swing.JPanel();
         jSeparator1 = new javax.swing.JSeparator();
+        jLabel111 = new javax.swing.JLabel();
         cantDlcN = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
@@ -279,7 +557,6 @@ public class Dashboard extends javax.swing.JFrame {
         estadoPmN = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
         jLabel32 = new javax.swing.JLabel();
-        estadoDirectorN = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
         descuentoPmN = new javax.swing.JLabel();
         faltasPmN = new javax.swing.JLabel();
@@ -313,10 +590,11 @@ public class Dashboard extends javax.swing.JFrame {
         estadoPmN1 = new javax.swing.JLabel();
         jLabel35 = new javax.swing.JLabel();
         readyToShip1 = new javax.swing.JLabel();
-        estadoPmN2 = new javax.swing.JLabel();
         jLabel96 = new javax.swing.JLabel();
         jLabel70 = new javax.swing.JLabel();
         estadoDirectorN1 = new javax.swing.JLabel();
+        jLabel109 = new javax.swing.JLabel();
+        jLabel110 = new javax.swing.JLabel();
 
         jLabel102.setText("jLabel102");
 
@@ -695,7 +973,7 @@ public class Dashboard extends javax.swing.JFrame {
             jLabel74.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
             jLabel74.setForeground(new java.awt.Color(0, 0, 0));
             jLabel74.setText("Juegos con DLC");
-            jPanel2.add(jLabel74, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 280, 110, 30));
+            jPanel2.add(jLabel74, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 280, 130, 30));
 
             jLabel75.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
             jLabel75.setForeground(new java.awt.Color(0, 0, 0));
@@ -790,27 +1068,27 @@ public class Dashboard extends javax.swing.JFrame {
             jLabel82.setAlignmentY(0.0F);
             jLabel82.setFocusable(false);
             jLabel82.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-            jPanel2.add(jLabel82, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 130, 100, 30));
+            jPanel2.add(jLabel82, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 170, 100, 30));
 
             estadoDirectorS.setFont(new java.awt.Font("BankGothic Md BT", 1, 14)); // NOI18N
             estadoDirectorS.setForeground(new java.awt.Color(0, 0, 0));
             estadoDirectorS.setText("estado");
-            jPanel2.add(estadoDirectorS, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 160, 50, 30));
+            jPanel2.add(estadoDirectorS, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 220, 100, 30));
 
             jLabel83.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
             jLabel83.setForeground(new java.awt.Color(0, 0, 0));
             jLabel83.setText("Ganancias en bruto");
-            jPanel2.add(jLabel83, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 210, 140, 30));
+            jPanel2.add(jLabel83, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 210, 180, 30));
 
             estadoPmS.setFont(new java.awt.Font("BankGothic Md BT", 1, 14)); // NOI18N
             estadoPmS.setForeground(new java.awt.Color(0, 0, 0));
             estadoPmS.setText("Estado");
-            jPanel2.add(estadoPmS, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 160, 70, 30));
+            jPanel2.add(estadoPmS, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 160, 170, 30));
 
             descuentoPmS.setFont(new java.awt.Font("BankGothic Md BT", 1, 14)); // NOI18N
             descuentoPmS.setForeground(new java.awt.Color(0, 0, 0));
             descuentoPmS.setText("0");
-            jPanel2.add(descuentoPmS, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 230, 20, 30));
+            jPanel2.add(descuentoPmS, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 230, 80, 30));
 
             faltasPmS.setFont(new java.awt.Font("BankGothic Md BT", 1, 14)); // NOI18N
             faltasPmS.setForeground(new java.awt.Color(0, 0, 0));
@@ -825,7 +1103,7 @@ public class Dashboard extends javax.swing.JFrame {
             jLabel85.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
             jLabel85.setForeground(new java.awt.Color(0, 0, 0));
             jLabel85.setText("Costos operativos");
-            jPanel2.add(jLabel85, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 170, 120, 30));
+            jPanel2.add(jLabel85, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 170, 200, 30));
 
             jLabel86.setBackground(new java.awt.Color(255, 255, 255));
             jLabel86.setFont(new java.awt.Font("BankGothic Md BT", 0, 24)); // NOI18N
@@ -835,7 +1113,7 @@ public class Dashboard extends javax.swing.JFrame {
             jLabel86.setAlignmentY(0.0F);
             jLabel86.setFocusable(false);
             jLabel86.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-            jPanel2.add(jLabel86, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 550, 90, 30));
+            jPanel2.add(jLabel86, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 480, 120, 50));
 
             jLabel87.setBackground(new java.awt.Color(255, 255, 255));
             jLabel87.setFont(new java.awt.Font("BankGothic Md BT", 1, 18)); // NOI18N
@@ -845,7 +1123,7 @@ public class Dashboard extends javax.swing.JFrame {
             jLabel87.setAlignmentY(0.0F);
             jLabel87.setFocusable(false);
             jLabel87.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-            jPanel2.add(jLabel87, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 130, 110, 30));
+            jPanel2.add(jLabel87, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 130, 130, 30));
 
             jLabel88.setBackground(new java.awt.Color(255, 255, 255));
             jLabel88.setFont(new java.awt.Font("BankGothic Md BT", 0, 18)); // NOI18N
@@ -925,7 +1203,7 @@ public class Dashboard extends javax.swing.JFrame {
             gananciasBrutasS.setFont(new java.awt.Font("BankGothic Md BT", 1, 14)); // NOI18N
             gananciasBrutasS.setForeground(new java.awt.Color(0, 0, 0));
             gananciasBrutasS.setText("0");
-            jPanel2.add(gananciasBrutasS, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 210, 40, 30));
+            jPanel2.add(gananciasBrutasS, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 210, 90, 30));
 
             juegosTotalesSq.setFont(new java.awt.Font("BankGothic Md BT", 1, 18)); // NOI18N
             juegosTotalesSq.setForeground(new java.awt.Color(0, 0, 0));
@@ -935,7 +1213,7 @@ public class Dashboard extends javax.swing.JFrame {
             gananciaTotalSq.setFont(new java.awt.Font("BankGothic Md BT", 1, 24)); // NOI18N
             gananciaTotalSq.setForeground(new java.awt.Color(0, 0, 0));
             gananciaTotalSq.setText("0");
-            jPanel2.add(gananciaTotalSq, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 550, 110, 30));
+            jPanel2.add(gananciaTotalSq, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 550, 110, 30));
 
             historicoDlcSq.setFont(new java.awt.Font("BankGothic Md BT", 1, 18)); // NOI18N
             historicoDlcSq.setForeground(new java.awt.Color(0, 0, 0));
@@ -955,7 +1233,7 @@ public class Dashboard extends javax.swing.JFrame {
             costosOpeS.setFont(new java.awt.Font("BankGothic Md BT", 1, 14)); // NOI18N
             costosOpeS.setForeground(new java.awt.Color(0, 0, 0));
             costosOpeS.setText("0");
-            jPanel2.add(costosOpeS, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 170, 40, 30));
+            jPanel2.add(costosOpeS, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 170, 80, 30));
 
             label1.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
             label1.setForeground(new java.awt.Color(0, 0, 0));
@@ -965,7 +1243,7 @@ public class Dashboard extends javax.swing.JFrame {
             label3.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
             label3.setForeground(new java.awt.Color(0, 0, 0));
             label3.setText("Dinero descontado");
-            jPanel2.add(label3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 230, 160, 30));
+            jPanel2.add(label3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 230, 160, 30));
 
             jLabel97.setBackground(new java.awt.Color(255, 255, 255));
             jLabel97.setFont(new java.awt.Font("BankGothic Md BT", 1, 18)); // NOI18N
@@ -985,7 +1263,7 @@ public class Dashboard extends javax.swing.JFrame {
             jLabel98.setAlignmentY(0.0F);
             jLabel98.setFocusable(false);
             jLabel98.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-            jPanel2.add(jLabel98, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 270, 130, 30));
+            jPanel2.add(jLabel98, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 270, 180, 30));
 
             readyToShipSq.setFont(new java.awt.Font("BankGothic Md BT", 1, 14)); // NOI18N
             readyToShipSq.setForeground(new java.awt.Color(0, 0, 0));
@@ -1007,16 +1285,6 @@ public class Dashboard extends javax.swing.JFrame {
             jLabel104.setText("Diseñadores de niveles");
             jPanel2.add(jLabel104, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 510, 150, 30));
 
-            estadoDirectorS1.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
-            estadoDirectorS1.setForeground(new java.awt.Color(0, 0, 0));
-            estadoDirectorS1.setText("Estado");
-            jPanel2.add(estadoDirectorS1, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 160, 50, 30));
-
-            estadoPmS1.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
-            estadoPmS1.setForeground(new java.awt.Color(0, 0, 0));
-            estadoPmS1.setText("Estado");
-            jPanel2.add(estadoPmS1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 160, 70, 30));
-
             jLabel103.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/Imagenes/89384.jpg"))); // NOI18N
             jLabel103.setText("jLabel103");
             jPanel2.add(jLabel103, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 1020, 620));
@@ -1024,6 +1292,9 @@ public class Dashboard extends javax.swing.JFrame {
             jLabel100.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/Imagenes/fondo_square.jpg"))); // NOI18N
             jLabel100.setText("jLabel100");
             jPanel2.add(jLabel100, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1020, 160));
+
+            jLabel2.setText("jLabel2");
+            jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 180, -1, -1));
 
             javax.swing.GroupLayout squarePanelLayout = new javax.swing.GroupLayout(squarePanel);
             squarePanel.setLayout(squarePanelLayout);
@@ -1040,6 +1311,17 @@ public class Dashboard extends javax.swing.JFrame {
 
             nintendoPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
             nintendoPanel.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 77, 1010, 20));
+
+            jLabel111.setBackground(new java.awt.Color(153, 153, 153));
+            jLabel111.setFont(new java.awt.Font("Super Mario 256", 1, 18)); // NOI18N
+            jLabel111.setForeground(new java.awt.Color(153, 153, 153));
+            jLabel111.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+            jLabel111.setText("Totales");
+            jLabel111.setAlignmentX(5.0F);
+            jLabel111.setAlignmentY(0.0F);
+            jLabel111.setFocusable(false);
+            jLabel111.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+            nintendoPanel.add(jLabel111, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 30, 150, 60));
 
             cantDlcN.setFont(new java.awt.Font("Super Mario 256", 1, 13)); // NOI18N
             cantDlcN.setForeground(new java.awt.Color(0, 0, 0));
@@ -1127,7 +1409,7 @@ public class Dashboard extends javax.swing.JFrame {
             jLabel12.setAlignmentY(0.0F);
             jLabel12.setFocusable(false);
             jLabel12.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-            nintendoPanel.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 40, 160, 30));
+            nintendoPanel.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 40, 200, 30));
 
             jLabel13.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
             jLabel13.setForeground(new java.awt.Color(0, 0, 0));
@@ -1137,7 +1419,7 @@ public class Dashboard extends javax.swing.JFrame {
             jLabel15.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
             jLabel15.setForeground(new java.awt.Color(0, 0, 0));
             jLabel15.setText("Juegos con DLC");
-            nintendoPanel.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 270, 120, 30));
+            nintendoPanel.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 270, 120, 30));
 
             jLabel16.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
             jLabel16.setForeground(new java.awt.Color(0, 0, 0));
@@ -1167,7 +1449,7 @@ public class Dashboard extends javax.swing.JFrame {
             readyToShipDLC.setFont(new java.awt.Font("Super Mario 256", 1, 13)); // NOI18N
             readyToShipDLC.setForeground(new java.awt.Color(0, 0, 0));
             readyToShipDLC.setText("0");
-            nintendoPanel.add(readyToShipDLC, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 260, 40, 40));
+            nintendoPanel.add(readyToShipDLC, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 260, 70, 40));
 
             cantSpritesN.setFont(new java.awt.Font("Super Mario 256", 1, 13)); // NOI18N
             cantSpritesN.setForeground(new java.awt.Color(0, 0, 0));
@@ -1218,7 +1500,7 @@ public class Dashboard extends javax.swing.JFrame {
             estadoPmN.setFont(new java.awt.Font("Super Mario 256", 1, 12)); // NOI18N
             estadoPmN.setForeground(new java.awt.Color(0, 0, 0));
             estadoPmN.setText("estado");
-            nintendoPanel.add(estadoPmN, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 130, 70, 30));
+            nintendoPanel.add(estadoPmN, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, 160, 30));
 
             jLabel31.setBackground(new java.awt.Color(255, 255, 255));
             jLabel31.setFont(new java.awt.Font("Pretendo", 1, 18)); // NOI18N
@@ -1240,20 +1522,15 @@ public class Dashboard extends javax.swing.JFrame {
             jLabel32.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
             nintendoPanel.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 100, 30));
 
-            estadoDirectorN.setFont(new java.awt.Font("Super Mario 256", 0, 12)); // NOI18N
-            estadoDirectorN.setForeground(new java.awt.Color(0, 0, 0));
-            estadoDirectorN.setText("Estado");
-            nintendoPanel.add(estadoDirectorN, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 70, 30));
-
             jLabel33.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
             jLabel33.setForeground(new java.awt.Color(0, 0, 0));
             jLabel33.setText("Ganancias en bruto");
-            nintendoPanel.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 130, 120, 30));
+            nintendoPanel.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 130, 180, 30));
 
             descuentoPmN.setFont(new java.awt.Font("Super Mario 256", 1, 12)); // NOI18N
             descuentoPmN.setForeground(new java.awt.Color(0, 0, 0));
             descuentoPmN.setText("0");
-            nintendoPanel.add(descuentoPmN, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 170, 20, 30));
+            nintendoPanel.add(descuentoPmN, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 170, 90, 30));
 
             faltasPmN.setFont(new java.awt.Font("Super Mario 256", 1, 12)); // NOI18N
             faltasPmN.setForeground(new java.awt.Color(0, 0, 0));
@@ -1268,7 +1545,7 @@ public class Dashboard extends javax.swing.JFrame {
             jLabel40.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
             jLabel40.setForeground(new java.awt.Color(0, 0, 0));
             jLabel40.setText("Costos operativos");
-            nintendoPanel.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 90, 120, 30));
+            nintendoPanel.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 90, 180, 30));
 
             jLabel41.setBackground(new java.awt.Color(153, 153, 153));
             jLabel41.setFont(new java.awt.Font("Super Mario 256", 1, 24)); // NOI18N
@@ -1278,27 +1555,27 @@ public class Dashboard extends javax.swing.JFrame {
             jLabel41.setAlignmentY(0.0F);
             jLabel41.setFocusable(false);
             jLabel41.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-            nintendoPanel.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 350, 110, 30));
+            nintendoPanel.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 350, 150, 30));
 
             jLabel42.setBackground(new java.awt.Color(255, 255, 255));
             jLabel42.setFont(new java.awt.Font("Pretendo", 1, 18)); // NOI18N
             jLabel42.setForeground(new java.awt.Color(0, 0, 0));
-            jLabel42.setText("Días en simulación ");
+            jLabel42.setText("Díias en simulacion ");
             jLabel42.setAlignmentX(5.0F);
             jLabel42.setAlignmentY(0.0F);
             jLabel42.setFocusable(false);
             jLabel42.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-            nintendoPanel.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 90, 200, 30));
+            nintendoPanel.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 90, 230, 30));
 
             jLabel43.setBackground(new java.awt.Color(153, 153, 153));
             jLabel43.setFont(new java.awt.Font("Super Mario 256", 1, 18)); // NOI18N
             jLabel43.setForeground(new java.awt.Color(153, 153, 153));
-            jLabel43.setText("Días para la entrega");
+            jLabel43.setText("Dias para la entrega");
             jLabel43.setAlignmentX(5.0F);
             jLabel43.setAlignmentY(0.0F);
             jLabel43.setFocusable(false);
             jLabel43.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-            nintendoPanel.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 10, 180, 30));
+            nintendoPanel.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 10, 260, 30));
 
             jLabel24.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
             jLabel24.setForeground(new java.awt.Color(0, 0, 0));
@@ -1348,12 +1625,13 @@ public class Dashboard extends javax.swing.JFrame {
             jLabel67.setBackground(new java.awt.Color(153, 153, 153));
             jLabel67.setFont(new java.awt.Font("Super Mario 256", 1, 18)); // NOI18N
             jLabel67.setForeground(new java.awt.Color(153, 153, 153));
-            jLabel67.setText("Juegos totales");
+            jLabel67.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+            jLabel67.setText("Juegos");
             jLabel67.setAlignmentX(5.0F);
             jLabel67.setAlignmentY(0.0F);
             jLabel67.setFocusable(false);
             jLabel67.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-            nintendoPanel.add(jLabel67, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 20, 140, 40));
+            nintendoPanel.add(jLabel67, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 0, 150, 60));
 
             jLabel68.setBackground(new java.awt.Color(153, 153, 153));
             jLabel68.setFont(new java.awt.Font("Super Mario 256", 1, 18)); // NOI18N
@@ -1363,7 +1641,7 @@ public class Dashboard extends javax.swing.JFrame {
             jLabel68.setAlignmentY(0.0F);
             jLabel68.setFocusable(false);
             jLabel68.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-            nintendoPanel.add(jLabel68, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 10, 180, 30));
+            nintendoPanel.add(jLabel68, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 10, 230, 30));
 
             jLabel69.setFont(new java.awt.Font("Pretendo", 0, 36)); // NOI18N
             jLabel69.setForeground(new java.awt.Color(255, 0, 0));
@@ -1374,7 +1652,7 @@ public class Dashboard extends javax.swing.JFrame {
             gananciasBrutasN.setFont(new java.awt.Font("Super Mario 256", 1, 13)); // NOI18N
             gananciasBrutasN.setForeground(new java.awt.Color(0, 0, 0));
             gananciasBrutasN.setText("0");
-            nintendoPanel.add(gananciasBrutasN, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 130, 40, 30));
+            nintendoPanel.add(gananciasBrutasN, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 130, 70, 30));
 
             juegosTotalesN.setBackground(new java.awt.Color(153, 153, 153));
             juegosTotalesN.setFont(new java.awt.Font("Super Mario 256", 1, 18)); // NOI18N
@@ -1408,7 +1686,7 @@ public class Dashboard extends javax.swing.JFrame {
             costosOpeN.setFont(new java.awt.Font("Super Mario 256", 1, 13)); // NOI18N
             costosOpeN.setForeground(new java.awt.Color(0, 0, 0));
             costosOpeN.setText("0");
-            nintendoPanel.add(costosOpeN, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 90, 40, 30));
+            nintendoPanel.add(costosOpeN, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 90, 60, 30));
 
             label.setFont(new java.awt.Font("Super Mario 256", 0, 12)); // NOI18N
             label.setForeground(new java.awt.Color(0, 0, 0));
@@ -1433,7 +1711,7 @@ public class Dashboard extends javax.swing.JFrame {
             estadoPmN1.setFont(new java.awt.Font("Super Mario 256", 1, 12)); // NOI18N
             estadoPmN1.setForeground(new java.awt.Color(0, 0, 0));
             estadoPmN1.setText("estado");
-            nintendoPanel.add(estadoPmN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 130, 70, 30));
+            nintendoPanel.add(estadoPmN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 130, 70, 30));
 
             jLabel35.setBackground(new java.awt.Color(255, 255, 255));
             jLabel35.setFont(new java.awt.Font("Pretendo", 1, 18)); // NOI18N
@@ -1448,12 +1726,7 @@ public class Dashboard extends javax.swing.JFrame {
             readyToShip1.setFont(new java.awt.Font("Super Mario 256", 1, 13)); // NOI18N
             readyToShip1.setForeground(new java.awt.Color(0, 0, 0));
             readyToShip1.setText("0");
-            nintendoPanel.add(readyToShip1, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 230, 40, 40));
-
-            estadoPmN2.setFont(new java.awt.Font("Super Mario 256", 0, 12)); // NOI18N
-            estadoPmN2.setForeground(new java.awt.Color(0, 0, 0));
-            estadoPmN2.setText("Estado");
-            nintendoPanel.add(estadoPmN2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 130, 70, 30));
+            nintendoPanel.add(readyToShip1, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 230, 70, 40));
 
             jLabel96.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Interfaz/Imagenes/fondobueno.png"))); // NOI18N
             nintendoPanel.add(jLabel96, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1040, 660));
@@ -1467,6 +1740,28 @@ public class Dashboard extends javax.swing.JFrame {
             estadoDirectorN1.setText("Estado");
             nintendoPanel.add(estadoDirectorN1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 70, 30));
 
+            jLabel109.setBackground(new java.awt.Color(153, 153, 153));
+            jLabel109.setFont(new java.awt.Font("Super Mario 256", 1, 18)); // NOI18N
+            jLabel109.setForeground(new java.awt.Color(153, 153, 153));
+            jLabel109.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+            jLabel109.setText("Juegos");
+            jLabel109.setAlignmentX(5.0F);
+            jLabel109.setAlignmentY(0.0F);
+            jLabel109.setFocusable(false);
+            jLabel109.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+            nintendoPanel.add(jLabel109, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 0, 150, 60));
+
+            jLabel110.setBackground(new java.awt.Color(153, 153, 153));
+            jLabel110.setFont(new java.awt.Font("Super Mario 256", 1, 18)); // NOI18N
+            jLabel110.setForeground(new java.awt.Color(153, 153, 153));
+            jLabel110.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+            jLabel110.setText("Juegos");
+            jLabel110.setAlignmentX(5.0F);
+            jLabel110.setAlignmentY(0.0F);
+            jLabel110.setFocusable(false);
+            jLabel110.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+            nintendoPanel.add(jLabel110, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 0, 150, 60));
+
             jTabbedPane1.addTab("Nintendo", nintendoPanel);
 
             jPanel1.add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1010, 760));
@@ -1479,6 +1774,20 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void spinnerNarrativoNStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerNarrativoNStateChanged
         // TODO add your handling code here:
+        if(this.flag==true){
+            
+            int antesCambio=this.initialValues.getQuantitySpritesDevsN();
+            if((int)this.spinnerNarrativoN.getValue() > antesCambio){
+                Developer dev= new Developer("Nintendo", 0, this.initialValues.getDayDuration(), nintendo.getDrive(), nintendo.getDevsMutex(), 10);
+                dev.start();
+                this.initialValues.setQuantityScriptsDevsN((int)this.spinnerNarrativoN.getValue());
+                nintendo.getScriptsDevs().agregarAlFinal(dev);
+            }else{
+                nintendo.getScriptsDevs().obtenerNodoUltimo().getDatos().interrupt();
+                nintendo.getScriptsDevs().eliminarAlFinal();
+                this.initialValues.setQuantityScriptsDevsN((int)this.spinnerNarrativoN.getValue());
+            }
+        }
         this.checkCantEmpleados(spinnerNarrativoN, this.spinnerNivelesN,this.spinnerSpritesN, spinnerLogicaN, spinnerDlcN, this.spinnerIntegradorN, 17);
         this.setSameSpinners(this.spinnerNarrativoN, this.spinnerNarrativoN1);
         this.checkCantEmpleados(spinnerNarrativoN1, this.spinnerNivelesN1,this.spinnerSpritesN1, spinnerLogicaN1, spinnerDlcN1, this.spinnerIntegradorN1, 17);
@@ -1486,6 +1795,20 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void spinnerNivelesNStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerNivelesNStateChanged
         // TODO add your handling code here:
+        if(this.flag==true){
+            
+            int antesCambio=this.initialValues.getQuantitySpritesDevsN();
+            if((int)this.spinnerNivelesN.getValue() > antesCambio){
+                Developer dev= new Developer("Nintendo", 1, this.initialValues.getDayDuration(), nintendo.getDrive(), nintendo.getDevsMutex(), 10);
+                dev.start();
+                this.initialValues.setQuantityLevelsDevsN((int)this.spinnerNivelesN.getValue());
+                nintendo.getLevelsDevs().agregarAlFinal(dev);
+            }else{
+                nintendo.getLevelsDevs().obtenerNodoUltimo().getDatos().interrupt();
+                nintendo.getLevelsDevs().eliminarAlFinal();
+                this.initialValues.setQuantityLevelsDevsN((int)this.spinnerNivelesN.getValue());
+            }
+        }
         this.checkCantEmpleados(spinnerNarrativoN, this.spinnerNivelesN,this.spinnerSpritesN, spinnerLogicaN, spinnerDlcN, this.spinnerIntegradorN, 17);
         this.setSameSpinners(this.spinnerNivelesN, this.spinnerNivelesN1);
         this.checkCantEmpleados(spinnerNarrativoN1, this.spinnerNivelesN1,this.spinnerSpritesN1, spinnerLogicaN1, spinnerDlcN1, this.spinnerIntegradorN1, 17);
@@ -1493,6 +1816,20 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void spinnerSpritesNStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerSpritesNStateChanged
         // TODO add your handling code here:
+        if(this.flag==true){
+            
+            int antesCambio=this.initialValues.getQuantitySpritesDevsN();
+            if((int)this.spinnerNarrativoN.getValue() > antesCambio){
+                Developer dev= new Developer("Nintendo", 0, this.initialValues.getDayDuration(), nintendo.getDrive(), nintendo.getDevsMutex(), 10);
+                dev.start();
+                this.initialValues.setQuantityScriptsDevsN((int)this.spinnerNarrativoN.getValue());
+                nintendo.getScriptsDevs().agregarAlFinal(dev);
+            }else{
+                nintendo.getScriptsDevs().obtenerNodoUltimo().getDatos().interrupt();
+                nintendo.getScriptsDevs().eliminarAlFinal();
+                this.initialValues.setQuantityScriptsDevsN((int)this.spinnerNarrativoN.getValue());
+            }
+        }
         this.checkCantEmpleados(spinnerNarrativoN, this.spinnerNivelesN,this.spinnerSpritesN, spinnerLogicaN, spinnerDlcN, this.spinnerIntegradorN, 17);
         this.setSameSpinners(this.spinnerSpritesN, this.spinnerSpritesN1);
         this.checkCantEmpleados(spinnerNarrativoN1, this.spinnerNivelesN1,this.spinnerSpritesN1, spinnerLogicaN1, spinnerDlcN1, this.spinnerIntegradorN1, 17);
@@ -1500,6 +1837,20 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void spinnerLogicaNStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerLogicaNStateChanged
         // TODO add your handling code here:
+        if(this.flag==true){
+            
+            int antesCambio=this.initialValues.getQuantitySpritesDevsN();
+            if((int)this.spinnerNarrativoN.getValue() > antesCambio){
+                Developer dev= new Developer("Nintendo", 0, this.initialValues.getDayDuration(), nintendo.getDrive(), nintendo.getDevsMutex(), 10);
+                dev.start();
+                this.initialValues.setQuantityScriptsDevsN((int)this.spinnerNarrativoN.getValue());
+                nintendo.getScriptsDevs().agregarAlFinal(dev);
+            }else{
+                nintendo.getScriptsDevs().obtenerNodoUltimo().getDatos().interrupt();
+                nintendo.getScriptsDevs().eliminarAlFinal();
+                this.initialValues.setQuantityScriptsDevsN((int)this.spinnerNarrativoN.getValue());
+            }
+        }
         this.checkCantEmpleados(spinnerNarrativoN, this.spinnerNivelesN,this.spinnerSpritesN, spinnerLogicaN, spinnerDlcN, this.spinnerIntegradorN, 17);
         this.setSameSpinners(this.spinnerLogicaN, this.spinnerLogicaN1);
         this.checkCantEmpleados(spinnerNarrativoN1, this.spinnerNivelesN1,this.spinnerSpritesN1, spinnerLogicaN1, spinnerDlcN1, this.spinnerIntegradorN1, 17);
@@ -1507,6 +1858,20 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void spinnerDlcNStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerDlcNStateChanged
         // TODO add your handling code here:
+        if(this.flag==true){
+            
+            int antesCambio=this.initialValues.getQuantitySpritesDevsN();
+            if((int)this.spinnerNarrativoN.getValue() > antesCambio){
+                Developer dev= new Developer("Nintendo", 0, this.initialValues.getDayDuration(), nintendo.getDrive(), nintendo.getDevsMutex(), 10);
+                dev.start();
+                this.initialValues.setQuantityScriptsDevsN((int)this.spinnerNarrativoN.getValue());
+                nintendo.getScriptsDevs().agregarAlFinal(dev);
+            }else{
+                nintendo.getScriptsDevs().obtenerNodoUltimo().getDatos().interrupt();
+                nintendo.getScriptsDevs().eliminarAlFinal();
+                this.initialValues.setQuantityScriptsDevsN((int)this.spinnerNarrativoN.getValue());
+            }
+        }
         this.checkCantEmpleados(spinnerNarrativoN, this.spinnerNivelesN,this.spinnerSpritesN, spinnerLogicaN, spinnerDlcN, this.spinnerIntegradorN, 17);
         this.setSameSpinners(this.spinnerDlcN, this.spinnerDlcN1);
         this.checkCantEmpleados(spinnerNarrativoN1, this.spinnerNivelesN1,this.spinnerSpritesN1, spinnerLogicaN1, spinnerDlcN1, this.spinnerIntegradorN1, 17);
@@ -1514,6 +1879,20 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void spinnerIntegradorNStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spinnerIntegradorNStateChanged
         // TODO add your handling code here:
+        if(this.flag==true){
+            
+            int antesCambio=this.initialValues.getQuantitySpritesDevsN();
+            if((int)this.spinnerNarrativoN.getValue() > antesCambio){
+                Developer dev= new Developer("Nintendo", 0, this.initialValues.getDayDuration(), nintendo.getDrive(), nintendo.getDevsMutex(), 10);
+                dev.start();
+                this.initialValues.setQuantityScriptsDevsN((int)this.spinnerNarrativoN.getValue());
+                nintendo.getScriptsDevs().agregarAlFinal(dev);
+            }else{
+                nintendo.getScriptsDevs().obtenerNodoUltimo().getDatos().interrupt();
+                nintendo.getScriptsDevs().eliminarAlFinal();
+                this.initialValues.setQuantityScriptsDevsN((int)this.spinnerNarrativoN.getValue());
+            }
+        }
         this.checkCantEmpleados(spinnerNarrativoN, this.spinnerNivelesN,this.spinnerSpritesN, spinnerLogicaN, spinnerDlcN, this.spinnerIntegradorN, 17);
         this.setSameSpinners(this.spinnerIntegradorN, this.spinnerIntegradorN1);
         this.checkCantEmpleados(spinnerNarrativoN1, this.spinnerNivelesN1,this.spinnerSpritesN1, spinnerLogicaN1, spinnerDlcN1, this.spinnerIntegradorN1, 17);
@@ -1540,8 +1919,12 @@ public class Dashboard extends javax.swing.JFrame {
         
         initialValues.escribirTXT();
         
+        nintendo= new Simulation(7,initialValues.getDayDuration()*1000,initialValues.getDeadline(),initialValues.getQuantityScriptsDevsN(),initialValues.getQuantityLevelsDevsN(),initialValues.getQuantitySpritesDevsN(),initialValues.getQuantitySystemsDevsN(),initialValues.getQuantityDLCsDevsN(),initialValues.getQuantityIntegratorsN(),"Nintendo");
+        square= new Simulation(7,initialValues.getDayDuration()*1000,initialValues.getDeadline(),initialValues.getQuantityScriptsDevsS(),initialValues.getQuantityLevelsDevsS(),initialValues.getQuantitySpritesDevsS(),initialValues.getQuantitySystemsDevsS(),initialValues.getQuantityDLCsDevsS(),initialValues.getQuantityIntegratorsS(),"Square Enix");
         
-
+        nintendo.start();
+        square.start();
+        this.flag=true;
         
     }//GEN-LAST:event_startSimulActionPerformed
 
@@ -1735,43 +2118,39 @@ public class Dashboard extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel adminPanel;
-    private javax.swing.JLabel cantDlcN;
-    private javax.swing.JLabel cantDlcS;
-    private javax.swing.JLabel cantGuionesN6;
-    private javax.swing.JLabel cantGuionesS;
-    private javax.swing.JLabel cantNivelesN;
-    private javax.swing.JLabel cantNivelesS;
-    private javax.swing.JLabel cantSistemasN;
-    private javax.swing.JLabel cantSistemasS;
-    private javax.swing.JLabel cantSpritesN;
-    private javax.swing.JLabel cantSpritesS;
-    private javax.swing.JLabel costosOpeN;
-    private javax.swing.JLabel costosOpeS;
-    private javax.swing.JLabel descuentoPmN;
-    private javax.swing.JLabel descuentoPmS;
-    private javax.swing.JLabel diasTotalesN;
-    private javax.swing.JLabel diasTotalesSq;
-    private javax.swing.JLabel estadoDirectorN;
+    private static javax.swing.JLabel cantDlcN;
+    private static javax.swing.JLabel cantDlcS;
+    private static javax.swing.JLabel cantGuionesN6;
+    private static javax.swing.JLabel cantGuionesS;
+    private static javax.swing.JLabel cantNivelesN;
+    private static javax.swing.JLabel cantNivelesS;
+    private static javax.swing.JLabel cantSistemasN;
+    private static javax.swing.JLabel cantSistemasS;
+    private static javax.swing.JLabel cantSpritesN;
+    private static javax.swing.JLabel cantSpritesS;
+    private static javax.swing.JLabel costosOpeN;
+    private static javax.swing.JLabel costosOpeS;
+    private static javax.swing.JLabel descuentoPmN;
+    private static javax.swing.JLabel descuentoPmS;
+    private static javax.swing.JLabel diasTotalesN;
+    private static javax.swing.JLabel diasTotalesSq;
     private javax.swing.JLabel estadoDirectorN1;
-    private javax.swing.JLabel estadoDirectorS;
-    private javax.swing.JLabel estadoDirectorS1;
-    private javax.swing.JLabel estadoPmN;
-    private javax.swing.JLabel estadoPmN1;
-    private javax.swing.JLabel estadoPmN2;
-    private javax.swing.JLabel estadoPmS;
-    private javax.swing.JLabel estadoPmS1;
-    private javax.swing.JLabel faltasPmN;
-    private javax.swing.JLabel faltasPmS;
-    private javax.swing.JLabel fechaEntregaN;
-    private javax.swing.JLabel fechaEntregaSq;
-    private javax.swing.JLabel gananciaTotalN;
-    private javax.swing.JLabel gananciaTotalSq;
-    private javax.swing.JLabel gananciasBrutasN;
-    private javax.swing.JLabel gananciasBrutasS;
-    private javax.swing.JLabel historicoDlcN;
-    private javax.swing.JLabel historicoDlcSq;
-    private javax.swing.JLabel historicoJuegosN;
-    private javax.swing.JLabel historicoJuegosSq;
+    private static javax.swing.JLabel estadoDirectorS;
+    private static javax.swing.JLabel estadoPmN;
+    private static javax.swing.JLabel estadoPmN1;
+    private static javax.swing.JLabel estadoPmS;
+    private static javax.swing.JLabel faltasPmN;
+    private static javax.swing.JLabel faltasPmS;
+    private static javax.swing.JLabel fechaEntregaN;
+    private static javax.swing.JLabel fechaEntregaSq;
+    private static javax.swing.JLabel gananciaTotalN;
+    private static javax.swing.JLabel gananciaTotalSq;
+    private static javax.swing.JLabel gananciasBrutasN;
+    private static javax.swing.JLabel gananciasBrutasS;
+    private static javax.swing.JLabel historicoDlcN;
+    private static javax.swing.JLabel historicoDlcSq;
+    private static javax.swing.JLabel historicoJuegosN;
+    private static javax.swing.JLabel historicoJuegosSq;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel100;
@@ -1783,7 +2162,10 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel106;
     private javax.swing.JLabel jLabel107;
     private javax.swing.JLabel jLabel108;
+    private javax.swing.JLabel jLabel109;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel110;
+    private javax.swing.JLabel jLabel111;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
@@ -1791,6 +2173,7 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
@@ -1880,8 +2263,8 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JLabel juegosTotalesN;
-    private javax.swing.JLabel juegosTotalesSq;
+    private static javax.swing.JLabel juegosTotalesN;
+    private static javax.swing.JLabel juegosTotalesSq;
     private javax.swing.JLabel label;
     private javax.swing.JLabel label1;
     private javax.swing.JLabel label2;
@@ -1897,10 +2280,10 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel maxSpritesN;
     private javax.swing.JLabel maxSpritesS;
     private javax.swing.JPanel nintendoPanel;
-    private javax.swing.JLabel readyToShip1;
-    private javax.swing.JLabel readyToShipDLC;
-    private javax.swing.JLabel readyToShipDLCSq;
-    private javax.swing.JLabel readyToShipSq;
+    private static javax.swing.JLabel readyToShip1;
+    private static javax.swing.JLabel readyToShipDLC;
+    private static javax.swing.JLabel readyToShipDLCSq;
+    private static javax.swing.JLabel readyToShipSq;
     private javax.swing.JSpinner spinnerDeadline;
     private javax.swing.JSpinner spinnerDlcN;
     private javax.swing.JSpinner spinnerDlcN1;

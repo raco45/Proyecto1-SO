@@ -4,6 +4,7 @@
  */
 package Developer;
 
+import Interfaz.Dashboard;
 import classes.Drive;
 import static java.lang.Thread.sleep;
 import java.util.Timer;
@@ -57,6 +58,7 @@ public final class Developer extends Thread {
             this.spritesForGame = 2;
             this.gameSystemsForGame = 4;
             this.dlcForGame=3;
+            this.contParaDlc=2;
         }
     }
     
@@ -65,11 +67,15 @@ public final class Developer extends Thread {
        int cont=0;
         while(true) {
             try {
-//                System.out.println("Dias "+cont);
-//                System.out.println("Juegos:" + this.getDrive().getGames());
+                System.out.println("Dias "+cont);
+                System.out.println("Juegos:" + this.getDrive().getGames());
+                System.out.println("Juegos con dlc :" + this.getDrive().getGamesWithDlc());
                 work();
 //                cobrar();
                 sleep(getDayDuration());
+                this.setInter();
+                this.setDashboard();
+                this.setDashboardCo();
                 cont+=1;
             } catch (InterruptedException ex) {
                 Logger.getLogger(Developer.class.getName()).log(Level.SEVERE, null, ex);
@@ -154,10 +160,24 @@ public final class Developer extends Thread {
                 Logger.getLogger(Developer.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
-                         
+                        
        this.setSueldo(this.getSueldo() + 24*this.sueldoPorHora); 
            
             
+    }
+    public void setDashboardCo(){
+        int costo;
+        costo= Integer.parseInt(Dashboard.getCostosOpeN().getText());
+        costo+=24*this.sueldoPorHora;
+        String ingresar;
+        ingresar= Integer.toString(costo);
+        
+        if(this.company.equals("Nintendo")){
+            Dashboard.getCostosOpeN().setText(ingresar);
+        }else{
+           Dashboard.getCostosOpeS().setText(ingresar);
+        }
+        
     }
     //Funcion para calcular la PPd
     public void calcPpd(){
@@ -200,9 +220,61 @@ public final class Developer extends Thread {
 //    }
     
     
+    public void setInter(){
+        
+        if(this.getCompany().equals("Nintendo")){
+            switch (getType()) {
+                case 0:
+                    Dashboard.getCantGuionesN6().setText(Integer.toString(drive.getScripts()));
+                    break;
+                case 1:
+                    Dashboard.getCantNivelesN().setText(Integer.toString(drive.getLevels()));
+                    break;
+                case 2:
+                    Dashboard.getCantSpritesN().setText(Integer.toString(drive.getSprites()));
+                    break;
+                case 3:
+                    Dashboard.getCantSistemasN().setText(Integer.toString(drive.getGameSystems()));
+                    break;
+                case 4:
+                    Dashboard.getCantDlcN().setText(Integer.toString(drive.getDlcs()));
+                    break;
+                default:
+                    break;
+            }   
+        }else{
+            
+            switch (getType()) {
+                case 0:
+                    Dashboard.getCantGuionesS().setText(Integer.toString(drive.getScripts()));
+                    break;
+                case 1:
+                    Dashboard.getCantNivelesS().setText(Integer.toString(drive.getLevels()));
+                    break;
+                case 2:
+                    Dashboard.getCantSpritesS().setText(Integer.toString(drive.getSprites()));
+                    break;
+                case 3:
+                    Dashboard.getCantSistemasS().setText(Integer.toString(drive.getGameSystems()));
+                    break;
+                case 4:
+                    Dashboard.getCantDlcS().setText(Integer.toString(drive.getDlcs()));
+                    break;
+                default:
+                    break;
+            }
+        }
+    }
     
-    
-    
+    public void setDashboard(){
+    if(this.company.equals("Nintendo")){
+            Dashboard.getReadyToShipDLC().setText(Integer.toString(drive.getGamesWithDlc()));
+            Dashboard.getReadyToShip1().setText(Integer.toString(drive.getGames()));
+        }else{
+           Dashboard.getReadyToShipDLCSq().setText(Integer.toString(drive.getGamesWithDlc()));
+            Dashboard.getReadyToShipSq().setText(Integer.toString(drive.getGames()));
+        }
+}
     
     
     
