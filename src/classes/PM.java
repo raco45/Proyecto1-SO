@@ -38,28 +38,48 @@ public class PM extends Thread {
         this.estado="Supervisando estado de proyecto";
         this.faltas=0;
     }
-
-    PM() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    
     @Override
     public void run() {
        int cont=0;
         while(true) {
             try {
-//                System.out.println("inicio");
                 this.changeOfStatus();
                 work();
-//                cobrar();
                 sleep(this.dayDuration);
                 cont+=1;
-//                System.out.println("dia: "+ cont);
-//                System.out.println("Sueldo: "+this.getSueldo());
             } catch (InterruptedException ex) {
                 Logger.getLogger(PM.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
     }
+    
+    public void changeOfStatus() {
+        // Primero se haya el valor de la hora segun dayDuration
+        int hourDuration = this.dayDuration/24;
+        int statusDuration = hourDuration/2;
+        int cont=0;
+        // Se hace un ciclo for para las 16 primeras horas
+        for (int i = 0; i < 2 * 16; i++) { // 2 * 16 veces ya que en 16 horas hay 32 cambios de estado
+            try {
+               //System.out.println("Estatus PM (en su clase): " + this.getEstado());
+                // Se duerme el codigo durante los 30 mins
+                sleep(statusDuration);      
+                // Cambia de estado
+                this.isWorking = !this.isWorking;
+                if(this.isWorking){
+                    this.setEstado("Supervisando estado de proyecto");
+                }else {
+                    this.setEstado("Among us");
+                }
+                cont+=1;
+//                System.out.println(cont);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(PM.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+    }
+    
     public void work() {
         this.setDiasSimulacion(this.getDiasSimulacion() + 1);
         if(this.getDaysUntilDeadline()>0){
@@ -69,8 +89,8 @@ public class PM extends Thread {
 //            System.out.println("Esperando por reinico de contador");
         }
         this.setSueldo(this.getSueldo() + 24*this.sueldoPorHora);
-//        System.out.println("Dias para la entrega : "+ this.getDaysUntilDeadline());
-//        System.out.println("dias transcurridos: "+this.getDiasSimulacion());
+        //System.out.println("Dias para la entrega : "+ this.getDaysUntilDeadline());
+        //System.out.println("dias transcurridos: "+this.getDiasSimulacion());
 //        while(true) {
 //            try {
 //                // Primeras 16 horas
@@ -84,31 +104,6 @@ public class PM extends Thread {
 //        }
     }
     
-    public void changeOfStatus() {
-        // Primero se haya el valor de la hora segun dayDuration
-        int hourDuration = this.dayDuration/24;
-        int statusDuration = hourDuration/2;
-        int cont=0;
-        // Se hace un ciclo for para las 16 primeras horas
-        for (int i = 0; i < 2 * 16; i++) { // 2 * 16 veces ya que en 16 horas hay 32 cambios de estado
-            try {
-//                System.out.println("Estatus: " + this.getEstado());
-                // Se duerme el codigo durante los 30 mins
-                sleep(statusDuration);      
-                // Cambia de estado
-                this.isWorking = !this.isWorking;
-                if(this.isWorking==true){
-                    this.setEstado("Supervisando estado de proyecto");
-                }else if (this.isWorking==false){
-                    this.setEstado("Among us");
-                }
-                cont+=1;
-//                System.out.println(cont);
-            } catch (InterruptedException ex) {
-                Logger.getLogger(PM.class.getName()).log(Level.SEVERE, null, ex);
-            }
-        }
-    }
 //        public void cobrar() throws InterruptedException{
 //        Timer timer = new Timer(true);
 //        TimerTask task = new Cobrar(this.sueldo, sueldoPorHora);

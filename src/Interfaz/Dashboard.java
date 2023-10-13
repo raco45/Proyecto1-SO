@@ -1566,12 +1566,6 @@ public class Dashboard extends javax.swing.JFrame {
         
         initialValues.escribirTXT();
         
-        // Se llena arreglos para pasarlos a los objetos Simulation
-        for (int i = 0; i < 6; i++) {
-            cantidadDevsNintendo[i] = valoresIniciales[i + 2];
-            cantidadDevsSquare[i] = valoresIniciales[i + 8];
-        }
-        
         
 
         

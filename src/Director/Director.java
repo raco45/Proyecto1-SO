@@ -5,6 +5,7 @@ import classes.Drive;
 import classes.PM;
 import classes.Tiendas;
 import static java.lang.Thread.sleep;
+import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -24,6 +25,9 @@ public class Director extends Thread{
     private Tiendas tienda;
     private String company;
     PM projectManager;
+    int contadorHoras;
+    int horaElegida;
+    
     public Director (int sueldoPorHora, int dayDuration, Drive drive, PM projectManager, Tiendas tienda, String company,int deadline){
         this.sueldoPorHora=sueldoPorHora;
         this.dayDuration=dayDuration;
@@ -32,19 +36,28 @@ public class Director extends Thread{
         this.tienda=tienda;
         this.company=company;
         this.deadline=deadline;
+        this.contadorHoras = 0;
+        int horaElegida = 0;
     }
     
         @Override
     public void run() {
         
         while(true) {
-           
+            Random random = new Random();
+            this.horaElegida = random.nextInt(0, 24);
             try {
-                Work();
-                
-                sleep(dayDuration);
-//                System.out.println("estado director " + this.estado);
-//                System.out.println(this.sueldo);
+                for (int i = 0; i < 24; i++) {
+                    /*
+                    System.out.println("Hora del dia: " + this.contadorHoras);
+                    System.out.println("Hora random elegida: " + this.horaElegida);
+                    System.out.println("estado director: " + this.estado);
+                    */
+                    Work();
+                    this.contadorHoras += 1;
+                    sleep(dayDuration/24);
+                }
+                this.contadorHoras = 0;
 
                 
             } catch (InterruptedException ex) {
@@ -56,6 +69,9 @@ public class Director extends Thread{
     public void Work(){
         if(this.projectManager.getDaysUntilDeadline()>=1){
             this.estado="Labores administrativas";
+            if (this.contadorHoras == this.horaElegida) {
+                this.supervisarPm();
+            }
             
         }else if (this.projectManager.getDaysUntilDeadline()==0){
             this.estado="Entregando juegos";
@@ -75,14 +91,22 @@ public class Director extends Thread{
         this.juegosParaEntrega=0;
         this.juegosParaEntregaDLC=0;
     }
+    
     public void supervisarPm(){
-        if (this.projectManager.getEstado().equals("Among us")){
-            this.projectManager.setFaltas(this.projectManager.getFaltas()+1);
-            this.projectManager.setDineroDescontado(this.projectManager.getDineroDescontado()+50);
-            this.projectManager.setSueldo(this.projectManager.getSueldo()-50);
-            System.out.println("Cachao");
-        }else{
-            System.out.println("nada");
+        try {
+            if (this.projectManager.getEstado().equals("Among us")){
+                this.projectManager.setFaltas(this.projectManager.getFaltas()+1);
+                this.projectManager.setDineroDescontado(this.projectManager.getDineroDescontado()+50);
+                this.projectManager.setSueldo(this.projectManager.getSueldo()-50);
+                System.out.println("Cachao");
+            }else{
+                System.out.println("nada");
+            }
+            sleep(dayDuration * 25/1440); // Se usa esa fraccion para llevar los 25 minutos segun dayDuration
+        
+        } catch (InterruptedException ex) {
+                Logger.getLogger(Director.class.getName()).log(Level.SEVERE, null, ex);
         }
+        
     }
 }
