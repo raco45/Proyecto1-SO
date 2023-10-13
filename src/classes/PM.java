@@ -26,11 +26,12 @@ public class PM extends Thread {
     private boolean isWorking;
     private int dayDuration;
     private int sueldo=0;
-    private int sueldoPorHora=20;
+    private int sueldoPorHora;
     private int dineroDescontado=0;
     private int faltas;
     
-    public PM(int deadline, int dayDuration) {
+    public PM(int sueldoPorHora, int deadline, int dayDuration) {
+        this.sueldoPorHora = sueldoPorHora;
         this.deadline = deadline;
         this.dayDuration = dayDuration;
         this.isWorking = true;
@@ -46,7 +47,7 @@ public class PM extends Thread {
             try {
                 this.changeOfStatus();
                 work();
-                sleep(this.dayDuration);
+                sleep(this.getDayDuration());
                 cont+=1;
             } catch (InterruptedException ex) {
                 Logger.getLogger(PM.class.getName()).log(Level.SEVERE, null, ex);
@@ -56,7 +57,7 @@ public class PM extends Thread {
     
     public void changeOfStatus() {
         // Primero se haya el valor de la hora segun dayDuration
-        int hourDuration = this.dayDuration/24;
+        int hourDuration = this.getDayDuration()/24;
         int statusDuration = hourDuration/2;
         int cont=0;
         // Se hace un ciclo for para las 16 primeras horas
@@ -66,8 +67,8 @@ public class PM extends Thread {
                 // Se duerme el codigo durante los 30 mins
                 sleep(statusDuration);      
                 // Cambia de estado
-                this.isWorking = !this.isWorking;
-                if(this.isWorking){
+                this.setIsWorking(!this.isIsWorking());
+                if(this.isIsWorking()){
                     this.setEstado("Supervisando estado de proyecto");
                 }else {
                     this.setEstado("Among us");
@@ -88,7 +89,7 @@ public class PM extends Thread {
         }else{
 //            System.out.println("Esperando por reinico de contador");
         }
-        this.setSueldo(this.getSueldo() + 24*this.sueldoPorHora);
+        this.setSueldo(this.getSueldo() + 24*this.getSueldoPorHora());
         //System.out.println("Dias para la entrega : "+ this.getDaysUntilDeadline());
         //System.out.println("dias transcurridos: "+this.getDiasSimulacion());
 //        while(true) {
@@ -206,5 +207,47 @@ public class PM extends Thread {
      */
     public void setFaltas(int faltas) {
         this.faltas = faltas;
+    }
+
+    /**
+     * @return the isWorking
+     */
+    public boolean isIsWorking() {
+        return isWorking;
+    }
+
+    /**
+     * @param isWorking the isWorking to set
+     */
+    public void setIsWorking(boolean isWorking) {
+        this.isWorking = isWorking;
+    }
+
+    /**
+     * @return the dayDuration
+     */
+    public int getDayDuration() {
+        return dayDuration;
+    }
+
+    /**
+     * @param dayDuration the dayDuration to set
+     */
+    public void setDayDuration(int dayDuration) {
+        this.dayDuration = dayDuration;
+    }
+
+    /**
+     * @return the sueldoPorHora
+     */
+    public int getSueldoPorHora() {
+        return sueldoPorHora;
+    }
+
+    /**
+     * @param sueldoPorHora the sueldoPorHora to set
+     */
+    public void setSueldoPorHora(int sueldoPorHora) {
+        this.sueldoPorHora = sueldoPorHora;
     }
 }

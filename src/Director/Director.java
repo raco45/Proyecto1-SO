@@ -3,7 +3,7 @@ package Director;
 
 import classes.Drive;
 import classes.PM;
-import classes.Tiendas;
+import classes.Tienda;
 import static java.lang.Thread.sleep;
 import java.util.Random;
 import java.util.logging.Level;
@@ -22,13 +22,13 @@ public class Director extends Thread{
     private int juegosParaEntregaDLC;
     private int dayDuration;
     private Drive drive;
-    private Tiendas tienda;
+    private Tienda tienda;
     private String company;
-    PM projectManager;
-    int contadorHoras;
-    int horaElegida;
+    private PM projectManager;
+    private int contadorHoras;
+    private int horaElegida;
     
-    public Director (int sueldoPorHora, int dayDuration, Drive drive, PM projectManager, Tiendas tienda, String company,int deadline){
+    public Director (int sueldoPorHora, int dayDuration, Drive drive, PM projectManager, Tienda tienda, String company,int deadline){
         this.sueldoPorHora=sueldoPorHora;
         this.dayDuration=dayDuration;
         this.drive= drive;
@@ -45,7 +45,7 @@ public class Director extends Thread{
         
         while(true) {
             Random random = new Random();
-            this.horaElegida = random.nextInt(0, 24);
+            this.setHoraElegida(random.nextInt(0, 24));
             try {
                 for (int i = 0; i < 24; i++) {
                     /*
@@ -54,10 +54,10 @@ public class Director extends Thread{
                     System.out.println("estado director: " + this.estado);
                     */
                     Work();
-                    this.contadorHoras += 1;
-                    sleep(dayDuration/24);
+                    this.setContadorHoras(this.getContadorHoras() + 1);
+                    sleep(getDayDuration()/24);
                 }
-                this.contadorHoras = 0;
+                this.setContadorHoras(0);
 
                 
             } catch (InterruptedException ex) {
@@ -67,46 +67,228 @@ public class Director extends Thread{
     }
     
     public void Work(){
-        if(this.projectManager.getDaysUntilDeadline()>=1){
-            this.estado="Labores administrativas";
-            if (this.contadorHoras == this.horaElegida) {
+        if(this.getProjectManager().getDaysUntilDeadline()>=1){
+            this.setEstado("Labores administrativas");
+            if (this.getContadorHoras() == this.getHoraElegida()) {
                 this.supervisarPm();
             }
             
-        }else if (this.projectManager.getDaysUntilDeadline()==0){
-            this.estado="Entregando juegos";
+        }else if (this.getProjectManager().getDaysUntilDeadline()==0){
+            this.setEstado("Entregando juegos");
             this.entregarJuegos();
-            this.projectManager.setDaysUntilDeadline(this.deadline);
+            this.getProjectManager().setDaysUntilDeadline(this.getDeadline());
         }
-        this.sueldo=this.sueldo+this.sueldoPorHora*24;
+        this.setSueldo(this.getSueldo() + this.getSueldoPorHora() * 24);
         
     }
     
     public void entregarJuegos(){
-        this.juegosParaEntrega=this.drive.getGames();
-        this.juegosParaEntregaDLC=this.drive.getGamesWithDlc();
-        this.tienda.recibirJuegos( this.juegosParaEntrega , this.juegosParaEntregaDLC , this.company );
-        this.drive.setGames(this.drive.getGames()-this.juegosParaEntrega);
-        this.drive.setGamesWithDlc(this.drive.getGamesWithDlc()-this.juegosParaEntregaDLC);
-        this.juegosParaEntrega=0;
-        this.juegosParaEntregaDLC=0;
+        this.setJuegosParaEntrega(this.getDrive().getGames());
+        this.setJuegosParaEntregaDLC(this.getDrive().getGamesWithDlc());
+        this.getTienda().recibirJuegos(this.getJuegosParaEntrega(), this.getJuegosParaEntregaDLC(), this.getCompany());
+        this.getDrive().setGames(this.getDrive().getGames()-this.getJuegosParaEntrega());
+        this.getDrive().setGamesWithDlc(this.getDrive().getGamesWithDlc()-this.getJuegosParaEntregaDLC());
+        this.setJuegosParaEntrega(0);
+        this.setJuegosParaEntregaDLC(0);
     }
     
     public void supervisarPm(){
         try {
-            if (this.projectManager.getEstado().equals("Among us")){
-                this.projectManager.setFaltas(this.projectManager.getFaltas()+1);
-                this.projectManager.setDineroDescontado(this.projectManager.getDineroDescontado()+50);
-                this.projectManager.setSueldo(this.projectManager.getSueldo()-50);
+            if (this.getProjectManager().getEstado().equals("Among us")){
+                this.getProjectManager().setFaltas(this.getProjectManager().getFaltas()+1);
+                this.getProjectManager().setDineroDescontado(this.getProjectManager().getDineroDescontado()+50);
+                this.getProjectManager().setSueldo(this.getProjectManager().getSueldo()-50);
                 System.out.println("Cachao");
             }else{
                 System.out.println("nada");
             }
-            sleep(dayDuration * 25/1440); // Se usa esa fraccion para llevar los 25 minutos segun dayDuration
+            sleep(getDayDuration() * 25/1440); // Se usa esa fraccion para llevar los 25 minutos segun dayDuration
         
         } catch (InterruptedException ex) {
                 Logger.getLogger(Director.class.getName()).log(Level.SEVERE, null, ex);
         }
         
+    }
+
+    /**
+     * @return the deadline
+     */
+    public int getDeadline() {
+        return deadline;
+    }
+
+    /**
+     * @param deadline the deadline to set
+     */
+    public void setDeadline(int deadline) {
+        this.deadline = deadline;
+    }
+
+    /**
+     * @return the sueldo
+     */
+    public float getSueldo() {
+        return sueldo;
+    }
+
+    /**
+     * @param sueldo the sueldo to set
+     */
+    public void setSueldo(float sueldo) {
+        this.sueldo = sueldo;
+    }
+
+    /**
+     * @return the sueldoPorHora
+     */
+    public float getSueldoPorHora() {
+        return sueldoPorHora;
+    }
+
+    /**
+     * @param sueldoPorHora the sueldoPorHora to set
+     */
+    public void setSueldoPorHora(float sueldoPorHora) {
+        this.sueldoPorHora = sueldoPorHora;
+    }
+
+    /**
+     * @return the estado
+     */
+    public String getEstado() {
+        return estado;
+    }
+
+    /**
+     * @param estado the estado to set
+     */
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
+
+    /**
+     * @return the juegosParaEntrega
+     */
+    public int getJuegosParaEntrega() {
+        return juegosParaEntrega;
+    }
+
+    /**
+     * @param juegosParaEntrega the juegosParaEntrega to set
+     */
+    public void setJuegosParaEntrega(int juegosParaEntrega) {
+        this.juegosParaEntrega = juegosParaEntrega;
+    }
+
+    /**
+     * @return the juegosParaEntregaDLC
+     */
+    public int getJuegosParaEntregaDLC() {
+        return juegosParaEntregaDLC;
+    }
+
+    /**
+     * @param juegosParaEntregaDLC the juegosParaEntregaDLC to set
+     */
+    public void setJuegosParaEntregaDLC(int juegosParaEntregaDLC) {
+        this.juegosParaEntregaDLC = juegosParaEntregaDLC;
+    }
+
+    /**
+     * @return the dayDuration
+     */
+    public int getDayDuration() {
+        return dayDuration;
+    }
+
+    /**
+     * @param dayDuration the dayDuration to set
+     */
+    public void setDayDuration(int dayDuration) {
+        this.dayDuration = dayDuration;
+    }
+
+    /**
+     * @return the drive
+     */
+    public Drive getDrive() {
+        return drive;
+    }
+
+    /**
+     * @param drive the drive to set
+     */
+    public void setDrive(Drive drive) {
+        this.drive = drive;
+    }
+
+    /**
+     * @return the tienda
+     */
+    public Tienda getTienda() {
+        return tienda;
+    }
+
+    /**
+     * @param tienda the tienda to set
+     */
+    public void setTienda(Tienda tienda) {
+        this.tienda = tienda;
+    }
+
+    /**
+     * @return the company
+     */
+    public String getCompany() {
+        return company;
+    }
+
+    /**
+     * @param company the company to set
+     */
+    public void setCompany(String company) {
+        this.company = company;
+    }
+
+    /**
+     * @return the projectManager
+     */
+    public PM getProjectManager() {
+        return projectManager;
+    }
+
+    /**
+     * @param projectManager the projectManager to set
+     */
+    public void setProjectManager(PM projectManager) {
+        this.projectManager = projectManager;
+    }
+
+    /**
+     * @return the contadorHoras
+     */
+    public int getContadorHoras() {
+        return contadorHoras;
+    }
+
+    /**
+     * @param contadorHoras the contadorHoras to set
+     */
+    public void setContadorHoras(int contadorHoras) {
+        this.contadorHoras = contadorHoras;
+    }
+
+    /**
+     * @return the horaElegida
+     */
+    public int getHoraElegida() {
+        return horaElegida;
+    }
+
+    /**
+     * @param horaElegida the horaElegida to set
+     */
+    public void setHoraElegida(int horaElegida) {
+        this.horaElegida = horaElegida;
     }
 }

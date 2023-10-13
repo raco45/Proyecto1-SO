@@ -24,7 +24,8 @@ public class Drive {
     private int maxDlcs;
     private int contParaDlc;
     int cont=0;
-    public Drive(int levels, int scripts, int sprites, int gameSystems, int dlcs, int games, String empresa) {
+    
+    public Drive(int levels, int scripts, int sprites, int gameSystems, int dlcs, String empresa) {
         this.maxScripts = scripts;
         this.maxLevels = levels;
         this.maxSprites = sprites;

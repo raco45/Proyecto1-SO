@@ -9,7 +9,7 @@ package classes;
  *
  * @author raco1
  */
-public class Tiendas {
+public class Tienda {
 
     private int juegos;
     private int juegosConDlc;
@@ -22,7 +22,7 @@ public class Tiendas {
     
     
     
-    public Tiendas(){
+    public Tienda(){
         this.juegos=0;
         this.juegosConDlc=0;
         this.juegosTotales=0;

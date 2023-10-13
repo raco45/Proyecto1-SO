@@ -188,7 +188,6 @@ public class Dashboard extends javax.swing.JFrame {
         spinnerLogicaS = new javax.swing.JSpinner();
         jLabel37 = new javax.swing.JLabel();
         spinnerDlcS = new javax.swing.JSpinner();
-        jLabel38 = new javax.swing.JLabel();
         jLabel71 = new javax.swing.JLabel();
         jLabel72 = new javax.swing.JLabel();
         jLabel74 = new javax.swing.JLabel();
@@ -201,7 +200,6 @@ public class Dashboard extends javax.swing.JFrame {
         cantSpritesS = new javax.swing.JLabel();
         cantSistemasS = new javax.swing.JLabel();
         jLabel78 = new javax.swing.JLabel();
-        progresBarS = new javax.swing.JProgressBar();
         jLabel79 = new javax.swing.JLabel();
         jLabel80 = new javax.swing.JLabel();
         fechaEntregaSq = new javax.swing.JLabel();
@@ -261,7 +259,6 @@ public class Dashboard extends javax.swing.JFrame {
         spinnerLogicaN = new javax.swing.JSpinner();
         jLabel9 = new javax.swing.JLabel();
         spinnerDlcN = new javax.swing.JSpinner();
-        jLabel2 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
@@ -275,7 +272,6 @@ public class Dashboard extends javax.swing.JFrame {
         cantSpritesN = new javax.swing.JLabel();
         cantSistemasN = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jProgressBar1 = new javax.swing.JProgressBar();
         jLabel26 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
         fechaEntregaN = new javax.swing.JLabel();
@@ -681,25 +677,15 @@ public class Dashboard extends javax.swing.JFrame {
             });
             jPanel2.add(spinnerDlcS, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 610, 60, -1));
 
-            jLabel38.setBackground(new java.awt.Color(255, 255, 255));
-            jLabel38.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
-            jLabel38.setForeground(new java.awt.Color(0, 0, 0));
-            jLabel38.setText("Avance de juego");
-            jLabel38.setAlignmentX(5.0F);
-            jLabel38.setAlignmentY(0.0F);
-            jLabel38.setFocusable(false);
-            jLabel38.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-            jPanel2.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 530, 160, 30));
-
             jLabel71.setBackground(new java.awt.Color(255, 255, 255));
             jLabel71.setFont(new java.awt.Font("BankGothic Md BT", 0, 18)); // NOI18N
             jLabel71.setForeground(new java.awt.Color(0, 0, 0));
-            jLabel71.setText("Juegos con DLC ");
+            jLabel71.setText("Juegos con DLC entregados");
             jLabel71.setAlignmentX(5.0F);
             jLabel71.setAlignmentY(0.0F);
             jLabel71.setFocusable(false);
             jLabel71.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-            jPanel2.add(jLabel71, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 60, 200, 30));
+            jPanel2.add(jLabel71, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 60, 240, 30));
 
             jLabel72.setFont(new java.awt.Font("BankGothic Md BT", 0, 14)); // NOI18N
             jLabel72.setForeground(new java.awt.Color(0, 0, 0));
@@ -760,7 +746,6 @@ public class Dashboard extends javax.swing.JFrame {
             jLabel78.setFocusable(false);
             jLabel78.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
             jPanel2.add(jLabel78, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 130, 190, 30));
-            jPanel2.add(progresBarS, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 560, 130, 20));
 
             jLabel79.setBackground(new java.awt.Color(255, 255, 255));
             jLabel79.setFont(new java.awt.Font("BankGothic Md BT", 1, 18)); // NOI18N
@@ -843,14 +828,14 @@ public class Dashboard extends javax.swing.JFrame {
             jPanel2.add(jLabel85, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 170, 120, 30));
 
             jLabel86.setBackground(new java.awt.Color(255, 255, 255));
-            jLabel86.setFont(new java.awt.Font("BankGothic Md BT", 0, 18)); // NOI18N
+            jLabel86.setFont(new java.awt.Font("BankGothic Md BT", 0, 24)); // NOI18N
             jLabel86.setForeground(new java.awt.Color(0, 0, 0));
-            jLabel86.setText("Utiliadad");
+            jLabel86.setText("Utilidad");
             jLabel86.setAlignmentX(5.0F);
             jLabel86.setAlignmentY(0.0F);
             jLabel86.setFocusable(false);
             jLabel86.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-            jPanel2.add(jLabel86, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 60, 110, 30));
+            jPanel2.add(jLabel86, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 550, 90, 30));
 
             jLabel87.setBackground(new java.awt.Color(255, 255, 255));
             jLabel87.setFont(new java.awt.Font("BankGothic Md BT", 1, 18)); // NOI18N
@@ -925,7 +910,7 @@ public class Dashboard extends javax.swing.JFrame {
             jLabel94.setAlignmentY(0.0F);
             jLabel94.setFocusable(false);
             jLabel94.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-            jPanel2.add(jLabel94, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 10, 120, 30));
+            jPanel2.add(jLabel94, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 40, 120, 30));
 
             jLabel95.setBackground(new java.awt.Color(255, 255, 255));
             jLabel95.setFont(new java.awt.Font("BankGothic Md BT", 0, 18)); // NOI18N
@@ -935,7 +920,7 @@ public class Dashboard extends javax.swing.JFrame {
             jLabel95.setAlignmentY(0.0F);
             jLabel95.setFocusable(false);
             jLabel95.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-            jPanel2.add(jLabel95, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 10, 210, 30));
+            jPanel2.add(jLabel95, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 10, 160, 30));
 
             gananciasBrutasS.setFont(new java.awt.Font("BankGothic Md BT", 1, 14)); // NOI18N
             gananciasBrutasS.setForeground(new java.awt.Color(0, 0, 0));
@@ -945,22 +930,22 @@ public class Dashboard extends javax.swing.JFrame {
             juegosTotalesSq.setFont(new java.awt.Font("BankGothic Md BT", 1, 18)); // NOI18N
             juegosTotalesSq.setForeground(new java.awt.Color(0, 0, 0));
             juegosTotalesSq.setText("0");
-            jPanel2.add(juegosTotalesSq, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 10, 40, 30));
+            jPanel2.add(juegosTotalesSq, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 40, 110, 30));
 
-            gananciaTotalSq.setFont(new java.awt.Font("BankGothic Md BT", 1, 18)); // NOI18N
+            gananciaTotalSq.setFont(new java.awt.Font("BankGothic Md BT", 1, 24)); // NOI18N
             gananciaTotalSq.setForeground(new java.awt.Color(0, 0, 0));
             gananciaTotalSq.setText("0");
-            jPanel2.add(gananciaTotalSq, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 60, 40, 30));
+            jPanel2.add(gananciaTotalSq, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 550, 110, 30));
 
             historicoDlcSq.setFont(new java.awt.Font("BankGothic Md BT", 1, 18)); // NOI18N
             historicoDlcSq.setForeground(new java.awt.Color(0, 0, 0));
             historicoDlcSq.setText("0");
-            jPanel2.add(historicoDlcSq, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 60, 40, 30));
+            jPanel2.add(historicoDlcSq, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 60, 40, 30));
 
             historicoJuegosSq.setFont(new java.awt.Font("BankGothic Md BT", 1, 18)); // NOI18N
             historicoJuegosSq.setForeground(new java.awt.Color(0, 0, 0));
             historicoJuegosSq.setText("0");
-            jPanel2.add(historicoJuegosSq, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 10, 40, 30));
+            jPanel2.add(historicoJuegosSq, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 10, 40, 30));
 
             cantGuionesS.setFont(new java.awt.Font("BankGothic Md BT", 1, 14)); // NOI18N
             cantGuionesS.setForeground(new java.awt.Color(0, 0, 0));
@@ -1129,16 +1114,6 @@ public class Dashboard extends javax.swing.JFrame {
             });
             nintendoPanel.add(spinnerDlcN, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 430, 60, -1));
 
-            jLabel2.setBackground(new java.awt.Color(255, 255, 255));
-            jLabel2.setFont(new java.awt.Font("Pretendo", 1, 18)); // NOI18N
-            jLabel2.setForeground(new java.awt.Color(0, 0, 0));
-            jLabel2.setText("Avance de juego");
-            jLabel2.setAlignmentX(5.0F);
-            jLabel2.setAlignmentY(0.0F);
-            jLabel2.setFocusable(false);
-            jLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-            nintendoPanel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 340, 160, 30));
-
             jLabel10.setFont(new java.awt.Font("Super Mario 256", 0, 13)); // NOI18N
             jLabel10.setForeground(new java.awt.Color(0, 0, 0));
             jLabel10.setText("Desarrolladores narrativo");
@@ -1213,7 +1188,6 @@ public class Dashboard extends javax.swing.JFrame {
             jLabel3.setFocusable(false);
             jLabel3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
             nintendoPanel.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 100, 190, 30));
-            nintendoPanel.add(jProgressBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 370, 130, 20));
 
             jLabel26.setBackground(new java.awt.Color(255, 255, 255));
             jLabel26.setFont(new java.awt.Font("Pretendo", 1, 18)); // NOI18N
@@ -1297,14 +1271,14 @@ public class Dashboard extends javax.swing.JFrame {
             nintendoPanel.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 90, 120, 30));
 
             jLabel41.setBackground(new java.awt.Color(153, 153, 153));
-            jLabel41.setFont(new java.awt.Font("Super Mario 256", 1, 18)); // NOI18N
-            jLabel41.setForeground(new java.awt.Color(153, 153, 153));
+            jLabel41.setFont(new java.awt.Font("Super Mario 256", 1, 24)); // NOI18N
+            jLabel41.setForeground(new java.awt.Color(0, 0, 0));
             jLabel41.setText("Utilidad");
             jLabel41.setAlignmentX(5.0F);
             jLabel41.setAlignmentY(0.0F);
             jLabel41.setFocusable(false);
             jLabel41.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-            nintendoPanel.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 40, 110, 30));
+            nintendoPanel.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 350, 110, 30));
 
             jLabel42.setBackground(new java.awt.Color(255, 255, 255));
             jLabel42.setFont(new java.awt.Font("Pretendo", 1, 18)); // NOI18N
@@ -1379,7 +1353,7 @@ public class Dashboard extends javax.swing.JFrame {
             jLabel67.setAlignmentY(0.0F);
             jLabel67.setFocusable(false);
             jLabel67.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-            nintendoPanel.add(jLabel67, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 10, 140, 30));
+            nintendoPanel.add(jLabel67, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 20, 140, 40));
 
             jLabel68.setBackground(new java.awt.Color(153, 153, 153));
             jLabel68.setFont(new java.awt.Font("Super Mario 256", 1, 18)); // NOI18N
@@ -1406,13 +1380,13 @@ public class Dashboard extends javax.swing.JFrame {
             juegosTotalesN.setFont(new java.awt.Font("Super Mario 256", 1, 18)); // NOI18N
             juegosTotalesN.setForeground(new java.awt.Color(153, 153, 153));
             juegosTotalesN.setText("0");
-            nintendoPanel.add(juegosTotalesN, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 10, 90, 30));
+            nintendoPanel.add(juegosTotalesN, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 20, 90, 40));
 
             gananciaTotalN.setBackground(new java.awt.Color(153, 153, 153));
-            gananciaTotalN.setFont(new java.awt.Font("Super Mario 256", 1, 18)); // NOI18N
-            gananciaTotalN.setForeground(new java.awt.Color(153, 153, 153));
+            gananciaTotalN.setFont(new java.awt.Font("Super Mario 256", 1, 24)); // NOI18N
+            gananciaTotalN.setForeground(new java.awt.Color(0, 0, 0));
             gananciaTotalN.setText("0");
-            nintendoPanel.add(gananciaTotalN, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 40, 80, 30));
+            nintendoPanel.add(gananciaTotalN, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 350, 80, 30));
 
             historicoDlcN.setBackground(new java.awt.Color(153, 153, 153));
             historicoDlcN.setFont(new java.awt.Font("Super Mario 256", 1, 18)); // NOI18N
@@ -1817,7 +1791,6 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
@@ -1832,7 +1805,6 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;
-    private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
@@ -1902,7 +1874,6 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel99;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JProgressBar jProgressBar1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
@@ -1926,7 +1897,6 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel maxSpritesN;
     private javax.swing.JLabel maxSpritesS;
     private javax.swing.JPanel nintendoPanel;
-    private javax.swing.JProgressBar progresBarS;
     private javax.swing.JLabel readyToShip1;
     private javax.swing.JLabel readyToShipDLC;
     private javax.swing.JLabel readyToShipDLCSq;
